@@ -161,3 +161,4 @@ cython_debug/
 
 # where downloaded datasets are stored
 data/
+*.lock

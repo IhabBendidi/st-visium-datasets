@@ -9,13 +9,9 @@ packages = [{include = "st_atlas_datasets", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
-httpx = "^0.25.1"
-rich = "^13.6.0"
-anyio = "^4.0.0"
 datasets = "^2.14.6"
-pillow = "^10.1.0"
-tifffile = {extras = ["all"], version = "^2023.9.26"}
-pyfastx = "^2.0.1"
+tifffile = "^2023.9.26"
+pydantic = "^2.5.0"
 
 
 [tool.poetry.group.dev.dependencies]
