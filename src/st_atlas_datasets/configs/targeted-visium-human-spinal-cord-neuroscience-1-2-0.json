@@ -1,0 +1,85 @@
+{
+  "name": "targeted-visium-human-spinal-cord-neuroscience-1-2-0",
+  "title": "Human Spinal Cord: Targeted, Neuroscience Panel. Stains: DAPI, Anti-SNAP25, Anti-GFAP, Anti-Myelin CNPase",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-spinal-cord-targeted-neuroscience-panel-stains-dapi-anti-snap-25-anti-gfap-anti-myelin-cn-pase-1-standard-1-2-0",
+  "description": "\n10X Genomics obtained fresh frozen human spinal cord tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained with antibodies and DAPI following Methanol Fixation, Immunofluorescence Staining & Imaging for Visium Spatial Protocols (CG000312).\n\nSamples were stained with antibodies and DAPI as follows:\n\n- 1:100 dilution of Alexa Fluor 488 anti-SNAP-25 Antibody (P/N 836313, BioLegend)\n- 1:200 dilution of Anti-GFAP Antibody, Cy3 Conjugate (P/N MAB3402C3, Millipore Sigma)\n- 1:100 dilution of Alexa Fluor 647 anti-Myelin CNPase Antibody (P/N 836407, BioLegend)\n- DAPI\n\nThe slide was coverslipped and imaged at 10X on a Nikon Eclipse Ti2E microscope with the following settings:\n\n- DAPI: Exposure 200 milli sec, Gain 7.6x\n- FITC: Exposure 200 milli sec, Gain 11.4x\n- TRITC: Exposure 300 milli sec, Gain 6.2x\n- Cy5: Exposure 400 milli sec, Gain 11.4x\n\nThe cloupe and TIFF files available for download here contain multiple channels or pages respectively. The following table describes the filters and stains corresponding to the channels/pages.\n\n| Channel | Filter | Stain                   |\n| ------- | ------ | ----------------------- |\n| 1       | DAPI   | DAPI                    |\n| 2       | FITC   | SNAP-25                 |\n| 3       | TRITC  | Fiducial Frame and GFAP |\n| 4       | Cy5    | Myelin CNPase           |\n\nThe Visium Gene Expression library (T1T2-A2) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Targeted libraries were prepared following the Targeted Gene Expression - Spatial User Guide (CG000377) using the Human Neuroscience Panel (PN-1000278). Targeted sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHWJ5DSXY (lane 1)\n- Sequencing depth: 10,761 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A15-100\n- Area: C1\n\nKey targeted metrics were:\n\n- Spots detected: 2,812\n- Median targeted genes per spot: 215\n- Median targeted UMI counts per spot: 611\n- Reads mapped confidently to the targeted transcriptome: 89.2%\n- Total targeted genes detected: 1,141\n\nTo maintain donor anonymity, sequence data for this sample is not currently available\n",
+  "liscense": "Creative Commons license",
+  "species": "Human",
+  "disease_state": "N/A",
+  "anatomical_entity": "spinal cord",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_image.tif",
+    "md5sum": "c9e63a0275055fba6423e98c221f3cfc",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_metrics_summary.csv",
+    "md5sum": "d904c9f50f4de047ef62666b9b1b1066",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_spatial.tar.gz",
+    "md5sum": "9cea0a0061da10957dbd12f810b5e3af",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_filtered_feature_bc_matrix.h5",
+    "md5sum": "be89c0686ec147bcf08228f973a5784e",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-spinal-cord-targeted-neuroscience-panel-stains-dapi-anti-snap-25-anti-gfap-anti-myelin-cn-pase-1-standard-1-2-0",
+  "published_at": "2020-10-27T00:00:00-07:00",
+  "pipeline_version": "1.2.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": null,
+  "inputs_probe_set": null,
+  "outputs_genome_aligned_bam": null,
+  "outputs_genome_aligned_bam_index": null,
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_molecule_info.h5",
+    "md5sum": "0dcacefd01cee2ecb73a888f5d5def00",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "ed355290692a5664e561c686a522fda7",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_raw_feature_bc_matrix.h5",
+    "md5sum": "fe49b4ddc59c047be72d54dc50b32d23",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "d598b058375e8f5ddf735fd0f465ea04",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_analysis.tar.gz",
+    "md5sum": "e47f2e364b05bcdc97c22eb649f1d4cf",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_web_summary.html",
+    "md5sum": "bda546bff0e6318d4dafa9d52f57deee",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_cloupe.cloupe",
+    "md5sum": "da39075a6631733bbd28fa00891ba14d",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_cloupe.cloupe"
+  },
+  "inputs_manual_alignment_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_alignment_file.json",
+    "md5sum": "9770b27ef272572ba9af129fa30587b9",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_alignment_file.json"
+  },
+  "inputs_target_panel": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_target_panel.csv",
+    "md5sum": "2af45a42ee9c7a38174968e540eea589",
+    "name": "Targeted_Visium_Human_SpinalCord_Neuroscience_target_panel.csv"
+  }
+}

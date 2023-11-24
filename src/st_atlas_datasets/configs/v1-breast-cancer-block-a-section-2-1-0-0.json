@@ -1,0 +1,75 @@
+{
+  "name": "v1-breast-cancer-block-a-section-2-1-0-0",
+  "title": "Human Breast Cancer (Block A Section 2)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-2-1-standard-1-0-0",
+  "description": "\n10x Genomics obtained fresh frozen Invasive Ductal Carcinoma breast tissue from [BioIVT](https://bioivt.com/) Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols - Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10 µm thickness were placed on Visium Gene Expression Slides.\n\nThe slide was coverslipped and the H&E image acquired using a Nikon Ti2-E microscope with the following settings:\n\n- Color camera\n- 20X objective\n- Numerical Aperture: 0.75\n- Exposure: 10 ms\n- Gain: 4.5X\n\nThe tissue was AJCC/UICC Stage Group IIA, ER positive, PR negative, Her2 positive and annotated with:\n\n- Ductal carcinoma in situ\n- Lobular carcinoma in situ\n- Invasive Carcinoma\n\nThe Visium Spatial Gene Expression library was prepared following the Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide)).\n\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing Depth: 137,262 reads per spot\n* Sequencing Configuration: 28 x 120 bp\n* Sequencing Coverage: Read 1 - 16 bp (includes 16 bp Spatial Barcode, 12 bp UMI); Read 2 - 120 bp (transcript); i7 sample index - 10 bp; i5 sample index - 10 bp.\n* Dual-Index set: T1T2-H10\n* Slide: V19L29-098\n* Area: B1\n\nKey cell metrics were:\n\n- Spots detected under tissue - 4,015\n- Median UMI counts per spot - 16,502\n- Median genes per spot - 5,100\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
+  "liscense": "Creative Commons license",
+  "species": "Human",
+  "disease_state": "Invasive Ductal Carcinoma",
+  "anatomical_entity": "breast",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_image.tif",
+    "md5sum": "32b1b4675d21b28b3b78fd4eab8e7ef6",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_metrics_summary.csv",
+    "md5sum": "96333cd4d7cab0133812db42aee43728",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_spatial.tar.gz",
+    "md5sum": "62bac861a15e02f752dc89062c9f3522",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_filtered_feature_bc_matrix.h5",
+    "md5sum": "b52c554f253cc1ac3f10d83615e6f4d2",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-breast-cancer-block-a-section-2-1-standard-1-0-0",
+  "published_at": "2019-12-12T00:00:00-08:00",
+  "pipeline_version": "1.0.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": null,
+  "inputs_probe_set": null,
+  "outputs_genome_aligned_bam": null,
+  "outputs_genome_aligned_bam_index": null,
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_molecule_info.h5",
+    "md5sum": "de5421877e87f23eab5fb6e5dfaba11a",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "64a4219b346e1fecfa7aa18a78db7eb1",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_raw_feature_bc_matrix.h5",
+    "md5sum": "d66e178a52dcfc5f9a9ae5b4812335e2",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "2a43cfa8804720ebe5714678e075dc98",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_analysis.tar.gz",
+    "md5sum": "843d754442ff2f89ee11d1ba12725d74",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_web_summary.html",
+    "md5sum": "4cf0c1e0110462dbc6cc37e13bf14655",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_2/V1_Breast_Cancer_Block_A_Section_2_cloupe.cloupe",
+    "md5sum": "94b1d269cbc1d76ae2feba7c2061eb82",
+    "name": "V1_Breast_Cancer_Block_A_Section_2_cloupe.cloupe"
+  }
+}

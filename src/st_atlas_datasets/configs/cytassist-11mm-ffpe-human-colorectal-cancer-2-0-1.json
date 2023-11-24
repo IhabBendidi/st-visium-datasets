@@ -1,0 +1,96 @@
+{
+  "name": "cytassist-11mm-ffpe-human-colorectal-cancer-2-0-1",
+  "title": "Human Colorectal Cancer, 11 mm Capture Area (FFPE)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-colorectal-cancer-11-mm-capture-area-ffpe-2-standard",
+  "description": "10x Genomics obtained FFPE human colorectal cancer tissue from [Discovery Life Sciences](https://www.dls.com/biospecimens/tissues/ffpe-tissue?utm_term=ffpe%20blocks&utm_campaign=US+FFPE+Tissue&utm_source=adwords&utm_medium=ppc&hsa_acc=6745169118&hsa_cam=6515436418&hsa_grp=122791002415&hsa_ad=542838316967&hsa_src=g&hsa_tgt=kwd-447215712161&hsa_kw=ffpe%20blocks&hsa_mt=p&hsa_net=adwords&hsa_ver=3&gclid=CjwKCAiAleOeBhBdEiwAfgmXf8fcFaQmk9zbIuxpnB9VSUUnn9NQ1lUWhl-2GCgq-jbeQoI3quaZBxoCXF4QAvD_BwE). The tissue was sectioned as described in the Visium CytAssist Spatial Gene Expression for FFPE – Tissue Preparation Guide ([CG000518](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-prep/visium-cyt-assist-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). Tissue section of 5 µm was placed on a standard glass slide, then stained following the Deparaffinization, H&E Staining, Imaging & Decrosslinking Demonstrated Protocol ([CG000520](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-staining/visium-cyt-assist-spatial-gene-expression-for-ffpe-deparaffinization-hand-e-staining-imaging-and-decrosslinking)). The glass slide with tissue section was processed via Visium CytAssist instrument to transfer analytes to a Visium CytAssist Spatial Gene Expression Slide v2, with 11 mm capture areas following the Visium CytAssist Spatial Gene Expression Reagent Kits User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)). \n\n- Diagnosis: Colorectal cancer, Adenocarcinoma\n- Stage (AJCC): II-A\n- TNM system: T3\n- FFPE Block Age: 2 years\n- DV200: 67\n\nThe H&E image was acquired using Olympus VS200 Slide Scanning Microscope with these settings:\n\n- Olympus Objective magnification: 20x UPLXAPO Objective\n- Numerical Aperture: 0.8\n- ScopeLED light source: Xcite Novum\n- Camera: VS-264C\n- Exposure: 500 µs\n\nFrom the H&E image, we can observe colorectal carcinoma with desmoplastic reaction. Infiltrating tumor regions with high amounts of tumor stroma can also be identified.\n\nLibraries were prepared following the Visium CytAssist Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)).\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cells HJWFGDSX5 and HJW2WDSX5 (lane 1-4)\n- Sequencing depth: 911,044,482 reads / 46.2% saturation\n- Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 90bp read 2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n- Dual-Index set: SI-TS-C3\n- Slide: V52Y10-310\n- Area: A1\n\nKey cell metrics were:\n\n- Spots detected under tissue: 9,080\n- Median UMI counts per spot: 49,282\n- Median genes per spot: 9,560\n",
+  "liscense": "Creative Commons license",
+  "species": "Human",
+  "disease_state": "colorectal cancer",
+  "anatomical_entity": "colorectal",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_image.tif",
+    "md5sum": "0d8722601f94990455b7bb99ebdfdc15",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_metrics_summary.csv",
+    "md5sum": "63e0c5fe503aab993321063d76d50851",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_spatial.tar.gz",
+    "md5sum": "928ec4e57618c058cfd5ecd6557dceb5",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_filtered_feature_bc_matrix.h5",
+    "md5sum": "57806b166f9b7df5f7a43f23d561296c",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-colorectal-cancer-11-mm-capture-area-ffpe-2-standard",
+  "published_at": "2023-02-14T00:17:53.487Z",
+  "pipeline_version": "2.0.1",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": {
+    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_fastqs.tar",
+    "md5sum": "9e21d1d19524ee9e508bdacd44f72e23",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_fastqs.tar"
+  },
+  "inputs_probe_set": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_probe_set.csv",
+    "md5sum": "a74f1583689de3c9f95164b2fc090194",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_probe_set.csv"
+  },
+  "outputs_genome_aligned_bam": {
+    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_possorted_genome_bam.bam",
+    "md5sum": "eccb3f9d40720efe072c582a5126b477",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_possorted_genome_bam.bam"
+  },
+  "outputs_genome_aligned_bam_index": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_possorted_genome_bam.bam.bai",
+    "md5sum": "d1757da40b7228c7dd5bf233b98cd036",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_possorted_genome_bam.bam.bai"
+  },
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_molecule_info.h5",
+    "md5sum": "ac4e512a936dca9ccaa339fe16924c46",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "ece28831dad79bc115fccfa78e0785ce",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_raw_feature_bc_matrix.h5",
+    "md5sum": "dec54b3f935c913b56d759fd41fa0cbf",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "4416007521da968b19af39beb7bb8d85",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_analysis.tar.gz",
+    "md5sum": "305ec085c4e025a1a06c20cff317bdfa",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_web_summary.html",
+    "md5sum": "e3dd1984b81a95bd5b8a9c130d58912e",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_cloupe.cloupe",
+    "md5sum": "c122c862bf0b6e670a105c770194a720",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_cloupe.cloupe"
+  },
+  "inputs_microscope_image_without_fiducial_frame_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Colorectal_Cancer/CytAssist_11mm_FFPE_Human_Colorectal_Cancer_tissue_image.tif",
+    "md5sum": "13633295852b5a64cc126801b448b332",
+    "name": "CytAssist_11mm_FFPE_Human_Colorectal_Cancer_tissue_image.tif"
+  }
+}

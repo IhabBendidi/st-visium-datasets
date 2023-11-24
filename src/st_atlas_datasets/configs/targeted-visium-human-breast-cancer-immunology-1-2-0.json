@@ -1,0 +1,80 @@
+{
+  "name": "targeted-visium-human-breast-cancer-immunology-1-2-0",
+  "title": "Human Breast Cancer: Targeted, Immunology Panel",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-breast-cancer-targeted-immunology-panel-1-standard-1-2-0",
+  "description": "\n10X Genomics obtained fresh frozen human Invasive Lobular Carcinoma breast tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained following Methanol Fixation, H&E Staining & Imaging for Visium Spatial Protocols ([CG000160](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-staining/methanol-fixation-hand-e-staining-and-imaging-for-visium-spatial-protocols)).\n\nThe tissue was AJCC/UICC Stage Group I, ER positive, PR positive, HER2 negative.\n\nThe H&E image was acquired using a Nikon Eclipse Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 20 ms\n\nThe Visium Gene Expression library (T1T2-A6) was prepared as described in the Visium Spatial Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide) Rev D). Targeted libraries were prepared following the Targeted Gene Expression - Spatial User Guide (CG000377) using the Human Immunology Panel (PN-2000286). Targeted sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHWHLDSXY (lane 4)\n- Sequencing depth: 16,141 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V19L29-095\n- Area: A1\n\nKey targeted metrics were:\n\n- Spots detected: 4,325\n- Median targeted genes per spot: 203\n- Median targeted UMI counts per spot: 672\n- Reads mapped confidently to the targeted transcriptome: 84.2%\n- Total targeted genes detected: 973\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
+  "liscense": "Creative Commons license",
+  "species": "Human",
+  "disease_state": "Invasive Lobular Carcinoma",
+  "anatomical_entity": "breast",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_image.tif",
+    "md5sum": "b244a78fd713b453ac53bcffd05d3217",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_metrics_summary.csv",
+    "md5sum": "4f537011d5950bbcc78a76103f71fbf2",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_spatial.tar.gz",
+    "md5sum": "e99f24f469221f65288eb7622e8c6ed3",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_filtered_feature_bc_matrix.h5",
+    "md5sum": "e3f96e35eecd098a160b33a06ce2d29f",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-breast-cancer-targeted-immunology-panel-1-standard-1-2-0",
+  "published_at": "2020-10-27T00:00:00-07:00",
+  "pipeline_version": "1.2.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": null,
+  "inputs_probe_set": null,
+  "outputs_genome_aligned_bam": null,
+  "outputs_genome_aligned_bam_index": null,
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_molecule_info.h5",
+    "md5sum": "c24e3eb5cbedd74cb25a36e008ef5350",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "890abb8330e1dcc424117e6fc465ae33",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_raw_feature_bc_matrix.h5",
+    "md5sum": "2cb6ca248d8886a77ab14311c5281e1f",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "b74c3b31235283beb23f3174c159b903",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_analysis.tar.gz",
+    "md5sum": "f0085e6be728308102bff8280fc5355f",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_web_summary.html",
+    "md5sum": "036c67d6b65e8a6d684de69a3cc8fde1",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_cloupe.cloupe",
+    "md5sum": "2e58faac3a73527d7f44a4ebfb7504fd",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_cloupe.cloupe"
+  },
+  "inputs_target_panel": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_BreastCancer_Immunology/Targeted_Visium_Human_BreastCancer_Immunology_target_panel.csv",
+    "md5sum": "81a23f3766ce5c61b1c3b84044c07a96",
+    "name": "Targeted_Visium_Human_BreastCancer_Immunology_target_panel.csv"
+  }
+}

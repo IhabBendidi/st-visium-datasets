@@ -1,0 +1,96 @@
+{
+  "name": "cytassist-11mm-ffpe-mouse-embryo-2-0-0",
+  "title": "Mouse Embryo, 11 mm Capture Area (FFPE)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/mouse-embryo-11-mm-capture-area-ffpe-2-standard",
+  "description": "10x Genomics obtained FFPE Mouse Embryo tissue blocks from [Avaden](http://www.avadenbio.com/) Biosciences. The tissue was sectioned as described in Visium CytAssist Spatial Gene Expression for FFPE – Tissue Preparation Guide [Demonstrated Protocol CG000518](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-prep/visium-cyt-assist-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). Tissue sections of 5 µm was placed on a standard glass slide, and H&E-stained following deparaffinization. Sections were coverslipped with 85% glycerol, imaged, decoverslipped, followed by dehydration & decrosslinking ([Demonstrated Protocol CG000520](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-staining/visium-cyt-assist-spatial-gene-expression-for-ffpe-deparaffinization-hand-e-staining-imaging-and-decrosslinking)). The glass slide with tissue section was processed via Visium CytAssist instrument to transfer analytes to a Visium CytAssist Spatial Gene Expression slide with 11 mm Capture Area. The probe extension and library construction steps follow the standard Visium for FFPE workflow outside of the instrument.\n\nThe H&E image was acquired using Olympus VS200 Slide Scanning Microscope with these settings:\n\n* Olympus Objective magnification: 20x UPLXAPO Objective\n* Numerical Aperture: 0.8\n* ScopeLED light source: Xcite Novum\n* Camera: VS-264C\n* Exposure: 410 µs \n\nLibraries were prepared following the Visium CytAssist Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)).\n\n\n* Sequencing instrument: Illumina NovaSeq, flow cell HNT5WDSX3 (lane 1-4)\n* Sequencing depth: 129,162 reads per spot\n* Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 90bp read 2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set: SI-TS-D6\n* Slide: V52Y09-019\n* Area: B\n\nKey metrics were:\n\n* Spots detected under tissue: 6,443\n* Median genes per spot: 8,843\n* Median UMI counts per spot: 62,780\n",
+  "liscense": "Creative Commons license",
+  "species": "Mouse",
+  "disease_state": "healthy",
+  "anatomical_entity": "mouse embryo",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_image.tif",
+    "md5sum": "4abacefefee889379f9356f69f2b6524",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_metrics_summary.csv",
+    "md5sum": "ae9b6de24e2af81901e7087547d78cb3",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_spatial.tar.gz",
+    "md5sum": "73e31316d94cb66334e6c0f4743e9194",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_filtered_feature_bc_matrix.h5",
+    "md5sum": "7557f39fb7a7fd17cd26d3862f613ad5",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "mouse-embryo-11-mm-capture-area-ffpe-2-standard",
+  "published_at": "2022-07-14T21:52:50.436Z",
+  "pipeline_version": "2.0.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": {
+    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_fastqs.tar",
+    "md5sum": "9e182de3e40fa5a6ec45a5b9093438c5",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_fastqs.tar"
+  },
+  "inputs_probe_set": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_probe_set.csv",
+    "md5sum": "df6ad1d3e39c9406f5a728705d7aad3d",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_probe_set.csv"
+  },
+  "outputs_genome_aligned_bam": {
+    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_possorted_genome_bam.bam",
+    "md5sum": "b06da10175ce6baa360d2a8acbb1532c",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_possorted_genome_bam.bam"
+  },
+  "outputs_genome_aligned_bam_index": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_possorted_genome_bam.bam.bai",
+    "md5sum": "b01c25c4ffb03982ace45c9efb8e221b",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_possorted_genome_bam.bam.bai"
+  },
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_molecule_info.h5",
+    "md5sum": "fc2630d867aa25dc8b4964222aef5c39",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "72ed99b468a88c58616fa3fc1e252f0d",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_raw_feature_bc_matrix.h5",
+    "md5sum": "e868800c3764856a2136b2b4b93761ac",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "4b42f99a65ac256b7e9263c8266d1353",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_analysis.tar.gz",
+    "md5sum": "1d6830299d108290428c8d4f87fc4e3c",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_web_summary.html",
+    "md5sum": "5ea2e23d6d340bef7ccb3372ed832aa2",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_cloupe.cloupe",
+    "md5sum": "ec761153326e8d1b37cb51d9968ea3fe",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_cloupe.cloupe"
+  },
+  "inputs_microscope_image_without_fiducial_frame_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Mouse_Embryo/CytAssist_11mm_FFPE_Mouse_Embryo_tissue_image.tif",
+    "md5sum": "87f6a12f1293abc9b117f7e12ad7276d",
+    "name": "CytAssist_11mm_FFPE_Mouse_Embryo_tissue_image.tif"
+  }
+}

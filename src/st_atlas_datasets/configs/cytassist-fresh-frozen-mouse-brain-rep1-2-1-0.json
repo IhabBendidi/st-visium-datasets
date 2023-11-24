@@ -1,0 +1,106 @@
+{
+  "name": "cytassist-fresh-frozen-mouse-brain-rep1-2-1-0",
+  "title": "Visium CytAssist Gene Expression Libraries of Post-Xenium Mouse Brain (FF)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/visium-cytassist-gene-expression-libraries-of-post-xenium-mouse-brain-ff-using-the-mouse-whole-transcriptome-probe-set-2-standard",
+  "description": "### Overview\n\nThis dataset is provided as part of the [Technical Note: Post-Xenium In Situ Applications: Immunofluorescence, H&E, and Visium CytAssist Spatial Gene Expression (CG000709)](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/assay/post-xenium-in-situ-applications-immunofluorescence-h-e-and-visium-cytassist-spatial-gene-expression). Post-Xenium samples were compared to controls (samples not processed through the Xenium workflow) using 10 µm fresh-frozen (FF) serial sections. \n\n*Click the links on the left panel to toggle the files available for download at the bottom of the page.*\n\n### Biomaterials\n\nMouse brain samples (FF, OCT-embedded) were obtained from Charles River Laboratories.\n\n### Tissue preparation\n\nPrior to the Visium CytAssist Spatial Gene Expression workflow, 10 µm sections were either placed on Superfrost Plus Slides (Fisherbrand, PN 12-550-15) and used as controls (not processed with the Xenium workflow prior to CytAssist), or placed on Xenium slides for Xenium processing (post-Xenium).\n\nFF mouse brain sections used for post-Xenium applications were generated using the [Xenium Mouse Brain Gene Expression Panel](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/panel-design/pre-designed-xenium-gene-expression-panels). For more details on methods, see page 13 of the [Technical Note](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/assay/post-xenium-in-situ-applications-immunofluorescence-h-e-and-visium-cytassist-spatial-gene-expression).\n\n### Library preparation & sequencing\n\nConsult the [Technical Note](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/assay/post-xenium-in-situ-applications-immunofluorescence-h-e-and-visium-cytassist-spatial-gene-expression) for details.\n\n* Probe set: [Mouse Whole Transcriptome](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/probe-sets/visium-mouse-transcriptome-probe-set-v1-0) \n* Slides: 11 mm, V52Y23-098 (Replicate 1), V52Y23-099 (Replicate 2) \n* Areas: A1 (control), B1 (post-Xenium)\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing configuration: 28 bp read 1 (16 bp Visium spatial barcode, 12 bp UMI), 90 bp read 2 (probe insert), 10 bp i7 sample index and 10 bp i5 sample index\n\n### Analysis\n\nThe resulting FASTQ files and image data were analyzed with Space Ranger v2.1 to produce the output files below. \n\n### How to view data\n\nInput and output files are listed below. To get started, [download Loupe Browser](/support/software/loupe-browser/downloads) to explore the Loupe Browser file, or read more about the other [Space Ranger outputs](/support/software/space-ranger/analysis/outputs/output-overview).",
+  "liscense": "Creative Commons license",
+  "species": "Mouse",
+  "disease_state": "",
+  "anatomical_entity": "brain",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_image.tif",
+    "md5sum": "46f6dfde13b6862b477645b3489afb2f",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_metrics_summary.csv",
+    "md5sum": "5a67ad021fa26c15aea2cfcbad326e78",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_spatial.tar.gz",
+    "md5sum": "f23d7d6db0c0b00f47fe9537530e118d",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_filtered_feature_bc_matrix.h5",
+    "md5sum": "39699ce4ba8b682dde12b5bcaefa19e3",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "visium-cytassist-gene-expression-libraries-of-post-xenium-mouse-brain-ff-using-the-mouse-whole-transcriptome-probe-set-2-standard",
+  "published_at": "2023-10-05T16:22:31.635Z",
+  "pipeline_version": "2.1.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_fastqs.tar",
+    "md5sum": "120eeb9e6158d5dae9fa2c5e3fd0c994",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_fastqs.tar"
+  },
+  "inputs_probe_set": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_probe_set.csv",
+    "md5sum": "df6ad1d3e39c9406f5a728705d7aad3d",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_probe_set.csv"
+  },
+  "outputs_genome_aligned_bam": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_possorted_genome_bam.bam",
+    "md5sum": "ce8cd370b28d253d5ee9ad03f1f54f0d",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_possorted_genome_bam.bam"
+  },
+  "outputs_genome_aligned_bam_index": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_possorted_genome_bam.bam.bai",
+    "md5sum": "a3f081aa65a77fc6bef484e31aeddfe8",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_possorted_genome_bam.bam.bai"
+  },
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_molecule_info.h5",
+    "md5sum": "5c0a3b43be95000c67bdae448208accf",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "78b3de9de2b9898411f3fa2c5d80ca27",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_raw_feature_bc_matrix.h5",
+    "md5sum": "1620b6571ed354937a7835ffb818a542",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "a1063119683b65bda6805fdd26a3bbbf",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_analysis.tar.gz",
+    "md5sum": "62430b2ebad52f5678e4de5d0a47ae14",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_web_summary.html",
+    "md5sum": "84ebd2631399809f2dcfcd74cb3c1ea2",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_cloupe.cloupe",
+    "md5sum": "1f07452dad82c306db273393b64db943",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_cloupe.cloupe"
+  },
+  "inputs_microscope_image_without_fiducial_btf": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_tissue_image.btf",
+    "md5sum": "03b51b2121ba8db87134db4e3e045b66",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_tissue_image.btf"
+  },
+  "outputs_probe_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_raw_probe_bc_matrix.h5",
+    "md5sum": "1215d392ff5e8230b07e82912ff24df3",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_raw_probe_bc_matrix.h5"
+  },
+  "outputs_spot_deconvolution_outputs": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FreshFrozen_Mouse_Brain_Rep1/CytAssist_FreshFrozen_Mouse_Brain_Rep1_deconvolution.tar.gz",
+    "md5sum": "777ede33fcda3346ae5ba10b38ac2408",
+    "name": "CytAssist_FreshFrozen_Mouse_Brain_Rep1_deconvolution.tar.gz"
+  }
+}

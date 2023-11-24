@@ -1,0 +1,101 @@
+{
+  "name": "cytassist-ffpe-human-lung-squamous-cell-carcinoma-2-0-0",
+  "title": "Human Lung Cancer (FFPE)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-lung-cancer-ffpe-2-standard",
+  "description": "10x Genomics obtained FFPE Human Lung Cancer tissue blocks from [Avaden](http://www.avadenbio.com/) Biosciences. The tissue was sectioned as described in Visium CytAssist Spatial Gene Expression for FFPE – Tissue Preparation Guide Demonstrated Protocol ([CG000518](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-prep/visium-cyt-assist-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). Tissue sections of 5 µm was placed on a standard glass slide, then H&E-stained following deparaffinization. Sections were coverslipped with 85% glycerol, imaged, decoverslipped, followed by dehydration & decrosslinking Demonstrated Protocol ([CG000520](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-staining/visium-cyt-assist-spatial-gene-expression-for-ffpe-deparaffinization-hand-e-staining-imaging-and-decrosslinking)). The glass slide with tissue section was processed via Visium CytAssist instrument to transfer analytes to a Visium CytAssist Spatial Gene Expression slide. The probe extension and library construction steps follow the standard Visium for FFPE workflow outside of the instrument.\n\n* Diagnosis:  Lung, Squamous Cell Carcinoma\n\nThe H&E image was acquired using Olympus VS200 Slide Scanning Microscope with these settings:\n\n* Olympus Objective magnification: 20x UPLXAPO Objective\n* Numerical Aperture: 0.8\n* ScopeLED light source: Xcite Novum\n* Camera: VS-264C\n* Exposure: 500 µs\n\nLibraries were prepared following the Visium CytAssist Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)).\n\n* Sequencing instrument: Illumina NovaSeq, flow cell HNNNMDSX3 (lane 1-4)\n* Sequencing depth: 35,785 reads per spot (sequencing saturation of 33%)\n* Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 90bp read 2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set: SI-TS-B1\n* Slide: V42A20-354\n* Area: D1\n\nKey metrics were:\n\n* Spots detected under tissue: 3,858\n* Median genes per spot: 6,174\n* Median UMI counts per spot: 13,991\n",
+  "liscense": "Creative Commons license",
+  "species": "Human",
+  "disease_state": "lung cancer",
+  "anatomical_entity": "lung",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_image.tif",
+    "md5sum": "45e4d3573eed8845fa9fb547ea8fdb2a",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_metrics_summary.csv",
+    "md5sum": "c831cac8577fcecc0994ee4178bdc0a3",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_spatial.tar.gz",
+    "md5sum": "aa3cfe678e40bac9cdcebf367c0c8867",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_filtered_feature_bc_matrix.h5",
+    "md5sum": "2cd95c387dbc3f6623713340f3eef606",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-lung-cancer-ffpe-2-standard",
+  "published_at": "2022-07-13T21:39:01.101Z",
+  "pipeline_version": "2.0.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_fastqs.tar",
+    "md5sum": "4c6e30e1f8e71e644999737f722623d0",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_fastqs.tar"
+  },
+  "inputs_probe_set": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_probe_set.csv",
+    "md5sum": "a74f1583689de3c9f95164b2fc090194",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_probe_set.csv"
+  },
+  "outputs_genome_aligned_bam": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_possorted_genome_bam.bam",
+    "md5sum": "c002de30b3d88acb966679d0a46c6de6",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_possorted_genome_bam.bam"
+  },
+  "outputs_genome_aligned_bam_index": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_possorted_genome_bam.bam.bai",
+    "md5sum": "60daf1dd1320dfc4dcbb7aa58d9be4e1",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_possorted_genome_bam.bam.bai"
+  },
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_molecule_info.h5",
+    "md5sum": "b3c63b369867d510e8d46a5e48069395",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "a2e6dcfde1d48a004a609d12e0282dc9",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_raw_feature_bc_matrix.h5",
+    "md5sum": "ff7def08a7f25b09b571e5bba819fd86",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "54209e875cd6edc70f6fbd9277c6a547",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_analysis.tar.gz",
+    "md5sum": "b37b0728ca37d4b6c1113a47124a84ee",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_web_summary.html",
+    "md5sum": "b5448113bbe66a76b9a318c90a6485d0",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_cloupe.cloupe",
+    "md5sum": "97719a81a4c818226fc512d3a97df4bc",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_cloupe.cloupe"
+  },
+  "inputs_manual_alignment_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_alignment_file.json",
+    "md5sum": "d5f3ea525eb5d29266ffa5686bf27bf7",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_alignment_file.json"
+  },
+  "inputs_microscope_image_without_fiducial_frame_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma/CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_tissue_image.tif",
+    "md5sum": "1a273be17e8d2041ed15a831753fba5a",
+    "name": "CytAssist_FFPE_Human_Lung_Squamous_Cell_Carcinoma_tissue_image.tif"
+  }
+}

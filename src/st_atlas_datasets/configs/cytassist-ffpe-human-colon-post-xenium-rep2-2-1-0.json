@@ -1,0 +1,111 @@
+{
+  "name": "cytassist-ffpe-human-colon-post-xenium-rep2-2-1-0",
+  "title": "Visium CytAssist Gene Expression Libraries of Post-Xenium Human Colon Cancer (FFPE)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/visium-cytassist-gene-expression-libraries-of-post-xenium-human-colon-cancer-ffpe-using-the-human-whole-transcriptome-probe-set-2-standard",
+  "description": "### Overview\n\nThis dataset is provided as part of the [Technical Note: Post-Xenium In Situ Applications: Immunofluorescence, H&E, and Visium CytAssist Spatial Gene Expression (CG000709)](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/assay/post-xenium-in-situ-applications-immunofluorescence-h-e-and-visium-cytassist-spatial-gene-expression). Post-Xenium samples were compared to controls (samples not processed through the Xenium workflow) using 5 µm (FFPE) serial sections. \n\n*Click the links on the left panel to toggle the files available for download at the bottom of the page.*\n\n### Biomaterials\n\nHuman colon cancer samples (FFPE; adenocarcinoma stage IIA) were obtained from Avaden Biosciences.\n\n### Tissue preparation\n\nPrior to the Visium CytAssist Spatial Gene Expression workflow, all sections were placed on Xenium slides. Two replicates were processed through the Xenium workflow prior to the Visium CytAssist workflow (post-Xenium). The other two replicates were treated as controls, not processed with the Xenium workflow. \n\nFFPE human colon sections used for post-Xenium applications were generated using a custom gene panel designed for human colon gene expression profiling. For more details on methods, see page 13 of the [Technical Note](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/assay/post-xenium-in-situ-applications-immunofluorescence-h-e-and-visium-cytassist-spatial-gene-expression).\n\n### Library preparation & sequencing\n\nConsult the [Technical Note](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/assay/post-xenium-in-situ-applications-immunofluorescence-h-e-and-visium-cytassist-spatial-gene-expression) for details.\n\n* Probe set: [Human Whole Transcriptome](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/probe-sets/visium-human-transcriptome-probe-set-v2-0)\n* Slides: 11 mm, V53M06-039 (Replicate 1), V53M06-063 (Replicate 2)\n* Areas: A1 (control), B1 (post-Xenium)\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing configuration: 28 bp read 1 (16 bp Visium spatial barcode, 12 bp UMI), 90 bp read 2 (probe insert), 10 bp i7 sample index and 10 bp i5 sample index\n\n### Analysis\n\nThe resulting FASTQ files and image data were analyzed with Space Ranger v2.1 to produce the output files below. \n\n### How to view data\n\nInput and output files are listed below. To get started, [download Loupe Browser](/support/software/loupe-browser/downloads) to explore the Loupe Browser file, or read more about the other [Space Ranger outputs](/support/software/space-ranger/analysis/outputs/output-overview).\n\n",
+  "liscense": "Creative Commons license",
+  "species": "Human",
+  "disease_state": "cancer; adenocarcinoma stage IIA",
+  "anatomical_entity": "colon",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_image.tif",
+    "md5sum": "144bec6452a98ed585e7f47e508c87ff",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_metrics_summary.csv",
+    "md5sum": "7a19591474d087130ca5e459db63237b",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_spatial.tar.gz",
+    "md5sum": "18d14c9bff2c3b4cdb29322f01cedcde",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_filtered_feature_bc_matrix.h5",
+    "md5sum": "c4fbb1a0f37ce0a0f5b2b746bb0529f1",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "visium-cytassist-gene-expression-libraries-of-post-xenium-human-colon-cancer-ffpe-using-the-human-whole-transcriptome-probe-set-2-standard",
+  "published_at": "2023-10-05T16:56:29.662Z",
+  "pipeline_version": "2.1.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_fastqs.tar",
+    "md5sum": "b88df56be076fe8afad48220dbf843db",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_fastqs.tar"
+  },
+  "inputs_probe_set": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_probe_set.csv",
+    "md5sum": "a74f1583689de3c9f95164b2fc090194",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_probe_set.csv"
+  },
+  "outputs_genome_aligned_bam": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_possorted_genome_bam.bam",
+    "md5sum": "592f9d6c55aa25bcd9d42499f4cfeb5d",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_possorted_genome_bam.bam"
+  },
+  "outputs_genome_aligned_bam_index": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_possorted_genome_bam.bam.bai",
+    "md5sum": "c59b6d31eb1220e238ec77d28c7bc6ea",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_possorted_genome_bam.bam.bai"
+  },
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_molecule_info.h5",
+    "md5sum": "5795fb58a9973c59e5ffdef7fcfed5ec",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "5d9bcb60c18ede8d2e67487adfe919ea",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_raw_feature_bc_matrix.h5",
+    "md5sum": "8b57c1b321cca7aae61298f3cbb750ba",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "12e0026a76a1f88e88512eb1b3d0f527",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_analysis.tar.gz",
+    "md5sum": "25356bc7711aafccd9008d90f1ff1aa0",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_web_summary.html",
+    "md5sum": "29bb7cf6918acefd023797f5d9380a6c",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_cloupe.cloupe",
+    "md5sum": "f765b718684ac18216e8126a2c239b26",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_cloupe.cloupe"
+  },
+  "inputs_manual_alignment_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_alignment_file.json",
+    "md5sum": "e1a34600d7c0bfc4cea039a250a05e44",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_alignment_file.json"
+  },
+  "inputs_microscope_image_without_fiducial_btf": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_tissue_image.btf",
+    "md5sum": "0f3d5f39ac149c3a4f49394463d721cb",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_tissue_image.btf"
+  },
+  "outputs_probe_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_raw_probe_bc_matrix.h5",
+    "md5sum": "c5cbf4324c9f305df8d7663c08337e76",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_raw_probe_bc_matrix.h5"
+  },
+  "outputs_spot_deconvolution_outputs": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2/CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_deconvolution.tar.gz",
+    "md5sum": "489073d094b60665ca37a795933f3e75",
+    "name": "CytAssist_FFPE_Human_Colon_Post_Xenium_Rep2_deconvolution.tar.gz"
+  }
+}

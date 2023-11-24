@@ -1,0 +1,96 @@
+{
+  "name": "cytassist-11mm-ffpe-human-ovarian-carcinoma-2-0-0",
+  "title": "Human Ovarian Cancer, 11 mm Capture Area (FFPE)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-ovarian-cancer-11-mm-capture-area-ffpe-2-standard",
+  "description": "10x Genomics obtained FFPE Human Ovarian Cancer tissue blocks from [Avaden](http://www.avadenbio.com/ \"http\\://www.avadenbio.com/\") Biosciences. The tissue was sectioned as described in Visium CytAssist  Spatial Gene Expression for FFPE – Tissue Preparation Guide Demonstrated Protocol ([CG000518](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-prep/visium-cyt-assist-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). Tissue sections of 5 µm was placed on a standard glass slide,and H&E-stained following deparaffinization. After 11 months storage at room temperature, sections were imaged, decoverslipped, followed by deparaffinization steps, dehydration & Decrosslinking Demonstrated Protocol ([CG000520](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-staining/visium-cyt-assist-spatial-gene-expression-for-ffpe-deparaffinization-hand-e-staining-imaging-and-decrosslinking)). The glass slide with tissue section was processed via Visium CytAssist instrument to transfer analytes to a Visium CytAssist Spatial Gene Expression slide with 11 mm Capture Area. The probe extension and library construction steps follow the standard Visium for FFPE workflow outside of the instrument.\n\n* Diagnosis: Ovarian Serous Carcinoma, High Grade\n\nThe H&E image was acquired using Olympus Slide Scanning Microscope with these settings:\n\n* Olympus Objective Magnification: 20X UPLXAPO Objective\n* Numerical Aperture: 0.8\n* ScopeLED light source: Xcite Novum\n* Camera: Hamamatsu Orca FusionBT sCMOS \n\nLibraries were prepared following the Visium CytAssist Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)).\n\n* Sequencing instrument: Illumina NovaSeq, flow cell HNNN7DSX3 (lane 1-4)\n* Sequencing depth: 46,109 reads per spot\n* Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 90bp read 2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set: SI-TS-F4\n* Slide: V52Y09-003\n* Area: B1\n\nKey metrics were:\n\n* Spots detected under tissue: 4,674\n* Median genes per spot: 8,792\n* Median UMI counts per spot: 32,048\n",
+  "liscense": "Creative Commons license",
+  "species": "Human",
+  "disease_state": "ovarian cancer",
+  "anatomical_entity": "ovary",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_image.tif",
+    "md5sum": "cec867b72fb838619160b32975795143",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_metrics_summary.csv",
+    "md5sum": "06cae3a1eff89223c12e4e317c891686",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_spatial.tar.gz",
+    "md5sum": "eb8a040eb47cf73f69a8e485ec54e7f3",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_filtered_feature_bc_matrix.h5",
+    "md5sum": "a9b4c170def337cf397f49ad2602f5f2",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-ovarian-cancer-11-mm-capture-area-ffpe-2-standard",
+  "published_at": "2022-07-14T21:48:53.345Z",
+  "pipeline_version": "2.0.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_fastqs.tar",
+    "md5sum": "aaa7dd656c946475493c4ef91f003398",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_fastqs.tar"
+  },
+  "inputs_probe_set": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_probe_set.csv",
+    "md5sum": "a74f1583689de3c9f95164b2fc090194",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_probe_set.csv"
+  },
+  "outputs_genome_aligned_bam": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_possorted_genome_bam.bam",
+    "md5sum": "5f5a09d1f5300fcd62955068cb528331",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_possorted_genome_bam.bam"
+  },
+  "outputs_genome_aligned_bam_index": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_possorted_genome_bam.bam.bai",
+    "md5sum": "923ba38edb753ebf9a9ef90bdba09fe5",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_possorted_genome_bam.bam.bai"
+  },
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_molecule_info.h5",
+    "md5sum": "0ead1d579b63783359c9f4869de9d7cc",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "e4325071291794340b1582fbb5d9ff8b",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_raw_feature_bc_matrix.h5",
+    "md5sum": "83134df5873e4e649c77ac4685fe6b21",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "9b223606977f0bff5485a41a92d69c15",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_analysis.tar.gz",
+    "md5sum": "9f7c107bd9a0fc0219ddb5fb79f5ffaf",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_web_summary.html",
+    "md5sum": "95bde0da23a72974aa08468cb77817c2",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_cloupe.cloupe",
+    "md5sum": "1cdecca57f6e7bcff8d93a910088f3cd",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_cloupe.cloupe"
+  },
+  "inputs_microscope_image_without_fiducial_frame_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma/CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_tissue_image.tif",
+    "md5sum": "0008df349d1f9c9b62aabb37ad883e5f",
+    "name": "CytAssist_11mm_FFPE_Human_Ovarian_Carcinoma_tissue_image.tif"
+  }
+}

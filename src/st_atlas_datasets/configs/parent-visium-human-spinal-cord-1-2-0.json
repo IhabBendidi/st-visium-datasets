@@ -1,0 +1,80 @@
+{
+  "name": "parent-visium-human-spinal-cord-1-2-0",
+  "title": "Human Spinal Cord: Whole Transcriptome Analysis. Stains: DAPI, Anti-SNAP25, Anti-GFAP, Anti-Myelin CNPase",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-spinal-cord-whole-transcriptome-analysis-stains-dapi-anti-snap-25-anti-gfap-anti-myelin-cn-pase-1-standard-1-2-0",
+  "description": "\n10X Genomics obtained fresh frozen human spinal cord tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained with antibodies and DAPI following Methanol Fixation, Immunofluorescence Staining & Imaging for Visium Spatial Protocols (CG000312).\n\nSamples were stained with antibodies and DAPI as follows:\n\n- 1:100 dilution of Alexa Fluor 488 anti-SNAP-25 Antibody (P/N 836313, BioLegend)\n- 1:200 dilution of Anti-GFAP Antibody, Cy3 Conjugate (P/N MAB3402C3, Millipore Sigma)\n- 1:100 dilution of Alexa Fluor 647 anti-Myelin CNPase Antibody (P/N 836407, BioLegend)\n- DAPI\n\nThe slide was coverslipped and imaged at 10X on a Nikon Eclipse Ti2E microscope with the following settings:\n\n- DAPI: Exposure 200 milli sec, Gain 7.6x\n- FITC: Exposure 200 milli sec, Gain 11.4x\n- TRITC: Exposure 300 milli sec, Gain 6.2x\n- Cy5: Exposure 400 milli sec, Gain 11.4x\n\nThe cloupe and TIFF files available for download here contain multiple channels or pages respectively. The following table describes the filters and stains corresponding to the channels/pages.\n\n| Channel | Filter | Stain                   |\n| ------- | ------ | ----------------------- |\n| 1       | DAPI   | DAPI                    |\n| 2       | FITC   | SNAP-25                 |\n| 3       | TRITC  | Fiducial Frame and GFAP |\n| 4       | Cy5    | Myelin CNPase           |\n\nThe Visium Gene Expression library (T1T2-A2) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHYWHDSXY (lanes 1-4)\n- Sequencing depth: 77,754 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A15-100\n- Area: C1\n\nKey metrics were:\n\n- Spots detected: 2,812\n- Median genes per spot: 2,254\n- Median UMI counts per spot: 4,854\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
+  "liscense": "Creative Commons license",
+  "species": "Human",
+  "disease_state": "N/A",
+  "anatomical_entity": "spinal cord",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_image.tif",
+    "md5sum": "c9e63a0275055fba6423e98c221f3cfc",
+    "name": "Parent_Visium_Human_SpinalCord_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_metrics_summary.csv",
+    "md5sum": "a4a4849d30d78a4d0b2cf844161cb71d",
+    "name": "Parent_Visium_Human_SpinalCord_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_spatial.tar.gz",
+    "md5sum": "7b8e41e3b940451eb4a31b10cd156a6c",
+    "name": "Parent_Visium_Human_SpinalCord_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_filtered_feature_bc_matrix.h5",
+    "md5sum": "a8231be23d3f5251dc281d88a51db431",
+    "name": "Parent_Visium_Human_SpinalCord_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-spinal-cord-whole-transcriptome-analysis-stains-dapi-anti-snap-25-anti-gfap-anti-myelin-cn-pase-1-standard-1-2-0",
+  "published_at": "2020-10-27T00:00:00-07:00",
+  "pipeline_version": "1.2.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": null,
+  "inputs_probe_set": null,
+  "outputs_genome_aligned_bam": null,
+  "outputs_genome_aligned_bam_index": null,
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_molecule_info.h5",
+    "md5sum": "1a15a9c830f8173830b3521bf5a0b5e7",
+    "name": "Parent_Visium_Human_SpinalCord_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "6aa3f5796d028ac5280582974322ae4b",
+    "name": "Parent_Visium_Human_SpinalCord_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_raw_feature_bc_matrix.h5",
+    "md5sum": "0131fba483db260196411d3842cc3405",
+    "name": "Parent_Visium_Human_SpinalCord_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "31c0c7795dc0675ae03a7b28cffe2034",
+    "name": "Parent_Visium_Human_SpinalCord_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_analysis.tar.gz",
+    "md5sum": "2aa97ffab4b50db42da170c025f7a85e",
+    "name": "Parent_Visium_Human_SpinalCord_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_web_summary.html",
+    "md5sum": "a9ff8351cacb4fa216542525ce946057",
+    "name": "Parent_Visium_Human_SpinalCord_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_cloupe.cloupe",
+    "md5sum": "44d4c7843c9d206e074a88193adba316",
+    "name": "Parent_Visium_Human_SpinalCord_cloupe.cloupe"
+  },
+  "inputs_manual_alignment_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_SpinalCord/Parent_Visium_Human_SpinalCord_alignment_file.json",
+    "md5sum": "9770b27ef272572ba9af129fa30587b9",
+    "name": "Parent_Visium_Human_SpinalCord_alignment_file.json"
+  }
+}

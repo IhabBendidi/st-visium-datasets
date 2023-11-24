@@ -1,0 +1,80 @@
+{
+  "name": "targeted-visium-human-colorectal-cancer-gene-signature-1-2-0",
+  "title": "Human Colorectal Cancer: Targeted, Gene Signature Panel",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-colorectal-cancer-targeted-gene-signature-panel-1-standard-1-2-0",
+  "description": "\n10X Genomics obtained fresh frozen Invasive Adenocarcinoma of the large intestine tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained following Methanol Fixation, H&E Staining & Imaging for Visium Spatial Protocols (CG000160).\n\nThe tissue was AJCC/UICC T4aN0M0, Stage Group IIB.\n\nThe H&E image was acquired using a Nikon Eclipse Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 20 ms\n\nThe Visium Gene Expression library (T1T2-E8) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Targeted libraries were prepared following the Targeted Gene Expression - Spatial User Guide (CG000377) using the Human Gene Signature Panel (PN-2000285).\nTargeted sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHW57DSXY (lane 4)\n- Sequencing depth: 16,795 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A13-206\n- Area: C1\n-\n\nKey targeted metrics were:\n\n- Spots detected: 3,138\n- Median targeted genes per spot: 351\n- Median targeted UMI counts per spot: 635\n- Reads mapped confidently to the targeted transcriptome: 88.2%\n- Total targeted genes detected: 1,134\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
+  "liscense": "Creative Commons license",
+  "species": "Human",
+  "disease_state": "Invasive Adenocarcinoma",
+  "anatomical_entity": "large intestine",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_image.tif",
+    "md5sum": "b4aa0ec592d1dd02526c39d716e8ef94",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_metrics_summary.csv",
+    "md5sum": "94892577d65dc10dbe2813fde9bba6c8",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_spatial.tar.gz",
+    "md5sum": "d7bfb3d4277af0311005819c1f5cfebd",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_filtered_feature_bc_matrix.h5",
+    "md5sum": "db00af49a06d376001cb3a9ba2ba7ea0",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-colorectal-cancer-targeted-gene-signature-panel-1-standard-1-2-0",
+  "published_at": "2020-10-27T00:00:00-07:00",
+  "pipeline_version": "1.2.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": null,
+  "inputs_probe_set": null,
+  "outputs_genome_aligned_bam": null,
+  "outputs_genome_aligned_bam_index": null,
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_molecule_info.h5",
+    "md5sum": "4de1b09d39cad51cd98b95681a3172d9",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "8b2b036d527313c50634ccdac160a890",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_raw_feature_bc_matrix.h5",
+    "md5sum": "9b322864b0174be18cbc9eb79126b804",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "262638072cfd3e7f4e055ca2d6334ab0",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_analysis.tar.gz",
+    "md5sum": "8f55b4dc34f096c07f195fa209d419dd",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_web_summary.html",
+    "md5sum": "580ebfc63d5ced808c994d2ab9acb0b0",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_cloupe.cloupe",
+    "md5sum": "3855ba5a813ea6a8837fc61fdc2c419e",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_cloupe.cloupe"
+  },
+  "inputs_target_panel": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_ColorectalCancer_GeneSignature/Targeted_Visium_Human_ColorectalCancer_GeneSignature_target_panel.csv",
+    "md5sum": "8e97f84068e53eb699a583009f86e336",
+    "name": "Targeted_Visium_Human_ColorectalCancer_GeneSignature_target_panel.csv"
+  }
+}
