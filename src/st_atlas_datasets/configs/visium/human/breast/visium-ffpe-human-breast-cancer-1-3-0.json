@@ -1,0 +1,95 @@
+{
+  "name": "visium-ffpe-human-breast-cancer-1-3-0",
+  "title": "Human Breast Cancer: Ductal Carcinoma In Situ, Invasive Carcinoma (FFPE)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-breast-cancer-ductal-carcinoma-in-situ-invasive-carcinoma-ffpe-1-standard-1-3-0",
+  "description": "10x Genomics obtained FFPE human breast tissue from [BioIVT](https://bioivt.com) Asterand Human Tissue Specimens. The tissue was annotated with Ductal Carcinoma In Situ, Invasive Carcinoma. The tissue was sectioned as described in Visium Spatial Gene Expression for FFPE – Tissue Preparation Guide Demonstrated Protocol ([CG000408](/support/spatial-gene-expression-ffpe/documentation/workflows/ffpe-v-1/steps/tissue-prep/visium-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). Tissue sections of 5 µm were placed on Visium Gene Expression slides, then stained following Deparaffinization, H&E Staining, Imaging & Decrosslinking Demonstrated Protocol ([CG000409](/support/spatial-gene-expression-ffpe/documentation/workflows/ffpe-v-1/steps/tissue-staining/visium-spatial-gene-expression-for-ffpe-deparaffinization-hand-e-staining-imaging-and-decrosslinking)).\n\n* Block 738811QB Section 1. Grade II\n* Sex: Female\n* Ethnicity: Asian\n* Age: 73\n\nAnnotations [here](https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_Pathologist_Annotations.png) were done at an overview level and were performed by Agoko NV, Belgium.\n\nThe H&E image was acquired using Metafer Slide Scanning Microscope from MetaSystems with these settings:\n\n* Zeiss Plan-Apochromat 20x objective\n* Numerical Aperture: 0.8\n* ScopeLED light source\n* MetaSystems CoolCube 4c camera\n\nLibraries were prepared following the Visium Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000407](/support/spatial-gene-expression-ffpe/library-prep/doc/user-guide-visium-spatial-gene-expression-reagent-kits-for-ffpe-user-guide) Rev A).\n\n* Sequencing instrument: Illumina NovaSeq, flow cell H25NJDMXY (lane 1)\n* Sequencing depth: 32,524 reads per spot\n* Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 50bp read2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set SI-TS-B12\n* Slide: V11J26-008\n* Area: B1\n\nKey metrics were:\n\n* Spots detected under tissue: 2,518\n* Median genes per spot: 5,244\n* Median reads per spot: 32,524\n",
+  "liscense": "Creative Commons license",
+  "species": "human",
+  "disease_state": "invasive_ductal_carcinoma",
+  "anatomical_entity": "breast",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_image.tif",
+    "md5sum": "eed639b786b5226b4b1cc97e40fd1a5c",
+    "name": "Visium_FFPE_Human_Breast_Cancer_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_metrics_summary.csv",
+    "md5sum": "3e9a3cef59eb7431d7651401594c0b7c",
+    "name": "Visium_FFPE_Human_Breast_Cancer_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_spatial.tar.gz",
+    "md5sum": "9a6bc80f4c1e288db5e9bcd368d473c3",
+    "name": "Visium_FFPE_Human_Breast_Cancer_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_filtered_feature_bc_matrix.h5",
+    "md5sum": "51bc85964122c30244405e2331727ff6",
+    "name": "Visium_FFPE_Human_Breast_Cancer_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-breast-cancer-ductal-carcinoma-in-situ-invasive-carcinoma-ffpe-1-standard-1-3-0",
+  "published_at": "2021-06-09T07:00:00.000Z",
+  "pipeline_version": "1.3.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_fastqs.tar",
+    "md5sum": "a0a33519d17367a4488f946d412e2f73",
+    "name": "Visium_FFPE_Human_Breast_Cancer_fastqs.tar"
+  },
+  "inputs_probe_set": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_probe_set.csv",
+    "md5sum": "39ecfeb3651c14d45900d843d6502525",
+    "name": "Visium_FFPE_Human_Breast_Cancer_probe_set.csv"
+  },
+  "outputs_genome_aligned_bam": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_possorted_genome_bam.bam",
+    "md5sum": "2ccff0b9abbb03ef659bc28f7f8c6445",
+    "name": "Visium_FFPE_Human_Breast_Cancer_possorted_genome_bam.bam"
+  },
+  "outputs_genome_aligned_bam_index": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_possorted_genome_bam.bam.bai",
+    "md5sum": "5325ca6d950b20fac45054d8ccf93fe2",
+    "name": "Visium_FFPE_Human_Breast_Cancer_possorted_genome_bam.bam.bai"
+  },
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_molecule_info.h5",
+    "md5sum": "974625c1db2eb641b57c092c3d2bb875",
+    "name": "Visium_FFPE_Human_Breast_Cancer_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "327eb8eca13ab31dde38a253d4a7678d",
+    "name": "Visium_FFPE_Human_Breast_Cancer_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_raw_feature_bc_matrix.h5",
+    "md5sum": "fc1841321cc9eba7129fe3684c765cdb",
+    "name": "Visium_FFPE_Human_Breast_Cancer_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "850bc480b68367bd65e9483f85d6e24b",
+    "name": "Visium_FFPE_Human_Breast_Cancer_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_analysis.tar.gz",
+    "md5sum": "1807707b61224f67f6a0c2b946526a58",
+    "name": "Visium_FFPE_Human_Breast_Cancer_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_spatial_enrichment.csv",
+    "md5sum": "8e7653cd85fc745481fd13781426cfcb",
+    "name": "Visium_FFPE_Human_Breast_Cancer_spatial_enrichment.csv"
+  },
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_web_summary.html",
+    "md5sum": "ab01b15b4694504b45c82ac0feb36776",
+    "name": "Visium_FFPE_Human_Breast_Cancer_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Breast_Cancer/Visium_FFPE_Human_Breast_Cancer_cloupe.cloupe",
+    "md5sum": "ad5aa7b2e9e4deb6b81158120eb61a5a",
+    "name": "Visium_FFPE_Human_Breast_Cancer_cloupe.cloupe"
+  }
+}

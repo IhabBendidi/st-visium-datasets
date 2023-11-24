@@ -1,0 +1,85 @@
+{
+  "name": "targeted-visium-human-ovarian-cancer-pan-cancer-1-2-0",
+  "title": "Human Ovarian Cancer: Targeted, Pan-Cancer Panel. Stains: DAPI, Anti-PanCK, Anti-CD45",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-ovarian-cancer-targeted-pan-cancer-panel-stains-dapi-anti-pan-ck-anti-cd-45-1-standard-1-2-0",
+  "description": "\n10X Genomics obtained fresh frozen Endometrial Adenocarcinoma of the ovary tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained with antibodies and DAPI following Methanol Fixation, Immunofluorescence Staining & Imaging for Visium Spatial Protocols (CG000312).\nThe tissue was AJCC/UICC T1N0M0, Stage Group I.\n\nSamples were stained with antibodies and DAPI as follows:\n\n- 1:150 dilution of Alexa Fluor 488 anti-Cytokeratin (pan reactive) Antibody (P/N 628608, BioLegend)\n- 1:100 dilution of Alexa Fluor 647 anti-human CD45 Antibody (P/N 304020, BioLegend)\n- DAPI\n\nThe slide was coverslipped and imaged at 20X on a Nikon Eclipse Ti2E microscope with the following settings:\n\n- DAPI: Exposure 10 milli sec, Gain 7.6x\n- FITC: Exposure 100 milli sec, Gain 7.6x\n- TRITC: Exposure 500 milli sec, Gain 13.9x (fiducial frame only)\n- Cy5: Exposure 200 milli sec, Gain 11.4x\n\nThe cloupe and TIFF files available for download here contain multiple channels or pages respectively. The following table describes the filters and stains corresponding to the channels/pages.\n\n| Channel | Filter | Stain                      |\n| ------- | ------ | -------------------------- |\n| 1       | DAPI   | DAPI                       |\n| 2       | FITC   | Cytokeratin (pan reactive) |\n| 3       | TRITC  | Fiducial Frame             |\n| 4       | Cy5    | CD45                       |\n\nThe Visium Gene Expression library (T1T2-H6) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Targeted libraries were prepared following the Targeted Gene Expression - Spatial User Guide (CG000377) using the Human Pan-Cancer Panel (PN-2000287).\nTargeted sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHWHLDSXY (lane 2)\n- Sequencing depth: 21,156 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A13-173\n- Area: B1\n\nKey targeted metrics were:\n\n- Spots detected: 3,493\n- Median targeted genes per spot: 316\n- Median targeted UMI counts per spot: 677\n- Reads mapped confidently to the targeted transcriptome: 83.4%\n- Total targeted genes detected: 1,198\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
+  "liscense": "Creative Commons license",
+  "species": "human",
+  "disease_state": "endometrial_adenocarcinoma",
+  "anatomical_entity": "ovary",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_image.tif",
+    "md5sum": "009f1958cbb0a4057ffa9584c2c6ecac",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_metrics_summary.csv",
+    "md5sum": "c0cedbcf2bb32a35f13ed23901e39575",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_spatial.tar.gz",
+    "md5sum": "22db619ed239bab5a415c1100f6d3e41",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_filtered_feature_bc_matrix.h5",
+    "md5sum": "12d15efb7e7000f241f1c268f9917bd5",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-ovarian-cancer-targeted-pan-cancer-panel-stains-dapi-anti-pan-ck-anti-cd-45-1-standard-1-2-0",
+  "published_at": "2020-10-27T00:00:00-07:00",
+  "pipeline_version": "1.2.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": null,
+  "inputs_probe_set": null,
+  "outputs_genome_aligned_bam": null,
+  "outputs_genome_aligned_bam_index": null,
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_molecule_info.h5",
+    "md5sum": "011657cbf44fb4372536d17300a3b6a9",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "e30a8a6d0f3fb9760e152c2cd5adfd1d",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_raw_feature_bc_matrix.h5",
+    "md5sum": "80bb8698399cfed5a2ad7be3ac378a7c",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "30d8b34a6d1afa36636b2aa570241322",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_analysis.tar.gz",
+    "md5sum": "86890c522bc45ce0db26dd87430796ff",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_web_summary.html",
+    "md5sum": "851f3977dbb6ed93ddb5e880d5e13f99",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_cloupe.cloupe",
+    "md5sum": "33dcb1533c63dce482a54b72b5083b05",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_cloupe.cloupe"
+  },
+  "inputs_manual_alignment_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_alignment_file.json",
+    "md5sum": "4ee2b2a59798237c2ea7985e25723488",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_alignment_file.json"
+  },
+  "inputs_target_panel": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_OvarianCancer_Pan_Cancer/Targeted_Visium_Human_OvarianCancer_Pan_Cancer_target_panel.csv",
+    "md5sum": "a576461482bd0afca1472c3f0431a1c3",
+    "name": "Targeted_Visium_Human_OvarianCancer_Pan_Cancer_target_panel.csv"
+  }
+}

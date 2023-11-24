@@ -1,0 +1,96 @@
+{
+  "name": "cytassist-ffpe-human-skin-melanoma-2-0-0",
+  "title": "Human Melanoma, IF Stained (FFPE)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-melanoma-if-stained-ffpe-2-standard",
+  "description": "10x Genomics obtained FFPE Human Melanoma tissue blocks from [Avaden](http://www.avadenbio.com/) Biosciences. The tissue was sectioned as described in Visium CytAssist Spatial Gene Expression for FFPE – Tissue Preparation Guide Demonstrated Protocol ([CG000518](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-prep/visium-cyt-assist-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). Tissue sections of 5 µm was placed on a standard glass slide, deparaffinized followed by immunofluorescence (IF) staining. Sections were coverslipped with 85% glycerol, imaged, decoverslipped, followed by dehydration & decrosslinking Demonstrated Protocol ([CG000519](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-staining/visium-cyt-assist-spatial-gene-expression-for-ffpe-deparaffinization-decrosslinking-immunofluorescence-staining-and-imaging)). The glass slide with tissue section was processed via Visium CytAssist instrument to transfer analytes to a Visium CytAssist Spatial Gene Expression slide. The probe extension and library construction steps follow the standard Visium for FFPE workflow outside of the instrument.\n\n* Diagnosis: Skin, Malignant Melanoma\n\nAntibodies used for immunofluorescence (IF) staining:\n\n* Channel 1 = 1:200 DAPI (Thermo Fisher, Cat. No. 62248)\n* Channel 2 = 1:100 Vimentin,  488 nm, (Biolegend Cat. No. 677809)\n* Channel 3 = 1:100 PCNA, 594 nm,  (Biolegend, Cat. No. 307914)\n* Channel 4 = 1:100 CD8a, 647 nm,  (Biolegend, Cat. No. 372906)\n* Blocking buffer: 1X Blocking Buffer (10x Genomics Cat. No. 2000554); 2 U/uL Roche Protector RNase Inhibitor\n\nThe IF  image was acquired using Olympus VS200 Slide Scanning Microscope with these settings:\n\n* Olympus Objective magnification: 20x UPLXAPO Objective\n* Numerical Aperture: 0.8\n* ScopeLED light source: Xcite Novum\n* Camera: Hamamatsu ORCA-Fusion\n* Exposure: 2.5 ms (DAPI), 300 ms (ATTO488), 150 ms (ATTO590), 500 ms (ATTO647) \n\nLibraries were prepared following the Visium CytAssist Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)).\n\n* Sequencing instrument: Illumina NovaSeq, flow cell HNNNMDSX3 (lane 1-4)\n* Sequencing depth: 55,952 reads per spot\n* Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 90bp read 2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set: SI-TS-C1\n* Slide: V42A20-355\n* Area: A1\n\nKey metrics were:\n\n* Spots detected under tissue: 3,458\n* Median genes per spot: 7,598\n* Median UMI counts per spot: 27,894\n",
+  "liscense": "Creative Commons license",
+  "species": "human",
+  "disease_state": "melanoma",
+  "anatomical_entity": "skin",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_image.tif",
+    "md5sum": "0d3040489897acdc52e13269d1024c0a",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_metrics_summary.csv",
+    "md5sum": "3e6db4a4fec833870b0718d9b53f028f",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_spatial.tar.gz",
+    "md5sum": "882ce1a6adfb4b35b9396e0721daa357",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_filtered_feature_bc_matrix.h5",
+    "md5sum": "059a6ef2c719a96b8cc1f7b8d896955a",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-melanoma-if-stained-ffpe-2-standard",
+  "published_at": "2022-07-12T23:25:29.302Z",
+  "pipeline_version": "2.0.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_fastqs.tar",
+    "md5sum": "39968b4e14b660668311f820ae4e21d1",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_fastqs.tar"
+  },
+  "inputs_probe_set": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_probe_set.csv",
+    "md5sum": "a74f1583689de3c9f95164b2fc090194",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_probe_set.csv"
+  },
+  "outputs_genome_aligned_bam": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_possorted_genome_bam.bam",
+    "md5sum": "7e91dd8d58390df01d946182d83f49f3",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_possorted_genome_bam.bam"
+  },
+  "outputs_genome_aligned_bam_index": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_possorted_genome_bam.bam.bai",
+    "md5sum": "a4621be108d009c0e2b2012589d0a813",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_possorted_genome_bam.bam.bai"
+  },
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_molecule_info.h5",
+    "md5sum": "133f3b18c4479281402c4676b9fb936e",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "90a157c8ebc69d93feee165d9f05e723",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_raw_feature_bc_matrix.h5",
+    "md5sum": "ff2648ee0c96f6b80c73ac4f84ad6e76",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "859b9cde6c772d0d052d95dc558d9a14",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_analysis.tar.gz",
+    "md5sum": "3418407aea52c2bc4ca2f85de50dd71a",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_web_summary.html",
+    "md5sum": "a9d9ef33b817b74b6de9e19781490fe0",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_cloupe.cloupe",
+    "md5sum": "cda150cf3bc0fb0ed7147b8d4f1f3bc1",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_cloupe.cloupe"
+  },
+  "inputs_microscope_image_without_fiducial_frame_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/CytAssist_FFPE_Human_Skin_Melanoma/CytAssist_FFPE_Human_Skin_Melanoma_tissue_image.tif",
+    "md5sum": "e02f3f0143d1fbb7bbc88ba6aa226bb6",
+    "name": "CytAssist_FFPE_Human_Skin_Melanoma_tissue_image.tif"
+  }
+}

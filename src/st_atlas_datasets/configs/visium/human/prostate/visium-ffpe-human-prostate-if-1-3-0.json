@@ -1,0 +1,100 @@
+{
+  "name": "visium-ffpe-human-prostate-if-1-3-0",
+  "title": "Human Prostate Cancer, Adjacent Normal Section with IF Staining (FFPE)",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-prostate-cancer-adjacent-normal-section-with-if-staining-ffpe-1-standard-1-3-0",
+  "description": "10x Genomics obtained FFPE human prostate tissue from [Indivumed](https://www.indivumed.com/) Human Tissue Specimens. Original diagnosis with adenocarcinoma. The tissue was sectioned as described in Visium Spatial Gene Expression for FFPE – Tissue Preparation Guide Demonstrated Protocol ([CG000408](/support/spatial-gene-expression-ffpe/documentation/workflows/ffpe-v-1/steps/tissue-prep/visium-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). Tissue sections of 10 µm were placed on Visium Gene Expression slides, then stained follwoing Deparaffinization, Decrosslinking, Immunofluorescence Staining & Imaging Demonstrated Protocol ([CG000410](/support/spatial-gene-expression-ffpe/documentation/workflows/ffpe-v-1/steps/tissue-staining/visium-spatial-gene-expression-for-ffpe-deparaffinization-decrosslinking-immunofluorescence-staining-and-imaging)).\n\n* Block 1E333_Tp11 Section 1\n* Stage II\n* Total Gleason score: 7\n* Sex: Male\n\nAntibodies used for immunofluorescence (IF) staining:\n\n* Channel 1 = 1:100 Iba1/AIF-1 (Cell Signalling, Cat. No. 36618S)\n* Channel 2 = 1:100 Vimentin (Cell Signalling, Cat. No. 9856S)\n* Channel 3 = 1:5000 DAPI (Thermo Scientific, Cat. No. 62248)\n* Blocking buffer: 1X PBS; 2% BSA; 0.1% Tween 20; 1 U/uL Roche Protector RNase Inhibitor (based on CoA)\n\nThe IF image was acquired using Metafer Slide Scanning Microscope from MetaSystems with these settings:\n\n* Zeiss Plan-Apochromat 20x objective\n* Numerical Aperture: 0.8\n* Zeiss Colibri 7 LED light source\n* MetaSystems CoolCube 4c camera\n\nLibraries were prepared following the Visium Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000407](/support/spatial-gene-expression-ffpe/library-prep/doc/user-guide-visium-spatial-gene-expression-reagent-kits-for-ffpe-user-guide) Rev A).\n\n* Sequencing instrument: Illumina NovaSeq, flow cell H25NNDMXY (lane 1)\n* Sequencing depth: 29,191 reads per spot\n* Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 50bp read2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode.\n* Dual-Index set: SI-TS-D4\n* Slide: V11J26-076\n* Area: D1\n\nKey metrics were:\n\n* Spots detected under tissue (Loupe Manual Alignment): 3,460\n* Median genes per spot: 5,001\n* Median UMI counts per spot: 11,444\n",
+  "liscense": "Creative Commons license",
+  "species": "human",
+  "disease_state": "adenocarcinoma",
+  "anatomical_entity": "prostate",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_image.tif",
+    "md5sum": "1df0f4b6477242161637b05d74a23067",
+    "name": "Visium_FFPE_Human_Prostate_IF_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_metrics_summary.csv",
+    "md5sum": "f24a378248b41bafa91cc23c00b4151c",
+    "name": "Visium_FFPE_Human_Prostate_IF_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_spatial.tar.gz",
+    "md5sum": "7975932f43c20f0d04a412fb202fa102",
+    "name": "Visium_FFPE_Human_Prostate_IF_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_filtered_feature_bc_matrix.h5",
+    "md5sum": "992de61430ce64767e447bad3cf7dafc",
+    "name": "Visium_FFPE_Human_Prostate_IF_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-prostate-cancer-adjacent-normal-section-with-if-staining-ffpe-1-standard-1-3-0",
+  "published_at": "2021-07-27T07:00:00.000Z",
+  "pipeline_version": "1.3.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_fastqs.tar",
+    "md5sum": "cbfc86447221d70de8a62271cfef2cbb",
+    "name": "Visium_FFPE_Human_Prostate_IF_fastqs.tar"
+  },
+  "inputs_probe_set": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_probe_set.csv",
+    "md5sum": "39ecfeb3651c14d45900d843d6502525",
+    "name": "Visium_FFPE_Human_Prostate_IF_probe_set.csv"
+  },
+  "outputs_genome_aligned_bam": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_possorted_genome_bam.bam",
+    "md5sum": "f9ede253c50e597ee4b66ae47fa1a44e",
+    "name": "Visium_FFPE_Human_Prostate_IF_possorted_genome_bam.bam"
+  },
+  "outputs_genome_aligned_bam_index": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_possorted_genome_bam.bam.bai",
+    "md5sum": "c4d5d90415979168a40c7aff5a7d24a9",
+    "name": "Visium_FFPE_Human_Prostate_IF_possorted_genome_bam.bam.bai"
+  },
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_molecule_info.h5",
+    "md5sum": "cce731d5998e52cdfc80f8197dd46c0f",
+    "name": "Visium_FFPE_Human_Prostate_IF_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "3bc72be57636ac1fd4b76885018f7356",
+    "name": "Visium_FFPE_Human_Prostate_IF_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_raw_feature_bc_matrix.h5",
+    "md5sum": "7b70d50192f078e2936872aca8ffa36e",
+    "name": "Visium_FFPE_Human_Prostate_IF_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "7a5c5dc7d2932adc3963dcd9b0792f60",
+    "name": "Visium_FFPE_Human_Prostate_IF_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_analysis.tar.gz",
+    "md5sum": "ac05a041d09811611c2a4157b27cfe6e",
+    "name": "Visium_FFPE_Human_Prostate_IF_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_spatial_enrichment.csv",
+    "md5sum": "ce9f9227915e3b0d9003a6ac28e86005",
+    "name": "Visium_FFPE_Human_Prostate_IF_spatial_enrichment.csv"
+  },
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_web_summary.html",
+    "md5sum": "397e5395e6b8f88a1fe0820081e43bc4",
+    "name": "Visium_FFPE_Human_Prostate_IF_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_cloupe.cloupe",
+    "md5sum": "7bbcf6d09cb76400d6d725756988e7be",
+    "name": "Visium_FFPE_Human_Prostate_IF_cloupe.cloupe"
+  },
+  "inputs_manual_alignment_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_IF/Visium_FFPE_Human_Prostate_IF_alignment_file.json",
+    "md5sum": "f056f5e3e32e2e786d9b46a31541ee60",
+    "name": "Visium_FFPE_Human_Prostate_IF_alignment_file.json"
+  }
+}

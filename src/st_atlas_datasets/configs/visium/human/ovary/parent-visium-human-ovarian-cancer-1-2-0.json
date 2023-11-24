@@ -1,0 +1,80 @@
+{
+  "name": "parent-visium-human-ovarian-cancer-1-2-0",
+  "title": "Human Ovarian Cancer: Whole Transcriptome Analysis. Stains: DAPI, Anti-PanCK, Anti-CD45",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-ovarian-cancer-whole-transcriptome-analysis-stains-dapi-anti-pan-ck-anti-cd-45-1-standard-1-2-0",
+  "description": "\n10X Genomics obtained fresh frozen Endometrial Adenocarcinoma of the ovary tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained with antibodies and DAPI following Methanol Fixation, Immunofluorescence Staining & Imaging for Visium Spatial Protocols (CG000312).\nThe tissue was AJCC/UICC T1N0M0, Stage Group I.\n\nSamples were stained with antibodies and DAPI as follows:\n\n- 1:150 dilution of Alexa Fluor 488 anti-Cytokeratin (pan reactive) Antibody (P/N 628608, BioLegend)\n- 1:100 dilution of Alexa Fluor 647 anti-human CD45 Antibody (P/N 304020, BioLegend)\n- DAPI\n\nThe slide was coverslipped and imaged at 20X on a Nikon Eclipse Ti2E microscope with the following settings:\n\n- DAPI: Exposure 10 milli sec, Gain 7.6x\n- FITC: Exposure 100 milli sec, Gain 7.6x\n- TRITC: Exposure 500 milli sec, Gain 13.9x (fiducial frame only)\n- Cy5: Exposure 200 milli sec, Gain 11.4x\n\nThe cloupe and TIFF files available for download here contain multiple channels or pages respectively. The following table describes the filters and stains corresponding to the channels/pages.\n\n| Channel | Filter | Stain                      |\n| ------- | ------ | -------------------------- |\n| 1       | DAPI   | DAPI                       |\n| 2       | FITC   | Cytokeratin (pan reactive) |\n| 3       | TRITC  | Fiducial Frame             |\n| 4       | Cy5    | CD45                       |\n\nThe Visium Gene Expression library (T1T2-H6) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHYWHDSXY (lane 1-4)\n- Sequencing depth: 80,586 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A13-173\n- Area: B1\n\nKey metrics were:\n\n- Spots detected: 3,493\n- Median genes per spot: 3,464\n- Median UMI counts per spot: 8,095\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
+  "liscense": "Creative Commons license",
+  "species": "human",
+  "disease_state": "endometrial_adenocarcinoma",
+  "anatomical_entity": "ovary",
+  "inputs_image_tiff": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_image.tif",
+    "md5sum": "009f1958cbb0a4057ffa9584c2c6ecac",
+    "name": "Parent_Visium_Human_OvarianCancer_image.tif"
+  },
+  "outputs_summary_csv": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_metrics_summary.csv",
+    "md5sum": "7c2700392f8c098a7bcf8f3acbd5f660",
+    "name": "Parent_Visium_Human_OvarianCancer_metrics_summary.csv"
+  },
+  "outputs_spatial_imaging_data": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_spatial.tar.gz",
+    "md5sum": "e221436ef7ca7c50c77745f524bd29cc",
+    "name": "Parent_Visium_Human_OvarianCancer_spatial.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_filtered_feature_bc_matrix.h5",
+    "md5sum": "355899831f9c90b627fa3ea34909ca5e",
+    "name": "Parent_Visium_Human_OvarianCancer_filtered_feature_bc_matrix.h5"
+  },
+  "visium_dataset_name": "human-ovarian-cancer-whole-transcriptome-analysis-stains-dapi-anti-pan-ck-anti-cd-45-1-standard-1-2-0",
+  "published_at": "2020-10-27T00:00:00-07:00",
+  "pipeline_version": "1.2.0",
+  "product_slug": "spatial-gene-expression",
+  "software_name": "Space Ranger",
+  "inputs_fastqs": null,
+  "inputs_probe_set": null,
+  "outputs_genome_aligned_bam": null,
+  "outputs_genome_aligned_bam_index": null,
+  "outputs_per_molecule_read_information": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_molecule_info.h5",
+    "md5sum": "6f245b4ffbd5d72284d1c0383e5a6f8c",
+    "name": "Parent_Visium_Human_OvarianCancer_molecule_info.h5"
+  },
+  "outputs_feature_barcode_matrix_filtered": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_filtered_feature_bc_matrix.tar.gz",
+    "md5sum": "f57edbc6d50a149729abe8bc96cffac3",
+    "name": "Parent_Visium_Human_OvarianCancer_filtered_feature_bc_matrix.tar.gz"
+  },
+  "outputs_feature_barcode_matrix_hdf5_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_raw_feature_bc_matrix.h5",
+    "md5sum": "8feeff9f86ce5f88acec9cc68794e6a3",
+    "name": "Parent_Visium_Human_OvarianCancer_raw_feature_bc_matrix.h5"
+  },
+  "outputs_feature_barcode_matrix_raw": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_raw_feature_bc_matrix.tar.gz",
+    "md5sum": "95e8d7db68974feae581f61212ceaf02",
+    "name": "Parent_Visium_Human_OvarianCancer_raw_feature_bc_matrix.tar.gz"
+  },
+  "outputs_clustering_analysis": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_analysis.tar.gz",
+    "md5sum": "e75b75f81ef6870a46f990a53869992f",
+    "name": "Parent_Visium_Human_OvarianCancer_analysis.tar.gz"
+  },
+  "outputs_spatial_enrichment_moran_s_i": null,
+  "outputs_summary_html": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_web_summary.html",
+    "md5sum": "035720f4d5961850929bb3b6b42ea997",
+    "name": "Parent_Visium_Human_OvarianCancer_web_summary.html"
+  },
+  "outputs_loupe_browser_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_cloupe.cloupe",
+    "md5sum": "e0288192aad5b564f6f6382fe6969b5e",
+    "name": "Parent_Visium_Human_OvarianCancer_cloupe.cloupe"
+  },
+  "inputs_manual_alignment_file": {
+    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_OvarianCancer/Parent_Visium_Human_OvarianCancer_alignment_file.json",
+    "md5sum": "4ee2b2a59798237c2ea7985e25723488",
+    "name": "Parent_Visium_Human_OvarianCancer_alignment_file.json"
+  }
+}
