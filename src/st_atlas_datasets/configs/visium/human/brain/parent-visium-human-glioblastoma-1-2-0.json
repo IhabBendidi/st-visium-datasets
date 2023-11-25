@@ -5,8 +5,8 @@
   "description": "\n10X Genomics obtained fresh frozen human glioblastoma multiforme tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained following Methanol Fixation, H&E Staining & Imaging for Visium Spatial Protocols (CG000160).\n\nThe H&E image was acquired using a Nikon Eclipse Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 20 ms\n\nThe Visium Gene Expression library (T1T2-E4) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHYWHDSXY (lanes 1-4)\n- Sequencing depth: 136,128 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A13-167\n- Area: C1\n\nKey metrics were:\n\n- Spots detected: 3,468\n- Median genes per spot: 4,326\n- Median UMI counts per spot: 11,596\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
   "liscense": "Creative Commons license",
   "species": "human",
-  "disease_state": "glioblastoma_multiforme",
   "anatomical_entity": "brain",
+  "disease_state": "glioblastoma_multiforme",
   "inputs_image_tiff": {
     "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_image.tif",
     "md5sum": "b2b4b2dd6a09a6137c9bb548b3851722",

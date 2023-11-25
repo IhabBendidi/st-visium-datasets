@@ -5,8 +5,8 @@
   "description": "\n10x Genomics obtained fresh frozen human lymph node from [BioIVT](https://bioivt.com/) Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols - Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10 µm thickness were placed on Visium Gene Expression Slides.\n\nThe H&E image was acquired using a Nikon Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 2 ms\n- Gain: 4.5X\n\nThe Visium Spatial Gene Expression library was prepared following the Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide)).\n\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing Depth: 123,311 reads per spot\n* Sequencing Configuration: 28 x 120 bp\n* Sequencing Coverage: Read 1 - 16 bp (includes 16 bp Spatial Barcode, 12 bp UMI); Read 2 - 120 bp (transcript); i7 sample index - 10 bp; i5 sample index - 10 bp.\n* Dual-Index set: T1T2-E3\n* Slide: V19L01-033\n* Area: A1\n\nKey cell metrics were:\n\n- Spots detected under tissue - 4,035\n- Median UMI counts per spot - 20,239\n- Median genes per spot - 5,999\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
   "liscense": "Creative Commons license",
   "species": "human",
-  "disease_state": null,
   "anatomical_entity": "lymph_node",
+  "disease_state": null,
   "inputs_image_tiff": {
     "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_image.tif",
     "md5sum": "8f118e2c4c984798e2c8fae59fd9593b",
