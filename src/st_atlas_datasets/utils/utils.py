@@ -42,8 +42,3 @@ def create_download_progress(**kwargs) -> rich.progress.Progress:
     )
     kwargs.setdefault("expand", True)
     return rich.progress.Progress(*columns, **kwargs)
-
-
-if __name__ == "__main__":
-    s = "Summary CSV/HTML FilesCommandOfGod now's the_lol (time)for_all-haha"
-    sanitize_with_sep(s, sep=",")

@@ -9,6 +9,7 @@ import rich.progress
 import typing_extensions as tp
 from pydantic.dataclasses import dataclass as pydantic_dataclass
 
+from st_atlas_datasets.settings import settings
 from st_atlas_datasets.utils.data_file import DataFile, UriType
 from st_atlas_datasets.utils.extract_manager import ExtractorManager
 from st_atlas_datasets.utils.utils import create_download_progress
@@ -16,12 +17,12 @@ from st_atlas_datasets.utils.utils import create_download_progress
 
 @pydantic_dataclass(kw_only=True)
 class DownloadManager:
-    download_policy: tp.Literal["always", "never", "missing"] = "missing"
-    extract_policy: tp.Literal["always", "never", "missing"] = "missing"
-    validate_checksums: bool = True
-    data_dir: Path = Path("./data")
-    disable_pbar: bool = False
-    max_workers: int | None = None
+    download_policy: tp.Literal["always", "never", "missing"] = settings.DOWNLOAD_POLICY
+    extract_policy: tp.Literal["always", "never", "missing"] = settings.EXTRCAT_POLICY
+    validate_checksums: bool = settings.VALIDATE_CHECKSUMS
+    data_dir: Path = settings.DATA_DIR
+    disable_pbar: bool = settings.DISABLE_PROGRESS_BAR
+    max_workers: int | None = settings.MAX_THREADS
     io_buffer_size: int = 8192
 
     _download_dir: Path = dataclasses.field(init=False)
@@ -122,25 +123,26 @@ class DownloadManager:
         if self.extract_policy == "never":
             return file
 
-        with ExtractorManager(file, progress=self._progress) as em:
-            if not em.is_extractable():
-                return file
+        if not ExtractorManager.is_extractable_filepath(file.uri):
+            return file
 
-            head, tail = os.path.split(
-                os.path.normpath(f"{file.uri.rstrip(file.extention)}")
-            )
-            extract_dir = Path(head) / "extracted" / tail
-            # metadata file used for tracking extracted files
-            metadata_filepath = extract_dir / "extracted_files.json"
+        head, tail = os.path.split(
+            os.path.normpath(f"{file.uri.rstrip(file.extention)}")
+        )
 
-            if self.extract_policy == "always" or not metadata_filepath.is_file():
+        extract_dir = Path(head) / "extracted" / tail
+        # metadata file used for tracking extracted files
+        metadata_filepath = extract_dir / "extracted_files.json"
+
+        if self.extract_policy == "always" or not metadata_filepath.is_file():
+            with ExtractorManager(file, progress=self._progress) as em:
                 extracted_files = em.extract(extract_dir)
 
-                # write metadata file
-                metadata_filepath.parent.mkdir(parents=True, exist_ok=True)
-                metadata_filepath.write_text(json.dumps(extracted_files, indent=2))
+            # write metadata file
+            metadata_filepath.parent.mkdir(parents=True, exist_ok=True)
+            metadata_filepath.write_text(json.dumps(extracted_files, indent=2))
 
-            return file.copy_with(uri=str(metadata_filepath), md5sum=None)
+        return file.copy_with(uri=str(metadata_filepath), md5sum=None)
 
     def download_and_extract(
         self, uris: UriType | tp.Sequence[UriType]

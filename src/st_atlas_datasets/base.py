@@ -1,140 +1,164 @@
-import dataclasses as dc
 import json
-import typing as tp
+from abc import ABC, abstractmethod
+from pathlib import Path
 
-import datasets
+import typing_extensions as tp
+from pydantic import AfterValidator, BaseModel, ConfigDict, Field, model_validator
 
-from st_atlas_datasets.utils import to_snake_case
+from st_atlas_datasets.settings import settings
+from st_atlas_datasets.utils import sanitize_as_snake_case
+from st_atlas_datasets.utils.download_manager import DownloadManager
 
 
-class _ConfigCompatibilityMixin:
-    @property
-    def data_dir(self) -> None:
-        """For compatibility with datasets"""
+def _str_sanitizer(s: str | None) -> str | None:
+    if not s:
         return None
-
-    @property
-    def data_files(self) -> None:
-        """For compatibility with datasets"""
+    if s.lower() in ["null", "none", "nan", "n/a"]:
         return None
-
-    def create_config_id(self, *args, **kwargs) -> str:
-        name = getattr(self, "name")
-        return f"st-atlas-datasets/{name}"
+    return sanitize_as_snake_case(s)
 
 
-@dc.dataclass(kw_only=True, frozen=True)
-class BaseBuilderConfig(_ConfigCompatibilityMixin):
-    full_name: str = ""
-    short_name: str = ""
-    description: str = ""
-    version: datasets.Version = datasets.Version("0.0.0")
-    homepage: str = ""
-    license: str = ""
-    citation: str = ""
-    metadata: dict[str, str] = dc.field(default_factory=dict)
-
-    @property
-    def name(self) -> str:
-        if self.short_name:
-            return to_snake_case(self.short_name)
-        if self.full_name:
-            return to_snake_case(self.full_name)
-        raise ValueError("Either full_name or short_name must be set")
+SanitizedStr = tp.Annotated[str, AfterValidator(_str_sanitizer)]
 
 
-T = tp.TypeVar("T", bound=BaseBuilderConfig)
+class BaseDatasetConfig(BaseModel):
+    model_config = ConfigDict(extra="allow")
 
-
-@dc.dataclass(kw_only=True, frozen=True)
-class MultiBuilderConfig(tp.Generic[T], _ConfigCompatibilityMixin):
     name: str
-    configs: list[T]
-    version: datasets.Version | None = None
+    title: str | None = None
+    homepage: str | None = None
+    description: str | None = None
+    liscense: str | None = None
+    species: SanitizedStr = "undefined"
+    anatomical_entity: SanitizedStr = "undefined"
+    disease_state: SanitizedStr | None = "undefined"
 
-    def __post_init__(self) -> None:
-        if not self.configs:
-            raise ValueError("configs must not be empty")
+    @classmethod
+    def get_configs_dir(cls) -> Path:
+        return (Path(__file__).parent / "configs").resolve()
 
-    def __iter__(self) -> tp.Iterator[T]:
-        return iter(self.configs)
+    @classmethod
+    def config_builder_name(cls) -> str:
+        return sanitize_as_snake_case(cls.__name__.replace("DatasetConfig", ""))
 
-    def __getitem__(self, key: int) -> T:
-        return self.configs[key]
+    @classmethod
+    def load(cls: tp.Type[tp.Self], config_name_or_path: str | Path) -> tp.Self:
+        if (path := Path(config_name_or_path)).is_file():
+            return cls.model_validate_json(path.read_text())
 
-    def get_config_by_name(self, name: str) -> T:
-        for config in self.configs:
-            if config.name == name:
-                return config
-        raise ValueError(f"Config with name {name} not found")
+        if isinstance(config_name_or_path, Path):
+            raise FileNotFoundError(config_name_or_path)
 
-    @property
-    def license(self) -> str:
-        return json.dumps({c.name: c.license for c in self.configs}, indent=2)
+        configs_dir = cls.get_configs_dir()
+        config_name_or_path = str(config_name_or_path)
 
-    @property
-    def homepage(self) -> str:
-        return json.dumps({c.name: c.homepage for c in self.configs}, indent=2)
+        if not config_name_or_path.endswith(".json"):
+            config_name_or_path += ".json"
 
-    @property
-    def description(self) -> str:
-        return json.dumps({c.name: c.description for c in self.configs}, indent=2)
+        for config_path in configs_dir.glob(config_name_or_path):
+            return cls.model_validate_json(config_path.read_text())
 
-    @property
-    def citation(self) -> str:
-        return json.dumps({c.name: c.citation for c in self.configs}, indent=2)
+        for config_path in configs_dir.glob(f"**/{config_name_or_path}"):
+            return cls.model_validate_json(config_path.read_text())
 
+        raise FileNotFoundError(config_name_or_path)
 
-@dc.dataclass(kw_only=True, frozen=True)
-class TenXGenomicsBuilderConfig(BaseBuilderConfig):
-    tiff_url: str
-    spatial_url: str
-    filtered_feature_bc_matrix_url: str
-    license: str = "CC BY 4.0"
-
-    @property
-    def urls(self) -> list[str]:
-        return [self.tiff_url, self.spatial_url, self.filtered_feature_bc_matrix_url]
-
-
-class TenXGenomicsBaseBuilder(datasets.GeneratorBasedBuilder):
-    BUILDER_CONFIG_CLASS = TenXGenomicsBuilderConfig
-
-    def _info(self):
-        self.config: TenXGenomicsBuilderConfig | MultiBuilderConfig
-        return datasets.DatasetInfo(
-            description=self.config.description,
-            homepage=self.config.homepage,
-            citation=self.config.citation,
-            license=self.config.license,
+    def save(
+        self, config_path: str | Path | None = None, overwrite: bool = False
+    ) -> None:
+        config_path = config_path or (
+            self.get_configs_dir()
+            / self.config_builder_name()
+            / self.species
+            / self.anatomical_entity
+            / f"{self.name}.json"
         )
 
-    def _generate_spots(self, config_name: str, tiff_path: str, spatial_dir: str):
-        raise NotImplementedError
+        config_path = Path(config_path)
 
-    def _split_generators(self, dl_manager: datasets.DownloadManager):
-        if isinstance(self.config, MultiBuilderConfig):
-            assert all(isinstance(c, TenXGenomicsBuilderConfig) for c in self.config)
-            urls: dict[str, list[str]] = {c.name: c.urls for c in self.config}
-        elif isinstance(self.config, TenXGenomicsBuilderConfig):
-            urls = {self.config.name: self.config.urls}
-        else:
-            raise TypeError(
-                f"Unexpected config type: {type(self.config)}, expected one "
-                f"of {TenXGenomicsBuilderConfig}, {MultiBuilderConfig}"
+        if config_path.is_file() and not overwrite:
+            raise FileExistsError(
+                f"Config file already exists at {config_path.resolve()}"
             )
 
-        local_files_map: dict[str, list[str]] = dl_manager.download_and_extract(urls)  # type: ignore
-        for config_name, local_files in local_files_map.items():
-            tiff_path, spatial_dir, *_ = local_files
-            self._generate_spots(config_name, tiff_path, spatial_dir)
+        config_path.parent.mkdir(parents=True, exist_ok=True)
+        config_path.write_text(self.model_dump_json(indent=2))
 
-        yield (
-            datasets.SplitGenerator(
-                name=datasets.Split.TRAIN,
-                gen_kwargs={
-                    "tiff_path": tiff_path,
-                    "spatial_path": spatial_path,
-                },
-            ),
-        )
+
+class MultiDatasetConfig(BaseDatasetConfig):
+    configs: tp.Sequence[BaseDatasetConfig] = Field(..., min_length=1)
+
+    def __iter__(self) -> tp.Iterator[BaseDatasetConfig]:
+        return iter(self.configs)
+
+    def __getitem__(self, item: int) -> BaseDatasetConfig:
+        return self.configs[item]
+
+    def __len__(self) -> int:
+        return len(self.configs)
+
+    def __repr__(self) -> str:
+        return f"MultiDatasetConfig(name={self.name}, nb_configs={len(self)})"
+
+    def __str__(self) -> str:
+        return self.__repr__()
+
+    def __add__(
+        self, other: "BaseDatasetConfig | MultiDatasetConfig"
+    ) -> "MultiDatasetConfig":
+        if isinstance(other, MultiDatasetConfig):
+            name = "+".join([self.name, other.name])
+            return self.model_validate(
+                {"name": name, "configs": [*self.configs, *other.configs]}
+            )
+        if isinstance(other, BaseDatasetConfig):
+            return self.model_copy(update={"configs": [*self.configs, other]})
+        raise TypeError(other)
+
+    @model_validator(mode="after")
+    def _fill_defaults(self):
+        def _get_value_from_configs(field_name: str) -> tp.Any:
+            values = {}
+            for c in self.configs:
+                v = getattr(c, field_name, None)
+                if v:
+                    values[c.name] = v
+            if not values:
+                return None
+            if len(set(values.values())) == 1:
+                return values.popitem()[1]
+            return json.dumps(values)
+
+        for field_name in self.model_fields:
+            if v := getattr(self, field_name, None):
+                continue
+            if v := _get_value_from_configs(field_name):
+                setattr(self, field_name, v)
+
+        return self
+
+    def save(self, overwrite: bool = False) -> None:
+        for config in self:
+            config.save(overwrite=overwrite)
+
+    @classmethod
+    def load(cls, config_name_or_path: str | Path) -> None:
+        raise NotImplementedError("MultiDatasetConfig cannot be loaded from a config")
+
+
+class BaseDatasetBuilder(ABC):
+    def __init__(
+        self,
+        config: BaseDatasetConfig,
+        dl_manager: DownloadManager | None = None,
+    ):
+        self.config = config
+        self.dl_manager = dl_manager or DownloadManager()
+
+        @abstractmethod
+        def download(self):
+            pass
+
+        @abstractmethod
+        def prepare(self):
+            pass

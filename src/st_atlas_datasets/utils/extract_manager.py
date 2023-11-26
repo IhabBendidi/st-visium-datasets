@@ -110,7 +110,10 @@ class ExtractorManager:
             filename=self._data_file.name,
         )
         self._fileobj = self._progress.open(self._data_file.uri, "rb", task_id=task_id)
-        self._extractor = self.get_extractor()
+        self._extractor = self.get_extractor(
+            filepath=self._data_file.uri,
+            fileobj=self._fileobj,
+        )
         return self
 
     def __exit__(self, *args, **kwargs) -> None:
@@ -129,22 +132,41 @@ class ExtractorManager:
             raise ValueError("ExtractorManager not in context.")
         return self._extractor
 
-    def get_extractor(self) -> tp.Type[BaseExtractor]:
-        # check for extensions first
-        for extractor in self._EXTRACTORS:
-            if self._data_file.uri.lower().endswith(tuple(extractor.VALID_EXTENSIONS)):
-                return extractor
-
-        # check for magic bytes
-        for extractor in self._EXTRACTORS:
-            if extractor.is_extractable(self.fileobj):
-                return extractor
-
-        return NotExtractable
-
+    @property
     def is_extractable(self) -> bool:
         return self.extractor is not NotExtractable
 
     def extract(self, extract_dir: str | Path) -> dict[str, str]:
         members = self.extractor.extract(self.fileobj, extract_dir)
         return {m: os.path.join(extract_dir, m) for m in members}
+
+    @classmethod
+    def get_extractor(
+        cls,
+        filepath: str | Path | None = None,
+        fileobj: tp.IO[bytes] | None = None,
+    ) -> tp.Type[BaseExtractor]:
+        if filepath:
+            filepath = str(filepath)
+            for extractor in cls._EXTRACTORS:
+                if filepath.lower().endswith(tuple(extractor.VALID_EXTENSIONS)):
+                    return extractor
+
+        _close_fileobj = False
+        if filepath and not fileobj:
+            fileobj = open(filepath, "rb")
+            _close_fileobj = True
+
+        if fileobj:
+            for extractor in cls._EXTRACTORS:
+                if extractor.is_extractable(fileobj):
+                    return extractor
+
+        if fileobj and _close_fileobj:
+            fileobj.close()
+
+        return NotExtractable
+
+    @classmethod
+    def is_extractable_filepath(cls, filepath: str | Path) -> bool:
+        return cls.get_extractor(filepath=filepath) is not NotExtractable
