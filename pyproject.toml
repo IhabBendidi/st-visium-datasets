@@ -1,11 +1,10 @@
 [tool.poetry]
-name = "st-atlas-datasets"
+name = "st-visium-datasets"
 version = "0.1.0"
 description = ""
 authors = ["Ouail Bendidi <ouail.bendidi@gmail.com>"]
 license = "MIT License"
 readme = "README.md"
-packages = [{include = "st_atlas_datasets", from = "src"}]
 
 [tool.poetry.dependencies]
 python = "^3.9"
