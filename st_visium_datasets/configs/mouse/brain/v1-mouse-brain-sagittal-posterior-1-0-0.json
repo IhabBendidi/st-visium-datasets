@@ -1,87 +1,120 @@
 {
   "name": "v1-mouse-brain-sagittal-posterior-1-0-0",
-  "title": "Mouse Brain Serial Section 1 (Sagittal-Posterior)",
   "homepage": "https://www.10xgenomics.com/resources/datasets/mouse-brain-serial-section-1-sagittal-posterior-1-standard-1-0-0",
+  "visium_dataset_name": "mouse-brain-serial-section-1-sagittal-posterior-1-standard-1-0-0",
+  "title": "Mouse Brain Serial Section 1 (Sagittal-Posterior)",
   "description": "\n10x Genomics obtained fresh frozen mouse brain tissue (Strain C57BL/6) from [BioIVT](https://bioivt.com) Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols - Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10 µm thickness from a sagittal slice of the posterior were placed on Visium Gene Expression Slides.\n\n* Sex: Male\n* Age: >8 weeks\n* Strain: C57BL/6\n* Section Orientation: Sagittal Slice of the Posterior\n\nThe H&E image acquired using a Nikon Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 10 ms\n- Gain: 4.5X\n\nThe Visium Spatial Gene Expression library was prepared following the Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide)). Sequencing data was processed using Space Ranger.\n\n* Sequencing instrument: Illumina NovaSeq 6000\n*  Sequencing Depth: 87,180 read pairs per spot\n* Sequencing Configuration: 28 x 120 bp\n* Sequencing Coverage: Read 1 - 28 bp (includes 16 bp Spatial Barcode, 12 bp UMI); Read 2 - 120 bp (transcript); i7 sample index - 10 bp; i5 sample index - 10 bp.\n* Dual-Index set T1T2-F3\n* Slide: V19L29-035\n* Area: A1\n\nKey cell metrics were:\n\n- Spots detected under tissue - 3,353\n- Median UMI counts per spot - 14,864\n- Median genes per spot - 4,564\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2019-12-02T00:00:00-08:00",
   "species": "mouse",
   "anatomical_entity": "brain",
-  "disease_state": null,
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_image.tif",
+  "disease_state": "undefined",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 3353,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_image.tif",
     "md5sum": "314fafeecd55068f75a8f9e5e795917c",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_image.tif"
+    "size": 404788982
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_metrics_summary.csv",
-    "md5sum": "36dc86a8d7e65e4cd06c9c707b828dfc",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_spatial.tar.gz",
-    "md5sum": "fa695b98cd978e40315b5d47dcf1253c",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_filtered_feature_bc_matrix.h5",
     "md5sum": "53e03d8ae046813b1d3e9ab080eeee75",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_filtered_feature_bc_matrix.h5"
+    "size": 20183365
   },
-  "visium_dataset_name": "mouse-brain-serial-section-1-sagittal-posterior-1-standard-1-0-0",
-  "published_at": "2019-12-02T00:00:00-08:00",
-  "pipeline_version": "1.0.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": {
-    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_fastqs.tar",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_spatial.tar.gz",
+    "md5sum": "fa695b98cd978e40315b5d47dcf1253c",
+    "size": 10659366
+  },
+  "fastqs": {
+    "bytes": 27334287360,
     "md5sum": "4d42d863da1a554833060f802f040040",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_fastqs.tar"
+    "title": "FASTQs",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_fastqs.tar"
   },
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": {
-    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_possorted_genome_bam.bam",
+  "genome_aligned_bam": {
+    "bytes": 20535332164,
     "md5sum": "a41044668eb9500a699e2c939d95b07a",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_possorted_genome_bam.bam"
+    "title": "Genome-aligned BAM",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_possorted_genome_bam.bam"
   },
-  "outputs_genome_aligned_bam_index": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_possorted_genome_bam.bam.bai",
+  "genome_aligned_bam_index": {
+    "bytes": 5166080,
     "md5sum": "026a671270f4cfab4343345397523963",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_possorted_genome_bam.bam.bai"
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_possorted_genome_bam.bam.bai"
   },
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_molecule_info.h5",
+  "per_molecule_read_information": {
+    "bytes": 285023454,
     "md5sum": "d046fa52266bc651cb1e0a272cf0bb36",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_molecule_info.h5"
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_molecule_info.h5"
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_filtered_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_filtered": {
+    "bytes": 55295047,
     "md5sum": "e5ba9e266ad6b777d6678583f5f570a6",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_filtered_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_filtered_feature_bc_matrix.tar.gz"
   },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_raw_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 23246113,
     "md5sum": "161b18556a9d8b2f52bb2481aeb2d572",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_raw_feature_bc_matrix.h5"
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_raw_feature_bc_matrix.h5"
   },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_raw_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_raw": {
+    "bytes": 63110450,
     "md5sum": "87267e9b9b67f43c078748c56e06fa8a",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_raw_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_raw_feature_bc_matrix.tar.gz"
   },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_analysis.tar.gz",
+  "clustering_analysis": {
+    "bytes": 31464095,
     "md5sum": "09d2d7ec81efb08c3cb2696f1ce03a06",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_analysis.tar.gz"
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_analysis.tar.gz"
   },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_web_summary.html",
+  "summary_csv": {
+    "bytes": 967,
+    "md5sum": "36dc86a8d7e65e4cd06c9c707b828dfc",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 9128306,
     "md5sum": "b43ca654be227143ace8379cf3a2d940",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_web_summary.html"
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_web_summary.html"
   },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_cloupe.cloupe",
+  "loupe_browser_file": {
+    "bytes": 372442026,
     "md5sum": "b31d70a8544b2050b8b22f562efe5bb8",
-    "name": "V1_Mouse_Brain_Sagittal_Posterior_cloupe.cloupe"
-  }
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Mouse_Brain_Sagittal_Posterior/V1_Mouse_Brain_Sagittal_Posterior_cloupe.cloupe"
+  },
+  "sample_id": "V1_Mouse_Brain_Sagittal_Posterior",
+  "median_genes_per_spot": 4564.0,
+  "number_of_reads": 292313529.0,
+  "valid_barcodes": 0.9759133864789404,
+  "valid_um_is": 0.9997150422688784,
+  "mean_reads_per_spot": 87179.69847897405,
+  "sequencing_saturation": 0.7380534189413588,
+  "q30_bases_in_barcode": 0.9718109970265024,
+  "q30_bases_in_rna_read": 0.9452041828891948,
+  "q30_bases_in_umi": 0.9717489767469168,
+  "reads_mapped_to_genome": 0.9399143068742468,
+  "reads_mapped_confidently_to_genome": 0.9077561853115598,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0437380098134287,
+  "reads_mapped_confidently_to_intronic_regions": 0.0156101019874451,
+  "reads_mapped_confidently_to_exonic_regions": 0.8484080735106858,
+  "reads_mapped_confidently_to_transcriptome": 0.8233735531276077,
+  "reads_mapped_antisense_to_gene": 0.007596949096393,
+  "fraction_reads_in_spots_under_tissue": 0.9331168197072838,
+  "total_genes_detected": 20524,
+  "median_umi_counts_per_spot": 14864.0,
+  "fraction_of_spots_under_tissue": 0.6716746794871795
 }

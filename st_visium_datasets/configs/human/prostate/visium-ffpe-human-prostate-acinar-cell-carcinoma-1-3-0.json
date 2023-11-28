@@ -1,95 +1,133 @@
 {
   "name": "visium-ffpe-human-prostate-acinar-cell-carcinoma-1-3-0",
-  "title": "Human Prostate Cancer, Acinar Cell Carcinoma (FFPE)",
   "homepage": "https://www.10xgenomics.com/resources/datasets/human-prostate-cancer-acinar-cell-carcinoma-ffpe-1-standard",
+  "visium_dataset_name": "human-prostate-cancer-acinar-cell-carcinoma-ffpe-1-standard",
+  "title": "Human Prostate Cancer, Acinar Cell Carcinoma (FFPE)",
   "description": "10x Genomics obtained FFPE human prostate tissue from [Indivumed](https://www.indivumed.com/) Human Tissue Specimens. The tissue was annotated with Invasive Acinar Cell Carcinoma. The tissue was sectioned as described in Visium Spatial Gene Expression for FFPE – Tissue Preparation Guide Demonstrated Protocol ([CG000408](/support/spatial-gene-expression-ffpe/documentation/workflows/ffpe-v-1/steps/tissue-prep/visium-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). Tissue sections of 5 µm were placed on Visium Gene Expression slides, then stained following Deparaffinization, H&E Staining, Imaging & Decrosslinking Demonstrated Protocol ([CG000409](/support/spatial-gene-expression-ffpe/documentation/workflows/ffpe-v-1/steps/tissue-staining/visium-spatial-gene-expression-for-ffpe-deparaffinization-hand-e-staining-imaging-and-decrosslinking)).\n\n* Block 1D1061-Tp11 Section 1\n* Stage IV\n* Total Gleason score: 7\n* Sex: Male\n\nThe H&E image was acquired using Metafer Slide Scanning Microscope from MetaSystems with these settings:\n\n* Zeiss Plan-Apochromat 20x objective\n* Numerical Aperture: 0.8\n* ScopeLED light source\n* MetaSystems CoolCube 4c camera\n\nLibraries were prepared following the Visium Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000407](/support/spatial-gene-expression-ffpe/library-prep/doc/user-guide-visium-spatial-gene-expression-reagent-kits-for-ffpe-user-guide) Rev A).\n\n* Sequencing instrument: Illumina NovaSeq, flow cell H23WTDMXY (lane 1-2)\n* Sequencing depth: 50,207 reads per spot\n* Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 50bp read2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set: SI-TS-B8\n* Slide: V11J26-002\n* Area: B1\n\nKey metrics were:\n\n* Spots detected under tissue: 3,043\n* Median genes per spot: 6,720\n* Median UMI counts per spot: 19,828\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2021-10-08T18:13:00.600000Z",
   "species": "human",
   "anatomical_entity": "prostate",
-  "disease_state": "prostate_cancer",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_image.tif",
+  "disease_state": "prostate-cancer",
+  "preservation_method": "FFPE",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism, Imaged Specimen",
+  "donor_count": null,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 3043,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_image.tif",
     "md5sum": "68769a567db7d5de2c4d2235defd2212",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_image.tif"
+    "size": 130381016
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_metrics_summary.csv",
-    "md5sum": "fccf74ba5ddf998c0fde6d398bd1b014",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_spatial.tar.gz",
-    "md5sum": "9aea89f986d0d29dbd061b96e70ebcc2",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_filtered_feature_bc_matrix.h5",
     "md5sum": "c130db956e4d4f68d861f6d52b7392f7",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_filtered_feature_bc_matrix.h5"
+    "size": 20732080
   },
-  "visium_dataset_name": "human-prostate-cancer-acinar-cell-carcinoma-ffpe-1-standard",
-  "published_at": "2021-10-08T18:13:00.600Z",
-  "pipeline_version": "1.3.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_fastqs.tar",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_spatial.tar.gz",
+    "md5sum": "9aea89f986d0d29dbd061b96e70ebcc2",
+    "size": 9255705
+  },
+  "fastqs": {
+    "bytes": 10026813440,
     "md5sum": "0acf12f96e1753a2431b217ddfd312d8",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_fastqs.tar"
+    "title": "FASTQs",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_fastqs.tar"
   },
-  "inputs_probe_set": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_probe_set.csv",
+  "probe_set": {
+    "bytes": 2084982,
     "md5sum": "39ecfeb3651c14d45900d843d6502525",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_probe_set.csv"
+    "title": "Probe Set",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_probe_set.csv"
   },
-  "outputs_genome_aligned_bam": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_possorted_genome_bam.bam",
+  "genome_aligned_bam": {
+    "bytes": 7383796840,
     "md5sum": "8c1ffc70a4f91648d376d1767d1e55a7",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_possorted_genome_bam.bam"
+    "title": "Genome-aligned BAM",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_possorted_genome_bam.bam"
   },
-  "outputs_genome_aligned_bam_index": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_possorted_genome_bam.bam.bai",
+  "genome_aligned_bam_index": {
+    "bytes": 2331072,
     "md5sum": "fc5e9362b23c71a1369b0dfbe683cc3d",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_possorted_genome_bam.bam.bai"
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_possorted_genome_bam.bam.bai"
   },
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_molecule_info.h5",
+  "per_molecule_read_information": {
+    "bytes": 286949808,
     "md5sum": "6df73cad117f0da448797d1d104da360",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_molecule_info.h5"
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_molecule_info.h5"
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_filtered_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_filtered": {
+    "bytes": 64306577,
     "md5sum": "1bc5afaf19a0ff4e75982c312b19f8b2",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_filtered_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_filtered_feature_bc_matrix.tar.gz"
   },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_raw_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 33711566,
     "md5sum": "4401544e93b52232d92b5168e57c38c0",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_raw_feature_bc_matrix.h5"
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_raw_feature_bc_matrix.h5"
   },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_raw_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_raw": {
+    "bytes": 90455151,
     "md5sum": "d23b86195ea4d041b66f024c45c95b0a",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_raw_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_raw_feature_bc_matrix.tar.gz"
   },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_analysis.tar.gz",
+  "clustering_analysis": {
+    "bytes": 23906654,
     "md5sum": "cdd02956bf94192c04368fe518e13965",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_analysis.tar.gz"
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_analysis.tar.gz"
   },
-  "outputs_spatial_enrichment_moran_s_i": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_spatial_enrichment.csv",
+  "spatial_enrichment_moran_s_i": {
+    "bytes": 1879875,
     "md5sum": "c7d66821a8507128e79c4f35e70cdb8b",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_spatial_enrichment.csv"
+    "title": "Spatial Enrichment (Moran's I)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_spatial_enrichment.csv"
   },
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_web_summary.html",
+  "summary_csv": {
+    "bytes": 935,
+    "md5sum": "fccf74ba5ddf998c0fde6d398bd1b014",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 7659786,
     "md5sum": "8e053b99aa44ef225e7fe04634fd4ab9",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_web_summary.html"
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_web_summary.html"
   },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_cloupe.cloupe",
+  "loupe_browser_file": {
+    "bytes": 1343885689,
     "md5sum": "fbc9d34100f812c5241a3b5f11c9a483",
-    "name": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_cloupe.cloupe"
-  }
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma/Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma_cloupe.cloupe"
+  },
+  "sample_id": "Visium_FFPE_Human_Prostate_Acinar_Cell_Carcinoma",
+  "number_of_reads": 152780004,
+  "mean_reads_per_spot": 50207.03384817614,
+  "mean_reads_under_tissue_per_spot": 44670.06506736773,
+  "fraction_of_spots_under_tissue": 0.6095753205128205,
+  "median_genes_per_spot": 6720.0,
+  "median_umi_counts_per_spot": 19828.0,
+  "valid_barcodes": 0.986366638660384,
+  "valid_um_is": 0.9999109765699444,
+  "sequencing_saturation": 0.5141804561712583,
+  "q30_bases_in_barcode": 0.9682305744095916,
+  "q30_bases_in_probe_read": 0.961783034829738,
+  "q30_bases_in_umi": 0.9651573998106112,
+  "reads_mapped_to_probe_set": 0.9876633659467636,
+  "reads_mapped_confidently_to_probe_set": 0.980740365735296,
+  "fraction_reads_in_spots_under_tissue": 0.9032198389358316,
+  "median_panel_genes_per_spot": 6212.0,
+  "median_panel_umi_counts_per_spot": 16648.0,
+  "genes_detected": 17350,
+  "reads_mapped_confidently_to_the_filtered_probe_set": 0.8239905203824972,
+  "number_of_panel_genes": 17943,
+  "number_of_panel_genes_>=_10_um_is": 15226
 }

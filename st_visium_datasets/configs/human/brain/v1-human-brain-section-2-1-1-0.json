@@ -1,80 +1,108 @@
 {
   "name": "v1-human-brain-section-2-1-1-0",
-  "title": "Adult Human Brain 2 (Cerebral Cortex, Unknown orientation). Stains: Anti-SNAP25, Anti-NFH",
   "homepage": "https://www.10xgenomics.com/resources/datasets/adult-human-brain-2-cerebral-cortex-unknown-orientation-stains-anti-snap-25-anti-nfh-1-standard-1-1-0",
+  "visium_dataset_name": "adult-human-brain-2-cerebral-cortex-unknown-orientation-stains-anti-snap-25-anti-nfh-1-standard-1-1-0",
+  "title": "Adult Human Brain 2 (Cerebral Cortex, Unknown orientation). Stains: Anti-SNAP25, Anti-NFH",
   "description": "10 µm cerebral cortex section of human brain was obtained from tissue blocks purchased from BioIVT. The section was stained with antibodies and DAPI following Visium Spatial Protocols Tissue Preparation Guide ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)) with Methanol Fixation, Immunofluorescence Staining and Imaging for Visium Spatial Protocols ([CG000312](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-staining/methanol-fixation-immunofluorescence-staining-and-imaging-for-visium-spatial-protocols)).\n\nSamples were stained with antibodies and DAPI as follows:\n\n* 1:100 dilution of Alexa Fluor 488 anti-SNAP25 (P/N 836313, BioLegend)\n* 1:100 dilution of Alexa Fluor 594 anti-Neurofilament H (P/N 801709, BioLegend)\n* DAPI\n\nSamples were imaged at 20X on a Nikon Eclipse Ti2-E with coverslip down as follows:\n\n* DAPI: Exposure 40 milli sec, Gain 5.1x\n* FITC: Exposure 70 milli sec, Gain 6.2x\n* TRITC: Exposure 300 milli sec, Gain 7.6x\n* Cy5: Exposure 200 mill sec, Gain 11.4x\n\nThe cloupe and TIFF files available for download here contain multiple channels or pages respectively. The following table describes the filters and stains corresponding to the channels/pages.\n\n| Channel | Filter | Stain           |\n| ------- | ------ | --------------- |\n| 1       | DAPI   | DAPI            |\n| 2       | FITC   | SNAP 25         |\n| 3       | TRITC  | Fiducial Frame  |\n| 4       | Cy5    | Neurofilament H |\n\nThe Visium Spatial Gene Expression libraries were generated using Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide)) with Methanol Fixation, Immunofluorescence Staining & Imaging for Visium Spatial Protocols ([CG000312](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-staining/methanol-fixation-immunofluorescence-staining-and-imaging-for-visium-spatial-protocols)). The data was analyzed using Space Ranger 1.1.\n\n* Sequencing instrument: Illumina NovaSeq 600\n* Sequencing Depth: 75,668 reads/tissue covered spot\n* Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 90bp read 2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set: T1T2-E8\n* Slide: V10M23-117\n* Area: D1\n\nKey metrics were:\n\n* Spots detected under tissue: 4,970\n* Median genes per spot: 2,924\n* Median UMI counts per spot: 6,092\n\nTo maintain donor anonymity, sequence data for this sample is not available.\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2020-06-23T07:00:00Z",
   "species": "human",
   "anatomical_entity": "brain",
-  "disease_state": null,
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_image.tif",
+  "disease_state": "undefined",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "DAPI, Immunofluorescence",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": "Adult",
+  "number_of_spots_under_tissue": 4972,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_image.tif",
     "md5sum": "ca2e26c44f1407734d2ed1310bde7a70",
-    "name": "V1_Human_Brain_Section_2_image.tif"
+    "size": 4702382736
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_metrics_summary.csv",
-    "md5sum": "a3bba8e246d47447dc739aa34b4b031f",
-    "name": "V1_Human_Brain_Section_2_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_spatial.tar.gz",
-    "md5sum": "d2e211b93e1f4fa139733fc5b039590d",
-    "name": "V1_Human_Brain_Section_2_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_filtered_feature_bc_matrix.h5",
     "md5sum": "104ce35f087008eb18816f3e0bb3fdac",
-    "name": "V1_Human_Brain_Section_2_filtered_feature_bc_matrix.h5"
+    "size": 21198742
   },
-  "visium_dataset_name": "adult-human-brain-2-cerebral-cortex-unknown-orientation-stains-anti-snap-25-anti-nfh-1-standard-1-1-0",
-  "published_at": "2020-06-23T07:00:00.000Z",
-  "pipeline_version": "1.1.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": null,
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": null,
-  "outputs_genome_aligned_bam_index": null,
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_molecule_info.h5",
-    "md5sum": "211880151c5acc143c67a1c97b4747e6",
-    "name": "V1_Human_Brain_Section_2_molecule_info.h5"
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_spatial.tar.gz",
+    "md5sum": "d2e211b93e1f4fa139733fc5b039590d",
+    "size": 10587843
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_filtered_feature_bc_matrix.tar.gz",
-    "md5sum": "a48c8f9a58cfb5465c5c427ba749f81b",
-    "name": "V1_Human_Brain_Section_2_filtered_feature_bc_matrix.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_raw_feature_bc_matrix.h5",
-    "md5sum": "663ad5492934cbd5683cc2a67f40e446",
-    "name": "V1_Human_Brain_Section_2_raw_feature_bc_matrix.h5"
-  },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_raw_feature_bc_matrix.tar.gz",
-    "md5sum": "27dcb57259c2339c240d6c959587a0d5",
-    "name": "V1_Human_Brain_Section_2_raw_feature_bc_matrix.tar.gz"
-  },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_analysis.tar.gz",
-    "md5sum": "057363f845fa91392148e710b312f332",
-    "name": "V1_Human_Brain_Section_2_analysis.tar.gz"
-  },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_web_summary.html",
-    "md5sum": "7b6f3a69b692c3245aad05626222257b",
-    "name": "V1_Human_Brain_Section_2_web_summary.html"
-  },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_cloupe.cloupe",
-    "md5sum": "088ccba09a6cc5d76bf68929b3cc5d3b",
-    "name": "V1_Human_Brain_Section_2_cloupe.cloupe"
-  },
-  "inputs_manual_alignment_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_alignment_file.json",
+  "manual_alignment_file": {
+    "bytes": 583629,
     "md5sum": "87ca773155675b5acdc19bcdb0f3ec79",
-    "name": "V1_Human_Brain_Section_2_alignment_file.json"
-  }
+    "title": "Manual alignment file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_alignment_file.json"
+  },
+  "per_molecule_read_information": {
+    "bytes": 148512807,
+    "md5sum": "211880151c5acc143c67a1c97b4747e6",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 55649046,
+    "md5sum": "a48c8f9a58cfb5465c5c427ba749f81b",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 22780611,
+    "md5sum": "663ad5492934cbd5683cc2a67f40e446",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 57171354,
+    "md5sum": "27dcb57259c2339c240d6c959587a0d5",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 28430995,
+    "md5sum": "057363f845fa91392148e710b312f332",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 953,
+    "md5sum": "a3bba8e246d47447dc739aa34b4b031f",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 8577706,
+    "md5sum": "7b6f3a69b692c3245aad05626222257b",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 4302346789,
+    "md5sum": "088ccba09a6cc5d76bf68929b3cc5d3b",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Brain_Section_2/V1_Human_Brain_Section_2_cloupe.cloupe"
+  },
+  "sample_id": "V1_Human_Brain_Section_2",
+  "median_genes_per_spot": 2923.5,
+  "number_of_reads": 376221577.0,
+  "valid_barcodes": 0.9704001267317,
+  "valid_um_is": 0.9988065649940115,
+  "mean_reads_per_spot": 75668.05651649236,
+  "sequencing_saturation": 0.8425050916078775,
+  "q30_bases_in_barcode": 0.9612202558906926,
+  "q30_bases_in_rna_read": 0.9391031488998915,
+  "q30_bases_in_umi": 0.9586909460227668,
+  "reads_mapped_to_genome": 0.9292467614104972,
+  "reads_mapped_confidently_to_genome": 0.7944931717725483,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0976257031637502,
+  "reads_mapped_confidently_to_intronic_regions": 0.0766872815484477,
+  "reads_mapped_confidently_to_exonic_regions": 0.6201801870603504,
+  "reads_mapped_confidently_to_transcriptome": 0.5943958950552164,
+  "reads_mapped_antisense_to_gene": 0.0160392501889916,
+  "fraction_reads_in_spots_under_tissue": 0.994668170373642,
+  "total_genes_detected": 25711,
+  "median_umi_counts_per_spot": 6092.0,
+  "fraction_of_spots_under_tissue": 0.9959935897435898
 }

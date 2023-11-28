@@ -1,92 +1,126 @@
 {
   "name": "v1-adult-mouse-brain-coronal-section-2-1-1-0",
-  "title": "Adult Mouse Brain Section 2 (Coronal). Stains: DAPI, Anti-GFAP, Anti-NeuN",
   "homepage": "https://www.10xgenomics.com/resources/datasets/adult-mouse-brain-section-2-coronal-stains-dapi-anti-gfap-anti-neu-n-1-standard-1-1-0",
+  "visium_dataset_name": "adult-mouse-brain-section-2-coronal-stains-dapi-anti-gfap-anti-neu-n-1-standard-1-1-0",
+  "title": "Adult Mouse Brain Section 2 (Coronal). Stains: DAPI, Anti-GFAP, Anti-NeuN",
   "description": "\nAdult 10 µm coronal section of mouse brain was obtained from tissue blocks purchased from BioIVT. The section was stained with antibodies and DAPI following following Visium Spatial Protocols Tissue Preparation Guide ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)) with Methanol Fixation, Immunofluorescence Staining and Imaging for Visium Spatial Protocols ([CG000312](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-staining/methanol-fixation-immunofluorescence-staining-and-imaging-for-visium-spatial-protocols)).\n\nSamples were stained with antibodies and DAPI as follows:\n\n- 1:200 dilution of Alexa Fluor 488 anti-NeuN (P/N ab190195, Abcam)\n- 1:150 dilution of Alexa Fluor 594 GFAP (P/N ab201732, Abcam)\n- DAPI\n\nSamples were imaged at 20X on a Nikon Eclipse Ti2-E coverslip down as follows:\n\n- DAPI: Exposure 40 milli sec, Gain 5.1x\n- FITC: Exposure 70 milli sec, Gain 6.2x\n- TRITC: Exposure 500 milli sec, Gain 17.1x\n\nThe cloupe and TIFF files available for download here contain multiple channels or pages respectively. The following table describes the filters and stains corresponding to the channels/pages.\n\n| Channel | Filter | Stain                   |\n| ------- | ------ | ----------------------- |\n| 1       | DAPI   | DAPI                    |\n| 2       | FITC   | NeuN                    |\n| 3       | TRITC  | Fiducial Frame and GFAP |\n\nThe Visium Spatial Gene Expression libraries were generated using Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide)) with Methanol Fixation, Immunofluorescence Staining & Imaging for Visium Spatial Protocols ([CG000312](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-staining/methanol-fixation-immunofluorescence-staining-and-imaging-for-visium-spatial-protocols)). The data was analyzed using Space Ranger 1.1.\n\n* Sequencing instrument: Illumina NovaSeq with NovaSeq S4 Reagent Kit (200 cycles), and Flow Cell ID: HGL22DSXY\n* Sequencing depth: 56,020 reads per spot\n* Sequencing configuration: Paired-end (28 X 90)\n* Sequencing coverage: Read 1: 28bp Read 1 (16bp Visium spatial barcode, 12bp UMI), Read 2: 120bp (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set: T1T2-B8\n* Slide: V10M23-089\n* Area: B1\n\nKey metrics were:\n\n* Spots detected under tissue: 2,807\n* Median genes per spot: 4,221\n* Median UMI counts per spot: 11,048\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2020-06-23T00:00:00-07:00",
   "species": "mouse",
   "anatomical_entity": "brain",
-  "disease_state": null,
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_image.tif",
+  "disease_state": "undefined",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "Immunofluorescence, DAPI",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": "Adult",
+  "number_of_spots_under_tissue": 2807,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_image.tif",
     "md5sum": "a8d07d649d8eaad8f8f427976018be81",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_image.tif"
+    "size": 3527172281
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_metrics_summary.csv",
-    "md5sum": "517d223d0f7a969b6c6de4483d161a83",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_spatial.tar.gz",
-    "md5sum": "dcc8b0f9d3e8d97bc9b68a21fd046355",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_filtered_feature_bc_matrix.h5",
     "md5sum": "2e7a884a9ea243250a6b12b16c801fa1",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_filtered_feature_bc_matrix.h5"
+    "size": 15739849
   },
-  "visium_dataset_name": "adult-mouse-brain-section-2-coronal-stains-dapi-anti-gfap-anti-neu-n-1-standard-1-1-0",
-  "published_at": "2020-06-23T00:00:00-07:00",
-  "pipeline_version": "1.1.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_fastqs.tar",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_spatial.tar.gz",
+    "md5sum": "dcc8b0f9d3e8d97bc9b68a21fd046355",
+    "size": 6169227
+  },
+  "fastqs": {
+    "bytes": 13173708800,
     "md5sum": "3bd1d48c4d9bdf9b4ee986d4b82c0df5",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_fastqs.tar"
+    "title": "FASTQs",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_fastqs.tar"
   },
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_possorted_genome_bam.bam",
-    "md5sum": "8f5ae90a0eaa476a2bb7562785faf140",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_possorted_genome_bam.bam"
-  },
-  "outputs_genome_aligned_bam_index": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_possorted_genome_bam.bam.bai",
-    "md5sum": "385a4f823f32bf89e49c642e0ca3c1ac",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_possorted_genome_bam.bam.bai"
-  },
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_molecule_info.h5",
-    "md5sum": "aed929b2242d5bd7ca72762d1387a798",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_molecule_info.h5"
-  },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_filtered_feature_bc_matrix.tar.gz",
-    "md5sum": "7f6755ecc3abd5ba27953808c4b3ebef",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_filtered_feature_bc_matrix.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_raw_feature_bc_matrix.h5",
-    "md5sum": "a018a22eea2ce245ab36469c9afd6ce4",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_raw_feature_bc_matrix.h5"
-  },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_raw_feature_bc_matrix.tar.gz",
-    "md5sum": "89e309703de22033f834090cb607646d",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_raw_feature_bc_matrix.tar.gz"
-  },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_analysis.tar.gz",
-    "md5sum": "c874df6bf8af8718f92b2729ba62c066",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_analysis.tar.gz"
-  },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_web_summary.html",
-    "md5sum": "3ab0de5f12f0bc2402547d79ecb6eec9",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_web_summary.html"
-  },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_cloupe.cloupe",
-    "md5sum": "ba0485837d6dcafd28e021e02b5a3cfd",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_cloupe.cloupe"
-  },
-  "inputs_manual_alignment_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_alignment_file.json",
+  "manual_alignment_file": {
+    "bytes": 552653,
     "md5sum": "c8fcc8f8731194e627946d6ce2f14ab0",
-    "name": "V1_Adult_Mouse_Brain_Coronal_Section_2_alignment_file.json"
-  }
+    "title": "Manual alignment file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_alignment_file.json"
+  },
+  "genome_aligned_bam": {
+    "bytes": 9048356717,
+    "md5sum": "8f5ae90a0eaa476a2bb7562785faf140",
+    "title": "Genome-aligned BAM",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_possorted_genome_bam.bam"
+  },
+  "genome_aligned_bam_index": {
+    "bytes": 3343160,
+    "md5sum": "385a4f823f32bf89e49c642e0ca3c1ac",
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_possorted_genome_bam.bam.bai"
+  },
+  "per_molecule_read_information": {
+    "bytes": 166872902,
+    "md5sum": "aed929b2242d5bd7ca72762d1387a798",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 42499083,
+    "md5sum": "7f6755ecc3abd5ba27953808c4b3ebef",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 23011175,
+    "md5sum": "a018a22eea2ce245ab36469c9afd6ce4",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 59004168,
+    "md5sum": "89e309703de22033f834090cb607646d",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 27446512,
+    "md5sum": "c874df6bf8af8718f92b2729ba62c066",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 971,
+    "md5sum": "517d223d0f7a969b6c6de4483d161a83",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 6835380,
+    "md5sum": "3ab0de5f12f0bc2402547d79ecb6eec9",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 2883642450,
+    "md5sum": "ba0485837d6dcafd28e021e02b5a3cfd",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Adult_Mouse_Brain_Coronal_Section_2/V1_Adult_Mouse_Brain_Coronal_Section_2_cloupe.cloupe"
+  },
+  "sample_id": "V1_Adult_Mouse_Brain_Coronal_Section_2",
+  "median_genes_per_spot": 4221.0,
+  "number_of_reads": 157247248.0,
+  "valid_barcodes": 0.9727698573141323,
+  "valid_um_is": 0.9994444163499764,
+  "mean_reads_per_spot": 56019.68222301389,
+  "sequencing_saturation": 0.6696642362514506,
+  "q30_bases_in_barcode": 0.9608244592517544,
+  "q30_bases_in_rna_read": 0.9398957306970211,
+  "q30_bases_in_umi": 0.9583797288772102,
+  "reads_mapped_to_genome": 0.9463792968891894,
+  "reads_mapped_confidently_to_genome": 0.9190085666872848,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0718083409637795,
+  "reads_mapped_confidently_to_intronic_regions": 0.0308073817609831,
+  "reads_mapped_confidently_to_exonic_regions": 0.816392843962522,
+  "reads_mapped_confidently_to_transcriptome": 0.7951835316062257,
+  "reads_mapped_antisense_to_gene": 0.0121198814239343,
+  "fraction_reads_in_spots_under_tissue": 0.8141592755850153,
+  "total_genes_detected": 20993,
+  "median_umi_counts_per_spot": 11048.0,
+  "fraction_of_spots_under_tissue": 0.5622996794871795
 }

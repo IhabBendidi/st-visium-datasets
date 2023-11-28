@@ -1,87 +1,120 @@
 {
   "name": "v1-mouse-kidney-1-1-0",
-  "title": "Mouse Kidney Section (Coronal)",
   "homepage": "https://www.10xgenomics.com/resources/datasets/mouse-kidney-section-coronal-1-standard-1-1-0",
+  "visium_dataset_name": "mouse-kidney-section-coronal-1-standard-1-1-0",
+  "title": "Mouse Kidney Section (Coronal)",
   "description": "\n10x Genomics obtained fresh frozen mouse kidney tissue from [BioIVT](https://bioivt.com) Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols - Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression/sample-prep/doc/demonstrated-protocol-visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10 µm thickness from a slice of the coronal plane were placed on Visium Gene Expression slides, then stained following the Methanol Fixation, H&E Staining & Imaging Demonstrated Protocol ([CG000160](/support/spatial-gene-expression/sample-prep/doc/demonstrated-protocol-methanol-fixation-hande-staining-and-imaging-for-visium-spatial-protocols)).\n\n* Sex: Male\n* Age: >8 weeks\n* Strain: C57BL/6\n\nThe H&E image was acquired using a Nikon Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 2 ms\n- Gain: 4.5X\n\nThe Visium Spatial Gene Expression libraries were prepared following the Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide) Rev A).\n\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing depth: 261,122 reads per spot\n* Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), Read 2: 120bp (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-index set T1T2-C3\n* Slide: V19L29-096\n* Area: B1\n\nKey cell metrics were:\n\n- Spots detected under tissue - 1,438\n- Median UMI counts per spot - 38,308\n- Median genes per spot - 6,516\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2020-06-23T00:00:00-07:00",
   "species": "mouse",
   "anatomical_entity": "kidney",
-  "disease_state": null,
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_image.tif",
+  "disease_state": "undefined",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 1438,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_image.tif",
     "md5sum": "c4dc82fdb629938163bf0598eaefa94b",
-    "name": "V1_Mouse_Kidney_image.tif"
+    "size": 383393847
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_metrics_summary.csv",
-    "md5sum": "056f891459ff0ec989ffdfdcd2989879",
-    "name": "V1_Mouse_Kidney_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_spatial.tar.gz",
-    "md5sum": "f753789974a3641987efadced90275bc",
-    "name": "V1_Mouse_Kidney_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_filtered_feature_bc_matrix.h5",
     "md5sum": "49fb992482c5801842a0a1b87ecadc25",
-    "name": "V1_Mouse_Kidney_filtered_feature_bc_matrix.h5"
+    "size": 11944462
   },
-  "visium_dataset_name": "mouse-kidney-section-coronal-1-standard-1-1-0",
-  "published_at": "2020-06-23T00:00:00-07:00",
-  "pipeline_version": "1.1.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": {
-    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_fastqs.tar",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_spatial.tar.gz",
+    "md5sum": "f753789974a3641987efadced90275bc",
+    "size": 7991948
+  },
+  "fastqs": {
+    "bytes": 33670553600,
     "md5sum": "ff308035688a154d5f9b25fa99dc6ff4",
-    "name": "V1_Mouse_Kidney_fastqs.tar"
+    "title": "FASTQs",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_fastqs.tar"
   },
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": {
-    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_possorted_genome_bam.bam",
+  "genome_aligned_bam": {
+    "bytes": 23131459308,
     "md5sum": "d1b3687a5ab31abe3a0fd49e6e3c4430",
-    "name": "V1_Mouse_Kidney_possorted_genome_bam.bam"
+    "title": "Genome-aligned BAM",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_possorted_genome_bam.bam"
   },
-  "outputs_genome_aligned_bam_index": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_possorted_genome_bam.bam.bai",
+  "genome_aligned_bam_index": {
+    "bytes": 4114832,
     "md5sum": "b3ca8c83ec68c7c088aefe9b6233f3ec",
-    "name": "V1_Mouse_Kidney_possorted_genome_bam.bam.bai"
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_possorted_genome_bam.bam.bai"
   },
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_molecule_info.h5",
+  "per_molecule_read_information": {
+    "bytes": 243355899,
     "md5sum": "6088e369a16f8db1e06704e0b11c910e",
-    "name": "V1_Mouse_Kidney_molecule_info.h5"
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_molecule_info.h5"
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_filtered_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_filtered": {
+    "bytes": 33014753,
     "md5sum": "8d2fa5dedafceb0e9970d7a9fbf1fb8f",
-    "name": "V1_Mouse_Kidney_filtered_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_filtered_feature_bc_matrix.tar.gz"
   },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_raw_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 17245007,
     "md5sum": "53d8e2b6932c02a4d60275d26947c8e4",
-    "name": "V1_Mouse_Kidney_raw_feature_bc_matrix.h5"
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_raw_feature_bc_matrix.h5"
   },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_raw_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_raw": {
+    "bytes": 44104536,
     "md5sum": "2e1ad9ba65b7cacd9d131f34d54ef0a3",
-    "name": "V1_Mouse_Kidney_raw_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_raw_feature_bc_matrix.tar.gz"
   },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_analysis.tar.gz",
+  "clustering_analysis": {
+    "bytes": 27341899,
     "md5sum": "956691c225fd76743396b36c106f8bc9",
-    "name": "V1_Mouse_Kidney_analysis.tar.gz"
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_analysis.tar.gz"
   },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_web_summary.html",
+  "summary_csv": {
+    "bytes": 950,
+    "md5sum": "056f891459ff0ec989ffdfdcd2989879",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 7150895,
     "md5sum": "b931bfdd140f659f02ae38a503e65284",
-    "name": "V1_Mouse_Kidney_web_summary.html"
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_web_summary.html"
   },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_cloupe.cloupe",
+  "loupe_browser_file": {
+    "bytes": 238108567,
     "md5sum": "89dce047973da01ad09f9279f91da75e",
-    "name": "V1_Mouse_Kidney_cloupe.cloupe"
-  }
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Mouse_Kidney/V1_Mouse_Kidney_cloupe.cloupe"
+  },
+  "sample_id": "V1_Mouse_Kidney",
+  "median_genes_per_spot": 6516.5,
+  "number_of_reads": 375492997.0,
+  "valid_barcodes": 0.9743582434907568,
+  "valid_um_is": 0.9990270204693058,
+  "mean_reads_per_spot": 261121.69471488177,
+  "sequencing_saturation": 0.7747233441441101,
+  "q30_bases_in_barcode": 0.9675707888838404,
+  "q30_bases_in_rna_read": 0.936986226553122,
+  "q30_bases_in_umi": 0.9670865496359092,
+  "reads_mapped_to_genome": 0.8685410929248303,
+  "reads_mapped_confidently_to_genome": 0.8259740753567236,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0173008606069955,
+  "reads_mapped_confidently_to_intronic_regions": 0.009504004145249,
+  "reads_mapped_confidently_to_exonic_regions": 0.799169210604479,
+  "reads_mapped_confidently_to_transcriptome": 0.7833846046401766,
+  "reads_mapped_antisense_to_gene": 0.0050694500701966,
+  "fraction_reads_in_spots_under_tissue": 0.9475628643509506,
+  "total_genes_detected": 20100,
+  "median_umi_counts_per_spot": 38308.0,
+  "fraction_of_spots_under_tissue": 0.2880608974358974
 }

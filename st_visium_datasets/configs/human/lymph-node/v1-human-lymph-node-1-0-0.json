@@ -1,0 +1,102 @@
+{
+  "name": "v1-human-lymph-node-1-0-0",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-lymph-node-1-standard-1-0-0",
+  "visium_dataset_name": "human-lymph-node-1-standard-1-0-0",
+  "title": "Human Lymph Node",
+  "description": "\n10x Genomics obtained fresh frozen human lymph node from [BioIVT](https://bioivt.com/) Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols - Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10 µm thickness were placed on Visium Gene Expression Slides.\n\nThe H&E image was acquired using a Nikon Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 2 ms\n- Gain: 4.5X\n\nThe Visium Spatial Gene Expression library was prepared following the Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide)).\n\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing Depth: 123,189 reads per spot\n* Sequencing Configuration: 28 x 120 bp\n* Sequencing Coverage: Read 1 - 16 bp (includes 16 bp Spatial Barcode, 12 bp UMI); Read 2 - 120 bp (transcript); i7 sample index - 10 bp; i5 sample index - 10 bp.\n* Dual-Index set: T1T2-E3\n* Slide: V19L01-033\n* Area: A1\n\nKey cell metrics were:\n\n- Spots detected under tissue - 4,039\n- Median UMI counts per spot - 16,853\n- Median genes per spot - 5,347\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
+  "liscense": null,
+  "published_at": "2019-12-12T00:00:00-08:00",
+  "species": "human",
+  "anatomical_entity": "lymph-node",
+  "disease_state": "undefined",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 4039,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_image.tif",
+    "md5sum": "8f118e2c4c984798e2c8fae59fd9593b",
+    "size": 398416526
+  },
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_filtered_feature_bc_matrix.h5",
+    "md5sum": "379a9fadbeeee583d4d50b558b9b08b3",
+    "size": 27416993
+  },
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_spatial.tar.gz",
+    "md5sum": "71ec9342c3080f5902b23ed18f66bf20",
+    "size": 8733712
+  },
+  "per_molecule_read_information": {
+    "bytes": 366225554,
+    "md5sum": "3a3e533eb0dbd45d3153e8a145f02f36",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 76076574,
+    "md5sum": "e83de7299ace75b52b2a461d3108b751",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 31384091,
+    "md5sum": "75feaf3253106a46c89d580e5adfb788",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 86641854,
+    "md5sum": "d2ee464bbb6977e1f9a74c41c92f96e8",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 27423730,
+    "md5sum": "2dbf41656dd942427e171a25746da48b",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 953,
+    "md5sum": "e4702e7128e1c2bed1ead78067c1afe5",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 8650921,
+    "md5sum": "e0ed7d309be194e4a4fd267a906b65a9",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 294961553,
+    "md5sum": "e8c07246a40cab09b7754217fe7edcf1",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Human_Lymph_Node/V1_Human_Lymph_Node_cloupe.cloupe"
+  },
+  "sample_id": "V1_Human_Lymph_Node",
+  "median_genes_per_spot": 5347.0,
+  "number_of_reads": 497558857.0,
+  "valid_barcodes": 0.9668303020480652,
+  "valid_um_is": 0.9981508579597048,
+  "mean_reads_per_spot": 123188.62515474128,
+  "sequencing_saturation": 0.7533472160333439,
+  "q30_bases_in_barcode": 0.96642679627044,
+  "q30_bases_in_rna_read": 0.9312376434503904,
+  "q30_bases_in_umi": 0.9662397136426312,
+  "reads_mapped_to_genome": 0.8785178835636726,
+  "reads_mapped_confidently_to_genome": 0.7857997672022147,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0317772355522554,
+  "reads_mapped_confidently_to_intronic_regions": 0.0352644129496422,
+  "reads_mapped_confidently_to_exonic_regions": 0.7187581187003169,
+  "reads_mapped_confidently_to_transcriptome": 0.6780341466215725,
+  "reads_mapped_antisense_to_gene": 0.0126574975229513,
+  "fraction_reads_in_spots_under_tissue": 0.8950191861489228,
+  "total_genes_detected": 22991,
+  "median_umi_counts_per_spot": 16853.0,
+  "fraction_of_spots_under_tissue": 0.8090945512820513
+}

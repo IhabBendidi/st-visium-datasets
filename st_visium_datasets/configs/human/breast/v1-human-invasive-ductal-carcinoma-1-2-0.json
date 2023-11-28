@@ -1,80 +1,109 @@
 {
   "name": "v1-human-invasive-ductal-carcinoma-1-2-0",
-  "title": "Invasive Ductal Carcinoma Stained With Fluorescent CD3 Antibody",
   "homepage": "https://www.10xgenomics.com/resources/datasets/invasive-ductal-carcinoma-stained-with-fluorescent-cd-3-antibody-1-standard-1-2-0",
+  "visium_dataset_name": "invasive-ductal-carcinoma-stained-with-fluorescent-cd-3-antibody-1-standard-1-2-0",
+  "title": "Invasive Ductal Carcinoma Stained With Fluorescent CD3 Antibody",
   "description": "\nInvasive ductal carcinoma was obtained from BioIVT: ASTERAND (Westbury, NY).\nRaw sequencing data (FASTQ and BAM files) are not included. This dataset is published in _Nature Biotechnology_: [Spatial transcriptomics at subspot resolution with BayesSpace](https://doi.org/10.1038/s41587-021-00935-2).\n\nTumor Phenotype:\n\n- Infiltrating ductal carcinoma of the breast\n- RIN – 9.26\n- Tumor Grade – III\n- AJCC/UICC Stage - T2N0M0\n- AJCC/UICC Stage Group – IIA\n- ER – Positive\n- PR – Negative\n- Hercep Test – 2+\n- Menopausal\n- Age at excision – 50+\n\nSamples were stained with antibodies and DAPI as follows:\n\n- DAPI to stain for nuclei\n- Anti-CD3 (SP7) (Abcam ab16669) with goat-anti rabbit alexa fluor 647\n- Imaged at 20X on Nikon Eclipse Ti2-E, coverslip down\n\nThe Visium Spatial Gene Expression libraries were prepared following the Methanol Fixation, Immunofluorescence Staining & Imaging for Visium Spatial Protocols ([CG000312](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-staining/methanol-fixation-immunofluorescence-staining-and-imaging-for-visium-spatial-protocols) Rev A) and Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide) Rev C).\n\n* Sequencing instrument: Illumina NovaSeq\n* Sequencing depth: 40,795 reads per spot\n* Sequencing configuration: Paired-end (28 X 90)\n* Sequencing coverage: Read 1: 28bp Read 1 (16bp Visium spatial barcode, 12bp UMI), Read 2: 120bp (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set: SI-TT-A12\n* Slide: SI-TT-A12\n* Area: A2\n\nKey metrics were:\n\n* Spots detected under tissue: 4,727\n* Median genes per spot: 2,964\n* Median UMI counts per spot: 6,314\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2021-05-11T00:00:00-07:00",
   "species": "human",
   "anatomical_entity": "breast",
-  "disease_state": "invasive_ductal_carcinoma",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_image.tif",
+  "disease_state": "invasive-ductal-carcinoma",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "DAPI, antibodies",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 4727,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_image.tif",
     "md5sum": "566b6aab58affcab2275547efe6bdf4b",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_image.tif"
+    "size": 4702392512
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_metrics_summary.csv",
-    "md5sum": "87c7296a5a53085df8ad53cd50b14c35",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_spatial.tar.gz",
-    "md5sum": "47f1630406028c35045b528458d0257c",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_filtered_feature_bc_matrix.h5",
     "md5sum": "b5374e45a45d12ba15b9da6441017eb8",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_filtered_feature_bc_matrix.h5"
+    "size": 19608897
   },
-  "visium_dataset_name": "invasive-ductal-carcinoma-stained-with-fluorescent-cd-3-antibody-1-standard-1-2-0",
-  "published_at": "2021-05-11T00:00:00-07:00",
-  "pipeline_version": "1.2.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": null,
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": null,
-  "outputs_genome_aligned_bam_index": null,
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_molecule_info.h5",
-    "md5sum": "c71d1e697165dc5371fc9212669e2495",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_molecule_info.h5"
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_spatial.tar.gz",
+    "md5sum": "47f1630406028c35045b528458d0257c",
+    "size": 8923208
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_filtered_feature_bc_matrix.tar.gz",
-    "md5sum": "b6db722409b3a169dd170da87ebf12d6",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_filtered_feature_bc_matrix.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_raw_feature_bc_matrix.h5",
-    "md5sum": "cc562996f25e3f91f4d7aa8cffbf4194",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_raw_feature_bc_matrix.h5"
-  },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_raw_feature_bc_matrix.tar.gz",
-    "md5sum": "19ca780e30039e8758265eef4dbd7ee8",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_raw_feature_bc_matrix.tar.gz"
-  },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_analysis.tar.gz",
-    "md5sum": "75027daf16f0c313b6bf9624bfe19830",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_analysis.tar.gz"
-  },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_web_summary.html",
-    "md5sum": "258575097c91ebb16bb3503ee03cbdeb",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_web_summary.html"
-  },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_cloupe.cloupe",
-    "md5sum": "b5ce1b483b4583c05c6e0ef0f934c931",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_cloupe.cloupe"
-  },
-  "inputs_manual_alignment_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_alignment_file.json",
+  "manual_alignment_file": {
+    "bytes": 579552,
     "md5sum": "4c6e8754405e4467d7227cf65b999e4b",
-    "name": "V1_Human_Invasive_Ductal_Carcinoma_alignment_file.json"
-  }
+    "title": "Manual alignment file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_alignment_file.json"
+  },
+  "per_molecule_read_information": {
+    "bytes": 153500712,
+    "md5sum": "c71d1e697165dc5371fc9212669e2495",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 51713977,
+    "md5sum": "b6db722409b3a169dd170da87ebf12d6",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 23117367,
+    "md5sum": "cc562996f25e3f91f4d7aa8cffbf4194",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 58057600,
+    "md5sum": "19ca780e30039e8758265eef4dbd7ee8",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 30147697,
+    "md5sum": "75027daf16f0c313b6bf9624bfe19830",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 1015,
+    "md5sum": "87c7296a5a53085df8ad53cd50b14c35",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 8001705,
+    "md5sum": "258575097c91ebb16bb3503ee03cbdeb",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 4075061086,
+    "md5sum": "b5ce1b483b4583c05c6e0ef0f934c931",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/V1_Human_Invasive_Ductal_Carcinoma/V1_Human_Invasive_Ductal_Carcinoma_cloupe.cloupe"
+  },
+  "sample_id": "V1_Human_Invasive_Ductal_Carcinoma",
+  "number_of_reads": 192840200.0,
+  "mean_reads_per_spot": 40795.47281573937,
+  "mean_reads_under_tissue_per_spot": 31771.54770467527,
+  "fraction_of_spots_under_tissue": 0.946915064102564,
+  "median_genes_per_spot": 2964.0,
+  "median_umi_counts_per_spot": 6314.0,
+  "valid_barcodes": 0.972280935199196,
+  "valid_um_is": 0.9987351807351372,
+  "sequencing_saturation": 0.6144835014886865,
+  "q30_bases_in_barcode": 0.9626356470812608,
+  "q30_bases_in_rna_read": 0.9271765554846978,
+  "q30_bases_in_umi": 0.9624302017255942,
+  "reads_mapped_to_genome": 0.857831261324143,
+  "reads_mapped_confidently_to_genome": 0.6567024251167547,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0503418270671779,
+  "reads_mapped_confidently_to_intronic_regions": 0.0814366195430205,
+  "reads_mapped_confidently_to_exonic_regions": 0.5249239785065563,
+  "reads_mapped_confidently_to_transcriptome": 0.5079139152521103,
+  "reads_mapped_antisense_to_gene": 0.0049421386204743,
+  "fraction_reads_in_spots_under_tissue": 0.8393498826501018,
+  "total_genes_detected": 23678
 }

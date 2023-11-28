@@ -1,75 +1,102 @@
 {
   "name": "v1-human-heart-1-1-0",
-  "title": "Human Heart",
   "homepage": "https://www.10xgenomics.com/resources/datasets/human-heart-1-standard-1-1-0",
+  "visium_dataset_name": "human-heart-1-standard-1-1-0",
+  "title": "Human Heart",
   "description": "\n10x Genomics obtained fresh frozen human heart tissue from [BioIVT](https://bioivt.com/) Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols - Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10 µm thickness were placed on Visium Gene Expression Slides.\n\nThe H&E image was acquired using a Nikon Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 10 ms\n- Gain: 4.5X\n\nThe Visium Spatial Gene Expression library was prepared following the Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide \"https\\://www.10xgenomics.com/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide\")).\n\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing Depth: 51,379 reads per spot\n* Sequencing Configuration: 28 x 120 bp\n* Sequencing Coverage: Read 1 - 16 bp (includes 16 bp Spatial Barcode, 12 bp UMI); Read 2 - 120 bp (transcript); i7 sample index - 10 bp; i5 sample index - 10 bp.\n* Dual-Index set: T1T2-G12\n* Slide: V19S16-046\n* Area: C1\n\nKey cell metrics were:\n\n- Spots detected under tissue - 4,247\n- Median UMI counts per spot - 8,735\n- Median genes per spot - 1,957\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2020-06-23T00:00:00-07:00",
   "species": "human",
   "anatomical_entity": "heart",
-  "disease_state": null,
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_image.tif",
+  "disease_state": "undefined",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 4247,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_image.tif",
     "md5sum": "4b1eb71e7def1cbfb2a68e8b44aaf2c0",
-    "name": "V1_Human_Heart_image.tif"
+    "size": 533405030
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_metrics_summary.csv",
-    "md5sum": "5aaea307ff1f35a5230e4ee06aca0e30",
-    "name": "V1_Human_Heart_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_spatial.tar.gz",
-    "md5sum": "5d9c119cee97873d9069dda31c2509d6",
-    "name": "V1_Human_Heart_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_filtered_feature_bc_matrix.h5",
     "md5sum": "9b214cecb14395c8e2ce3263c3e10df9",
-    "name": "V1_Human_Heart_filtered_feature_bc_matrix.h5"
+    "size": 12196059
   },
-  "visium_dataset_name": "human-heart-1-standard-1-1-0",
-  "published_at": "2020-06-23T00:00:00-07:00",
-  "pipeline_version": "1.1.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": null,
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": null,
-  "outputs_genome_aligned_bam_index": null,
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_molecule_info.h5",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_spatial.tar.gz",
+    "md5sum": "5d9c119cee97873d9069dda31c2509d6",
+    "size": 9204127
+  },
+  "per_molecule_read_information": {
+    "bytes": 148947394,
     "md5sum": "da8b1f619b53ec437e7b7d50a41975f3",
-    "name": "V1_Human_Heart_molecule_info.h5"
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_molecule_info.h5"
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_filtered_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_filtered": {
+    "bytes": 32175853,
     "md5sum": "d71008e8cdc64a88865136df120302df",
-    "name": "V1_Human_Heart_filtered_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_filtered_feature_bc_matrix.tar.gz"
   },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_raw_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 14069817,
     "md5sum": "5b0f0c24f9a1567339babefb05918d92",
-    "name": "V1_Human_Heart_raw_feature_bc_matrix.h5"
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_raw_feature_bc_matrix.h5"
   },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_raw_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_raw": {
+    "bytes": 34346448,
     "md5sum": "f5de70e2c2227c4beb92a099b1d489b2",
-    "name": "V1_Human_Heart_raw_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_raw_feature_bc_matrix.tar.gz"
   },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_analysis.tar.gz",
+  "clustering_analysis": {
+    "bytes": 18999583,
     "md5sum": "05b5b6271c19f945bd35eef263248665",
-    "name": "V1_Human_Heart_analysis.tar.gz"
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_analysis.tar.gz"
   },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_web_summary.html",
+  "summary_csv": {
+    "bytes": 945,
+    "md5sum": "5aaea307ff1f35a5230e4ee06aca0e30",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 7647718,
     "md5sum": "c410c3dfc40ef35b40abad91dc09b6b3",
-    "name": "V1_Human_Heart_web_summary.html"
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_web_summary.html"
   },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_cloupe.cloupe",
+  "loupe_browser_file": {
+    "bytes": 379116485,
     "md5sum": "e7122d0fd95957bdb4eab0e8f496da70",
-    "name": "V1_Human_Heart_cloupe.cloupe"
-  }
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.1.0/V1_Human_Heart/V1_Human_Heart_cloupe.cloupe"
+  },
+  "sample_id": "V1_Human_Heart",
+  "median_genes_per_spot": 1957.0,
+  "number_of_reads": 218207916.0,
+  "valid_barcodes": 0.9743157713856724,
+  "valid_um_is": 0.9998356200789708,
+  "mean_reads_per_spot": 51379.30680480339,
+  "sequencing_saturation": 0.7785800721731775,
+  "q30_bases_in_barcode": 0.9526389468585442,
+  "q30_bases_in_rna_read": 0.9206445500399912,
+  "q30_bases_in_umi": 0.9517972633327672,
+  "reads_mapped_to_genome": 0.9714963548801776,
+  "reads_mapped_confidently_to_genome": 0.9463964955331868,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0967754442052414,
+  "reads_mapped_confidently_to_intronic_regions": 0.0123557387349778,
+  "reads_mapped_confidently_to_exonic_regions": 0.8372653125929675,
+  "reads_mapped_confidently_to_transcriptome": 0.8144931323206441,
+  "reads_mapped_antisense_to_gene": 0.0072084735917646,
+  "fraction_reads_in_spots_under_tissue": 0.9744037415096304,
+  "total_genes_detected": 20917,
+  "median_umi_counts_per_spot": 8735.0,
+  "fraction_of_spots_under_tissue": 0.850761217948718
 }

@@ -1,0 +1,132 @@
+{
+  "name": "targeted-visium-human-spinal-cord-neuroscience-1-2-0",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-spinal-cord-targeted-neuroscience-panel-stains-dapi-anti-snap-25-anti-gfap-anti-myelin-cn-pase-1-standard-1-2-0",
+  "visium_dataset_name": "human-spinal-cord-targeted-neuroscience-panel-stains-dapi-anti-snap-25-anti-gfap-anti-myelin-cn-pase-1-standard-1-2-0",
+  "title": "Human Spinal Cord: Targeted, Neuroscience Panel. Stains: DAPI, Anti-SNAP25, Anti-GFAP, Anti-Myelin CNPase",
+  "description": "\n10X Genomics obtained fresh frozen human spinal cord tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained with antibodies and DAPI following Methanol Fixation, Immunofluorescence Staining & Imaging for Visium Spatial Protocols (CG000312).\n\nSamples were stained with antibodies and DAPI as follows:\n\n- 1:100 dilution of Alexa Fluor 488 anti-SNAP-25 Antibody (P/N 836313, BioLegend)\n- 1:200 dilution of Anti-GFAP Antibody, Cy3 Conjugate (P/N MAB3402C3, Millipore Sigma)\n- 1:100 dilution of Alexa Fluor 647 anti-Myelin CNPase Antibody (P/N 836407, BioLegend)\n- DAPI\n\nThe slide was coverslipped and imaged at 10X on a Nikon Eclipse Ti2E microscope with the following settings:\n\n- DAPI: Exposure 200 milli sec, Gain 7.6x\n- FITC: Exposure 200 milli sec, Gain 11.4x\n- TRITC: Exposure 300 milli sec, Gain 6.2x\n- Cy5: Exposure 400 milli sec, Gain 11.4x\n\nThe cloupe and TIFF files available for download here contain multiple channels or pages respectively. The following table describes the filters and stains corresponding to the channels/pages.\n\n| Channel | Filter | Stain                   |\n| ------- | ------ | ----------------------- |\n| 1       | DAPI   | DAPI                    |\n| 2       | FITC   | SNAP-25                 |\n| 3       | TRITC  | Fiducial Frame and GFAP |\n| 4       | Cy5    | Myelin CNPase           |\n\nThe Visium Gene Expression library (T1T2-A2) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Targeted libraries were prepared following the Targeted Gene Expression - Spatial User Guide (CG000377) using the Human Neuroscience Panel (PN-1000278). Targeted sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHWJ5DSXY (lane 1)\n- Sequencing depth: 10,761 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A15-100\n- Area: C1\n\nKey targeted metrics were:\n\n- Spots detected: 2,812\n- Median targeted genes per spot: 215\n- Median targeted UMI counts per spot: 611\n- Reads mapped confidently to the targeted transcriptome: 89.2%\n- Total targeted genes detected: 1,141\n\nTo maintain donor anonymity, sequence data for this sample is not currently available\n",
+  "liscense": null,
+  "published_at": "2020-10-27T00:00:00-07:00",
+  "species": "human",
+  "anatomical_entity": "spinal-cord",
+  "disease_state": "undefined",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "DAPI, antibodies",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 2812,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_image.tif",
+    "md5sum": "c9e63a0275055fba6423e98c221f3cfc",
+    "size": 158344966
+  },
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_filtered_feature_bc_matrix.h5",
+    "md5sum": "be89c0686ec147bcf08228f973a5784e",
+    "size": 779524
+  },
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_spatial.tar.gz",
+    "md5sum": "9cea0a0061da10957dbd12f810b5e3af",
+    "size": 5763797
+  },
+  "manual_alignment_file": {
+    "bytes": 553854,
+    "md5sum": "9770b27ef272572ba9af129fa30587b9",
+    "title": "Manual alignment file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_alignment_file.json"
+  },
+  "target_panel": {
+    "bytes": 10369128,
+    "md5sum": "2af45a42ee9c7a38174968e540eea589",
+    "title": "Target Panel",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_target_panel.csv"
+  },
+  "per_molecule_read_information": {
+    "bytes": 12972398,
+    "md5sum": "0dcacefd01cee2ecb73a888f5d5def00",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 2082266,
+    "md5sum": "ed355290692a5664e561c686a522fda7",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 2759633,
+    "md5sum": "fe49b4ddc59c047be72d54dc50b32d23",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 5290608,
+    "md5sum": "d598b058375e8f5ddf735fd0f465ea04",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 2330445,
+    "md5sum": "e47f2e364b05bcdc97c22eb649f1d4cf",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 1821,
+    "md5sum": "d904c9f50f4de047ef62666b9b1b1066",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 6021083,
+    "md5sum": "bda546bff0e6318d4dafa9d52f57deee",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 127353911,
+    "md5sum": "da39075a6631733bbd28fa00891ba14d",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_SpinalCord_Neuroscience/Targeted_Visium_Human_SpinalCord_Neuroscience_cloupe.cloupe"
+  },
+  "sample_id": "Targeted_Visium_Human_SpinalCord_Neuroscience",
+  "number_of_reads": 30259792.0,
+  "mean_reads_per_spot": 10760.950213371269,
+  "mean_reads_under_tissue_per_spot": 9002.068990042675,
+  "fraction_of_spots_under_tissue": 0.563301282051282,
+  "median_genes_per_spot": 331.0,
+  "median_umi_counts_per_spot": 750.5,
+  "valid_barcodes": 0.9620175842583452,
+  "valid_um_is": 0.9998709178172804,
+  "q30_bases_in_barcode": 0.9358570672013072,
+  "q30_bases_in_rna_read": 0.9001564631852852,
+  "q30_bases_in_umi": 0.927985198996752,
+  "reads_mapped_to_genome": 0.9819237025819608,
+  "reads_mapped_confidently_to_genome": 0.971643294838246,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0029295310423812,
+  "reads_mapped_confidently_to_intronic_regions": 0.005629516554509,
+  "reads_mapped_confidently_to_exonic_regions": 0.9630842472413558,
+  "reads_mapped_confidently_to_transcriptome": 0.9284279614347648,
+  "reads_mapped_antisense_to_gene": 0.0166420178962234,
+  "fraction_reads_in_spots_under_tissue": 0.8695185303229729,
+  "total_genes_detected": 15996,
+  "targeted_sequencing_saturation": 0.9181149696984032,
+  "mean_targeted_reads_per_spot": 9599.75853485064,
+  "median_targeted_genes_per_spot": 215.0,
+  "median_targeted_umi_counts_per_spot": 611.0,
+  "total_targeted_genes_detected": 1141,
+  "reads_mapped_confidently_to_the_targeted_transcriptome": 0.8920920870837447,
+  "reads_mapped_confidently_to_the_non_targeted_transcriptome": 0.0363358743510199,
+  "number_of_targeted_genes": 1186,
+  "number_of_non_targeted_genes": 35415,
+  "number_of_targeted_genes_>=_10_um_is": 1075,
+  "number_of_non_targeted_genes_>=_10_um_is": 7000,
+  "number_of_enriched_targeted_genes": 1071,
+  "number_of_enriched_non_targeted_genes": 105,
+  "mean_reads_per_umi_per_targeted_gene": 18.69081107515212,
+  "mean_reads_per_umi_per_non_targeted_gene": 1.432803756714677,
+  "fraction_of_targeted_genes_enriched": 0.9962790697674418,
+  "high_fraction_of_non_targeted_genes_enriched": 0.015,
+  "analyzed_reads": 1.0
+}

@@ -1,84 +1,115 @@
 {
   "name": "visium-human-breast-cancer-1-3-0",
-  "title": "Human Breast Cancer: Visium Fresh Frozen, Whole Transcriptome",
   "homepage": "https://www.10xgenomics.com/resources/datasets/human-breast-cancer-visium-fresh-frozen-whole-transcriptome-1-standard",
+  "visium_dataset_name": "human-breast-cancer-visium-fresh-frozen-whole-transcriptome-1-standard",
+  "title": "Human Breast Cancer: Visium Fresh Frozen, Whole Transcriptome",
   "description": "10x Genomics obtained fresh frozen Invasive Ductal Carcinoma breast tissue from [BioIVT](https://bioivt.com/ \"https\\://bioivt.com/\"). The tissue was embedded and cryosectioned as described in Visium Spatial Protocols - Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide) Rev A). Tissue sections of 10 µm thickness were placed on Visium Gene Expression Slides.\n\nThe tissue was AJCC/UICC Stage T2N0M0, ER positive, PR negative, Hercep Test 2+.\n\n* Block ID: 1168993F\n* Tumor Grade III\n* Sex: Female (Age 60s)\n* RIN Score: 9.26\n\nThe slide was cover-slipped and the H&E image acquired using a Nikon Ti2-E microscope with the following settings:\n\n* Color camera\n* 20X objective\n* Numerical Aperture: 0.75\n* Exposure: 10 ms\n* Gain: 4.5X\n\nThe library was prepared following the Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide) Rev A).\n\n* Sequencing instrument: Illumina NovaSeq 600, flow cell H2LJMDSXY (lane 1-3)\n* Sequencing Depth: 47,223 reads per spot\n* Sequencing Configuration: 28 x 120 bp\n* Sequencing Coverage: Read 1 - 16 bp (includes 16 bp Spatial Barcode, 12 bp UMI); Read 2 - 120 bp (transcript); i7 sample index - 10 bp; i5 sample index - 10 bp.\n* Dual-Index set: T1T2-E5\n* Slide: V19B23-014\n* Capture Area: A1\n\nKey cell metrics were:\n\n* Spots detected under tissue - 4,898\n* Median UMI counts per spot - 9,720\n* Median genes per spot - 3,654\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2022-07-01T16:48:00.495000Z",
   "species": "human",
   "anatomical_entity": "breast",
-  "disease_state": "breast_cancer",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_image.tif",
+  "disease_state": "breast-cancer",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism, Imaged Specimen",
+  "donor_count": null,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 4898,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_image.tif",
     "md5sum": "95a13f73c154fff5104e699dc20b89ea",
-    "name": "Visium_Human_Breast_Cancer_image.tif"
+    "size": 3461492844
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_metrics_summary.csv",
-    "md5sum": "7d4b09ddf2473be2fbdfdd5a6b5608a1",
-    "name": "Visium_Human_Breast_Cancer_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_spatial.tar.gz",
-    "md5sum": "211b7cfb829f49769178a75c988bcc7a",
-    "name": "Visium_Human_Breast_Cancer_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_filtered_feature_bc_matrix.h5",
     "md5sum": "cba8d9f6e27bf79cf033a0f7b37b0f7d",
-    "name": "Visium_Human_Breast_Cancer_filtered_feature_bc_matrix.h5"
+    "size": 23942611
   },
-  "visium_dataset_name": "human-breast-cancer-visium-fresh-frozen-whole-transcriptome-1-standard",
-  "published_at": "2022-07-01T16:48:00.495Z",
-  "pipeline_version": "1.3.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": null,
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": null,
-  "outputs_genome_aligned_bam_index": null,
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_molecule_info.h5",
-    "md5sum": "3a8dd09c3602e615eca8b4c33ae62f65",
-    "name": "Visium_Human_Breast_Cancer_molecule_info.h5"
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_spatial.tar.gz",
+    "md5sum": "211b7cfb829f49769178a75c988bcc7a",
+    "size": 5262726
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_filtered_feature_bc_matrix.tar.gz",
-    "md5sum": "2b0c01be06bd204c2ad32131a8815716",
-    "name": "Visium_Human_Breast_Cancer_filtered_feature_bc_matrix.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_raw_feature_bc_matrix.h5",
-    "md5sum": "475fb1ea3312c1ec0c1680a480fa17ce",
-    "name": "Visium_Human_Breast_Cancer_raw_feature_bc_matrix.h5"
-  },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_raw_feature_bc_matrix.tar.gz",
-    "md5sum": "13ee23e2a477b643a30d6cb4260e6477",
-    "name": "Visium_Human_Breast_Cancer_raw_feature_bc_matrix.tar.gz"
-  },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_analysis.tar.gz",
-    "md5sum": "792bb34abc79fd2b8fa7e924a4be378d",
-    "name": "Visium_Human_Breast_Cancer_analysis.tar.gz"
-  },
-  "outputs_spatial_enrichment_moran_s_i": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_spatial_enrichment.csv",
-    "md5sum": "5853427d228487422e86c7351b253c5c",
-    "name": "Visium_Human_Breast_Cancer_spatial_enrichment.csv"
-  },
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_web_summary.html",
-    "md5sum": "4b2a3d0a8bc6afb39d483f0facadf182",
-    "name": "Visium_Human_Breast_Cancer_web_summary.html"
-  },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_cloupe.cloupe",
-    "md5sum": "79c3e0f928ec40089c47abc8929ded73",
-    "name": "Visium_Human_Breast_Cancer_cloupe.cloupe"
-  },
-  "inputs_manual_alignment_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_alignment_file.json",
+  "manual_alignment_file": {
+    "bytes": 983276,
     "md5sum": "ec2d8e193bed37fc813999e7307b0c0f",
-    "name": "Visium_Human_Breast_Cancer_alignment_file.json"
-  }
+    "title": "Manual alignment file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_alignment_file.json"
+  },
+  "per_molecule_read_information": {
+    "bytes": 209761388,
+    "md5sum": "3a8dd09c3602e615eca8b4c33ae62f65",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 63406771,
+    "md5sum": "2b0c01be06bd204c2ad32131a8815716",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 25826279,
+    "md5sum": "475fb1ea3312c1ec0c1680a480fa17ce",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 65874865,
+    "md5sum": "13ee23e2a477b643a30d6cb4260e6477",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 31881602,
+    "md5sum": "792bb34abc79fd2b8fa7e924a4be378d",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_analysis.tar.gz"
+  },
+  "spatial_enrichment_moran_s_i": {
+    "bytes": 2588119,
+    "md5sum": "5853427d228487422e86c7351b253c5c",
+    "title": "Spatial Enrichment (Moran's I)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_spatial_enrichment.csv"
+  },
+  "summary_csv": {
+    "bytes": 1005,
+    "md5sum": "7d4b09ddf2473be2fbdfdd5a6b5608a1",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 6433298,
+    "md5sum": "4b2a3d0a8bc6afb39d483f0facadf182",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 1914325785,
+    "md5sum": "79c3e0f928ec40089c47abc8929ded73",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Human_Breast_Cancer/Visium_Human_Breast_Cancer_cloupe.cloupe"
+  },
+  "sample_id": "Visium_Human_Breast_Cancer",
+  "number_of_reads": 231300686,
+  "mean_reads_per_spot": 47223.49652919559,
+  "mean_reads_under_tissue_per_spot": 45585.4299714169,
+  "fraction_of_spots_under_tissue": 0.9811698717948718,
+  "median_genes_per_spot": 3654.0,
+  "median_umi_counts_per_spot": 9720.5,
+  "valid_barcodes": 0.9735172251067168,
+  "valid_um_is": 0.9973232375108476,
+  "sequencing_saturation": 0.7210802362976978,
+  "q30_bases_in_barcode": 0.9595361593503434,
+  "q30_bases_in_rna_read": 0.9341576787645196,
+  "q30_bases_in_umi": 0.9517303127232382,
+  "reads_mapped_to_genome": 0.9081213879322432,
+  "reads_mapped_confidently_to_genome": 0.8793342532499018,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0201993953446381,
+  "reads_mapped_confidently_to_intronic_regions": 0.0230474067854688,
+  "reads_mapped_confidently_to_exonic_regions": 0.8360874511197948,
+  "reads_mapped_confidently_to_transcriptome": 0.8110910099073376,
+  "reads_mapped_antisense_to_gene": 0.0107079405722125,
+  "fraction_reads_in_spots_under_tissue": 0.991828852687758,
+  "total_genes_detected": 24387
 }

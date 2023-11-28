@@ -1,106 +1,143 @@
 {
   "name": "cytassist-ffpe-sagittal-mouse-brain-2-1-0",
-  "title": "Preservation Method Comparison on Visium CytAssist: FFPE Mouse Brain (Sagittal), 11 mm Capture Area",
   "homepage": "https://www.10xgenomics.com/resources/datasets/preservation-method-comparison-on-visium-cytassist-ffpe-mouse-brain-sagittal-11-mm-capture-area-2-standard",
+  "visium_dataset_name": "preservation-method-comparison-on-visium-cytassist-ffpe-mouse-brain-sagittal-11-mm-capture-area-2-standard",
+  "title": "Preservation Method Comparison on Visium CytAssist: FFPE Mouse Brain (Sagittal), 11 mm Capture Area",
   "description": "C57/Bl6 mice were obtained from [Charles River Laboratory](https://www.criver.com/). Tissues were harvested from euthanized mice and formalin fixed and paraffin embedded. The tissue was sectioned as described in the Visium CytAssist Spatial Gene Expression for FFPE – Tissue Preparation Guide Demonstrated Protocol ([CG000518](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-prep/visium-cyt-assist-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). A tissue section of 5 µm was placed on a standard glass slide, and H&E-stained following deparaffinization and rehydration. The section was coverslipped with 85% glycerol, imaged, decoverslipped, followed by destaining and decrosslinking as described in Visium CytAssist Spatial Gene Expression for FFPE – Deparaffinization, H&E Staining, Imaging & Decrosslinking Demonstrated Protocol ([CG000520](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-staining/visium-cyt-assist-spatial-gene-expression-for-ffpe-deparaffinization-hand-e-staining-imaging-and-decrosslinking)). The glass slide with tissue section was processed with the Visium CytAssist instrument following the Visium CytAssist Spatial Gene Expression Reagent Kit User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)). \n\nThe H&E image was acquired using Olympus VS200 Slide Scanning Microscope with these settings:\n\n- Olympus Objective magnification: 20x UPLXAPO Objective\n- Numerical Aperture: 0.8\n- ScopeLED light source: Xcite Novum\n- Camera: VS-264C\n- Exposure: 500 µs\n\nLibraries were prepared following the Visium CytAssist Spatial Gene Expression Reagent Kit User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)).\n\n- Sequencing instrument: Illumina NovaSeq 6, flow cell HLYH7DSX5 (lane 1-4)  \n- Sequencing configuration and coverage: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 90bp read 2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n- Dual Index set: SI-TS-H12\n- Slide: V52B25-081\n- Capture Area: B\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2023-06-08T19:33:11.195000Z",
   "species": "mouse",
   "anatomical_entity": "brain",
   "disease_state": "healthy",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_image.tif",
+  "preservation_method": "FFPE",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism, Imaged Specimen",
+  "donor_count": null,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 8470,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_image.tif",
     "md5sum": "c0a8b290cd71e99f15ab8af0e3f747fd",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_image.tif"
+    "size": 24056873
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_metrics_summary.csv",
-    "md5sum": "a2fee7abeaf1582d2959990e157ea86e",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_spatial.tar.gz",
-    "md5sum": "89ac6092a2aa7d0c3ed35c44bac6921e",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_filtered_feature_bc_matrix.h5",
     "md5sum": "53581ff9b57f4bb9136d6f14db080e59",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_filtered_feature_bc_matrix.h5"
+    "size": 49368890
   },
-  "visium_dataset_name": "preservation-method-comparison-on-visium-cytassist-ffpe-mouse-brain-sagittal-11-mm-capture-area-2-standard",
-  "published_at": "2023-06-08T19:33:11.195Z",
-  "pipeline_version": "2.1.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": {
-    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_fastqs.tar",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_spatial.tar.gz",
+    "md5sum": "89ac6092a2aa7d0c3ed35c44bac6921e",
+    "size": 35584792
+  },
+  "fastqs": {
+    "bytes": 62998302720,
     "md5sum": "071d4c5a8fa0e27968e2438cb374df58",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_fastqs.tar"
+    "title": "FASTQs",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_fastqs.tar"
   },
-  "inputs_probe_set": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_probe_set.csv",
+  "probe_set": {
+    "bytes": 2311348,
     "md5sum": "df6ad1d3e39c9406f5a728705d7aad3d",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_probe_set.csv"
+    "title": "Probe set",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_probe_set.csv"
   },
-  "outputs_genome_aligned_bam": {
-    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_possorted_genome_bam.bam",
-    "md5sum": "335364e2a0beb85e72c0902d24fe7fa7",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_possorted_genome_bam.bam"
-  },
-  "outputs_genome_aligned_bam_index": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_possorted_genome_bam.bam.bai",
-    "md5sum": "a4b82b1767b76ef368646c12fa8943f7",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_possorted_genome_bam.bam.bai"
-  },
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_molecule_info.h5",
-    "md5sum": "a1542dba72cf7695551b2d6bdbd5efbb",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_molecule_info.h5"
-  },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_filtered_feature_bc_matrix.tar.gz",
-    "md5sum": "893dffce24e000e4824d622869a35004",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_filtered_feature_bc_matrix.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_raw_feature_bc_matrix.h5",
-    "md5sum": "8fef40c8cab9a5704daebdc9159b1819",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_raw_feature_bc_matrix.h5"
-  },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_raw_feature_bc_matrix.tar.gz",
-    "md5sum": "7d565c935c7fd1991eae07cd43c480ad",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_raw_feature_bc_matrix.tar.gz"
-  },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_analysis.tar.gz",
-    "md5sum": "0666dd8238eaaa8674787462cc9929fb",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_analysis.tar.gz"
-  },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_web_summary.html",
-    "md5sum": "68e9bcf4083410b4304320c04056001e",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_web_summary.html"
-  },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_cloupe.cloupe",
-    "md5sum": "23d4fac5e8089871c7fa2eac2a7017e4",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_cloupe.cloupe"
-  },
-  "inputs_microscope_image_without_fiducial_frame_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_tissue_image.tif",
+  "microscope_image_without_fiducial_frame_tiff": {
+    "bytes": 6649426708,
     "md5sum": "d9dc092cddd3a8123815e1b51c7a67dd",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_tissue_image.tif"
+    "title": "Microscope image without fiducial frame (TIFF)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_tissue_image.tif"
   },
-  "outputs_probe_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_raw_probe_bc_matrix.h5",
+  "genome_aligned_bam": {
+    "bytes": 36172632577,
+    "md5sum": "335364e2a0beb85e72c0902d24fe7fa7",
+    "title": "Genome-aligned BAM",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_possorted_genome_bam.bam"
+  },
+  "genome_aligned_bam_index": {
+    "bytes": 3013320,
+    "md5sum": "a4b82b1767b76ef368646c12fa8943f7",
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_possorted_genome_bam.bam.bai"
+  },
+  "per_molecule_read_information": {
+    "bytes": 623618992,
+    "md5sum": "a1542dba72cf7695551b2d6bdbd5efbb",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 147423651,
+    "md5sum": "893dffce24e000e4824d622869a35004",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 62679209,
+    "md5sum": "8fef40c8cab9a5704daebdc9159b1819",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 171561104,
+    "md5sum": "7d565c935c7fd1991eae07cd43c480ad",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_raw_feature_bc_matrix.tar.gz"
+  },
+  "probe_barcode_matrix_raw": {
+    "bytes": 59839258,
     "md5sum": "b2e2ef70ddba1d391cd1c3e257420fd6",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_raw_probe_bc_matrix.h5"
+    "title": "Probe / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_raw_probe_bc_matrix.h5"
   },
-  "outputs_spot_deconvolution_outputs": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_deconvolution.tar.gz",
+  "clustering_analysis": {
+    "bytes": 38820906,
+    "md5sum": "0666dd8238eaaa8674787462cc9929fb",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 830,
+    "md5sum": "a2fee7abeaf1582d2959990e157ea86e",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 8997008,
+    "md5sum": "68e9bcf4083410b4304320c04056001e",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 3266837270,
+    "md5sum": "23d4fac5e8089871c7fa2eac2a7017e4",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_cloupe.cloupe"
+  },
+  "spot_deconvolution_outputs": {
+    "bytes": 13515851,
     "md5sum": "8efc7f6ad8e58e7a246ee868a833ad19",
-    "name": "CytAssist_FFPE_Sagittal_Mouse_Brain_deconvolution.tar.gz"
-  }
+    "title": "Spot deconvolution outputs",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Sagittal_Mouse_Brain/CytAssist_FFPE_Sagittal_Mouse_Brain_deconvolution.tar.gz"
+  },
+  "sample_id": "CytAssist_FFPE_Sagittal_Mouse_Brain",
+  "number_of_reads": 724705313,
+  "mean_reads_per_spot": 85561.43010625738,
+  "mean_reads_under_tissue_per_spot": 82806.16883116883,
+  "fraction_of_spots_under_tissue": 0.5908203125,
+  "valid_barcodes": 0.9897034589561508,
+  "valid_um_is": 0.999914915761077,
+  "sequencing_saturation": 0.8329906011906125,
+  "q30_bases_in_barcode": 0.9535914694657252,
+  "q30_bases_in_probe_read": 0.9338449187249592,
+  "q30_bases_in_umi": 0.9487119399700902,
+  "reads_mapped_to_probe_set": 0.9822440021217286,
+  "reads_mapped_confidently_to_probe_set": 0.9798549455370144,
+  "fraction_reads_in_spots_under_tissue": 0.9779588915377344,
+  "median_genes_per_spot": 4814.5,
+  "median_umi_counts_per_spot": 11129.0,
+  "genes_detected": 19364,
+  "reads_mapped_confidently_to_the_filtered_probe_set": 0.9218485072704304,
+  "number_of_genes": 19465,
+  "number_of_genes_>=_10_um_is": 19288
 }

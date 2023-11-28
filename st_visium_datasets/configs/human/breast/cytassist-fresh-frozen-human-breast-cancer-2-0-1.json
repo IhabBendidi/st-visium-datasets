@@ -1,96 +1,131 @@
 {
   "name": "cytassist-fresh-frozen-human-breast-cancer-2-0-1",
-  "title": "Fresh Frozen Visium on CytAssist: Human Breast Cancer, Probe-Based Whole Transcriptome Profiling",
   "homepage": "https://www.10xgenomics.com/resources/datasets/fresh-frozen-visium-on-cytassist-human-breast-cancer-probe-based-whole-transcriptome-profiling-2-standard",
+  "visium_dataset_name": "fresh-frozen-visium-on-cytassist-human-breast-cancer-probe-based-whole-transcriptome-profiling-2-standard",
+  "title": "Fresh Frozen Visium on CytAssist: Human Breast Cancer, Probe-Based Whole Transcriptome Profiling",
   "description": "10x Genomics obtained fresh frozen (FF) Human Breast Cancer tissue blocks from [Avaden](http://www.avadenbio.com/) Biosciences. The tissue was sectioned as described in Visium CytAssist Spatial Gene Expression for Fresh Frozen–Tissue Preparation Guide Demonstrated Protocol ([CG000636](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-prep/visium-cytassist-spatial-gene-expression-for-fresh-frozen-–-tissue-preparation-guide)). Tissue section of 10 µm was placed on a standard glass slide, and H&E-stained following methanol fixation. Sections were coverslipped with 85% glycerol, imaged, decoverslipped, followed by destaining as described in Visium CytAssist Spatial Gene Expression for Fresh Frozen – Fixation, H&E Staining, Imaging & Destaining Demonstrated Protocol ([CG000614](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-staining/visium-cytassist-spatial-gene-expression-for-fresh-frozen-–-methanol-fixation-h-e-staining-imaging-destaining)). The glass slide with tissue section was processed via Visium CytAssist instrument to transfer analytes to a Visium CytAssist Spatial Gene Expression slide with 6.5 mm Capture Area following the Visium CytAssist Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)). RIN Score: 4.4\n\nThe H&E image was acquired using Olympus VS200 Slide Scanning Microscope with these settings:\n\n* Olympus Objective magnification: 20x UPLXAPO Objective\n* Numerical Aperture: 0.8\n* ScopeLED light source: Xcite Novum\n* Camera: VS-264C\n* Exposure: 500 µs\n\nLibraries were prepared following the Visium CytAssist Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)).\n\n* Sequencing instrument: Illumina NovaSeq 6000, flow cell HLYH7DSX5 (lane 1-4)   \n* Sequencing depth: 75,314,377 reads / 15.1% saturation\n* Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 90bp read 2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-Index set: SI-TS-C9\n* Slide: V42U20-030\n* Area: A1\n\nKey cell metrics were:\n\n* Spots detected under tissue: 1,657\n* Median UMI counts per spot: 27,128\n* Median genes per spot: 6,782",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2023-01-06T21:01:29.906000Z",
   "species": "human",
   "anatomical_entity": "breast",
-  "disease_state": "breast_cancer",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_image.tif",
+  "disease_state": "breast-cancer",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism, Imaged Specimen",
+  "donor_count": null,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 1657,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_image.tif",
     "md5sum": "a0bc338a4c6389904f977d98e227e809",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_image.tif"
+    "size": 21608946
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_metrics_summary.csv",
-    "md5sum": "e9a56e984751a9163018f2111c4e31bd",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_spatial.tar.gz",
-    "md5sum": "68239b455af01fb99afacab814b432bc",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_filtered_feature_bc_matrix.h5",
     "md5sum": "5c6f495d69a566185ccf5a1e5edf76fb",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_filtered_feature_bc_matrix.h5"
+    "size": 11427200
   },
-  "visium_dataset_name": "fresh-frozen-visium-on-cytassist-human-breast-cancer-probe-based-whole-transcriptome-profiling-2-standard",
-  "published_at": "2023-01-06T21:01:29.906Z",
-  "pipeline_version": "2.0.1",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_fastqs.tar",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_spatial.tar.gz",
+    "md5sum": "68239b455af01fb99afacab814b432bc",
+    "size": 29057618
+  },
+  "fastqs": {
+    "bytes": 6259927040,
     "md5sum": "1448d8c7b3e9c54992a826da45f5eb44",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_fastqs.tar"
+    "title": "FASTQs",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_fastqs.tar"
   },
-  "inputs_probe_set": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_probe_set.csv",
+  "probe_set": {
+    "bytes": 6134282,
     "md5sum": "a74f1583689de3c9f95164b2fc090194",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_probe_set.csv"
+    "title": "Probe Set",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_probe_set.csv"
   },
-  "outputs_genome_aligned_bam": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_possorted_genome_bam.bam",
-    "md5sum": "8927a54485cca0e4eded926df9e3dfd0",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_possorted_genome_bam.bam"
-  },
-  "outputs_genome_aligned_bam_index": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_possorted_genome_bam.bam.bai",
-    "md5sum": "1293220d825b6fc317cd68a488ed578a",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_possorted_genome_bam.bam.bai"
-  },
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_molecule_info.h5",
-    "md5sum": "e2f2119b72aca64ed4329946551643ca",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_molecule_info.h5"
-  },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_filtered_feature_bc_matrix.tar.gz",
-    "md5sum": "c94e614563ebeecba655158c32405da2",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_filtered_feature_bc_matrix.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_raw_feature_bc_matrix.h5",
-    "md5sum": "2f52bf85875fbf01506026310a84fb5e",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_raw_feature_bc_matrix.h5"
-  },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_raw_feature_bc_matrix.tar.gz",
-    "md5sum": "4e37710326576f822a3990cba54b5f2a",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_raw_feature_bc_matrix.tar.gz"
-  },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_analysis.tar.gz",
-    "md5sum": "8c03133d9d68e581a029d00ba63c2cb5",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_analysis.tar.gz"
-  },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_web_summary.html",
-    "md5sum": "61453ed6fa53fd4e110ae2efb4e07247",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_web_summary.html"
-  },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_cloupe.cloupe",
-    "md5sum": "9aa1d8763fd1851bb7a2924276d94aa8",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_cloupe.cloupe"
-  },
-  "inputs_microscope_image_without_fiducial_frame_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_tissue_image.tif",
+  "microscope_image_without_fiducial_frame_tiff": {
+    "bytes": 2375591453,
     "md5sum": "21c055fb9290ae4b0c5c663ae8487a81",
-    "name": "CytAssist_Fresh_Frozen_Human_Breast_Cancer_tissue_image.tif"
-  }
+    "title": "Microscope image without fiducial frame (TIFF)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_tissue_image.tif"
+  },
+  "genome_aligned_bam": {
+    "bytes": 3718358693,
+    "md5sum": "8927a54485cca0e4eded926df9e3dfd0",
+    "title": "Genome-aligned BAM",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_possorted_genome_bam.bam"
+  },
+  "genome_aligned_bam_index": {
+    "bytes": 2186088,
+    "md5sum": "1293220d825b6fc317cd68a488ed578a",
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_possorted_genome_bam.bam.bai"
+  },
+  "per_molecule_read_information": {
+    "bytes": 253071832,
+    "md5sum": "e2f2119b72aca64ed4329946551643ca",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 34514806,
+    "md5sum": "c94e614563ebeecba655158c32405da2",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 16583995,
+    "md5sum": "2f52bf85875fbf01506026310a84fb5e",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 43804197,
+    "md5sum": "4e37710326576f822a3990cba54b5f2a",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 24570340,
+    "md5sum": "8c03133d9d68e581a029d00ba63c2cb5",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 845,
+    "md5sum": "e9a56e984751a9163018f2111c4e31bd",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 5023781,
+    "md5sum": "61453ed6fa53fd4e110ae2efb4e07247",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 1107810440,
+    "md5sum": "9aa1d8763fd1851bb7a2924276d94aa8",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_Fresh_Frozen_Human_Breast_Cancer/CytAssist_Fresh_Frozen_Human_Breast_Cancer_cloupe.cloupe"
+  },
+  "sample_id": "CytAssist_Fresh_Frozen_Human_Breast_Cancer",
+  "number_of_reads": 75833503,
+  "mean_reads_per_spot": 45765.541943270975,
+  "mean_reads_under_tissue_per_spot": 43052.3808086904,
+  "fraction_of_spots_under_tissue": 0.3319310897435897,
+  "valid_barcodes": 0.9927561700532284,
+  "valid_um_is": 0.9997169720618077,
+  "sequencing_saturation": 0.2808827186884269,
+  "q30_bases_in_barcode": 0.9612397524095576,
+  "q30_bases_in_probe_read": 0.9613439817336996,
+  "q30_bases_in_umi": 0.9549126050245652,
+  "reads_mapped_to_probe_set": 0.9860897629903764,
+  "reads_mapped_confidently_to_probe_set": 0.9838957195475988,
+  "fraction_reads_in_spots_under_tissue": 0.9503952264748822,
+  "median_genes_per_spot": 6782.0,
+  "median_umi_counts_per_spot": 27128.0,
+  "genes_detected": 16387,
+  "reads_mapped_confidently_to_the_filtered_probe_set": 0.9600977288362902,
+  "number_of_genes": 18085,
+  "number_of_genes_>=_10_um_is": 14521
 }

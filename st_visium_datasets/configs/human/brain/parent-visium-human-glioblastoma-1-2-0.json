@@ -1,75 +1,103 @@
 {
   "name": "parent-visium-human-glioblastoma-1-2-0",
-  "title": "Human Glioblastoma: Whole Transcriptome Analysis",
   "homepage": "https://www.10xgenomics.com/resources/datasets/human-glioblastoma-whole-transcriptome-analysis-1-standard-1-2-0",
+  "visium_dataset_name": "human-glioblastoma-whole-transcriptome-analysis-1-standard-1-2-0",
+  "title": "Human Glioblastoma: Whole Transcriptome Analysis",
   "description": "\n10X Genomics obtained fresh frozen human glioblastoma multiforme tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained following Methanol Fixation, H&E Staining & Imaging for Visium Spatial Protocols (CG000160).\n\nThe H&E image was acquired using a Nikon Eclipse Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 20 ms\n\nThe Visium Gene Expression library (T1T2-E4) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHYWHDSXY (lanes 1-4)\n- Sequencing depth: 136,128 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A13-167\n- Area: C1\n\nKey metrics were:\n\n- Spots detected: 3,468\n- Median genes per spot: 4,326\n- Median UMI counts per spot: 11,596\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2020-10-27T00:00:00-07:00",
   "species": "human",
   "anatomical_entity": "brain",
-  "disease_state": "glioblastoma_multiforme",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_image.tif",
+  "disease_state": "glioblastoma-multiforme",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 3468,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_image.tif",
     "md5sum": "b2b4b2dd6a09a6137c9bb548b3851722",
-    "name": "Parent_Visium_Human_Glioblastoma_image.tif"
+    "size": 533412808
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_metrics_summary.csv",
-    "md5sum": "abf5be732abc0f1a1475c31503d80018",
-    "name": "Parent_Visium_Human_Glioblastoma_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_spatial.tar.gz",
-    "md5sum": "435b7fbccec8fbcb0fa58fa705435eac",
-    "name": "Parent_Visium_Human_Glioblastoma_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_filtered_feature_bc_matrix.h5",
     "md5sum": "991a267a51849ec165c5a040f5866074",
-    "name": "Parent_Visium_Human_Glioblastoma_filtered_feature_bc_matrix.h5"
+    "size": 20429768
   },
-  "visium_dataset_name": "human-glioblastoma-whole-transcriptome-analysis-1-standard-1-2-0",
-  "published_at": "2020-10-27T00:00:00-07:00",
-  "pipeline_version": "1.2.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": null,
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": null,
-  "outputs_genome_aligned_bam_index": null,
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_molecule_info.h5",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_spatial.tar.gz",
+    "md5sum": "435b7fbccec8fbcb0fa58fa705435eac",
+    "size": 9134896
+  },
+  "per_molecule_read_information": {
+    "bytes": 213804226,
     "md5sum": "b35b1133f467b8536b45b4fb8dc4c852",
-    "name": "Parent_Visium_Human_Glioblastoma_molecule_info.h5"
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_molecule_info.h5"
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_filtered_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_filtered": {
+    "bytes": 54134945,
     "md5sum": "c9f7da66085c4b5bb83cb1b1ab7f67a0",
-    "name": "Parent_Visium_Human_Glioblastoma_filtered_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_filtered_feature_bc_matrix.tar.gz"
   },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_raw_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 26263310,
     "md5sum": "1c8ec6d080e41e2de09b2264475c43e4",
-    "name": "Parent_Visium_Human_Glioblastoma_raw_feature_bc_matrix.h5"
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_raw_feature_bc_matrix.h5"
   },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_raw_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_raw": {
+    "bytes": 66791851,
     "md5sum": "a1f3e4d88edb72bcaa590991979184f2",
-    "name": "Parent_Visium_Human_Glioblastoma_raw_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_raw_feature_bc_matrix.tar.gz"
   },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_analysis.tar.gz",
+  "clustering_analysis": {
+    "bytes": 32938292,
     "md5sum": "26d2689ec85cc851faec4bd522fe0487",
-    "name": "Parent_Visium_Human_Glioblastoma_analysis.tar.gz"
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_analysis.tar.gz"
   },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_web_summary.html",
+  "summary_csv": {
+    "bytes": 1018,
+    "md5sum": "abf5be732abc0f1a1475c31503d80018",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 7806947,
     "md5sum": "df2623b7090dd8adcf40deb1e6a013e8",
-    "name": "Parent_Visium_Human_Glioblastoma_web_summary.html"
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_web_summary.html"
   },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_cloupe.cloupe",
+  "loupe_browser_file": {
+    "bytes": 390834525,
     "md5sum": "6fe676a0f264d9ae915de450732d9459",
-    "name": "Parent_Visium_Human_Glioblastoma_cloupe.cloupe"
-  }
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_Glioblastoma/Parent_Visium_Human_Glioblastoma_cloupe.cloupe"
+  },
+  "sample_id": "Parent_Visium_Human_Glioblastoma",
+  "number_of_reads": 472092025.0,
+  "mean_reads_per_spot": 136128.03489042676,
+  "mean_reads_under_tissue_per_spot": 114855.82814302192,
+  "fraction_of_spots_under_tissue": 0.6947115384615384,
+  "median_genes_per_spot": 4326.0,
+  "median_umi_counts_per_spot": 11595.5,
+  "valid_barcodes": 0.9625276830295958,
+  "valid_um_is": 0.999085286390932,
+  "sequencing_saturation": 0.8732588224590592,
+  "q30_bases_in_barcode": 0.9690102626246836,
+  "q30_bases_in_rna_read": 0.9519807633866436,
+  "q30_bases_in_umi": 0.9677047637846083,
+  "reads_mapped_to_genome": 0.9679575502255096,
+  "reads_mapped_confidently_to_genome": 0.9454585236850802,
+  "reads_mapped_confidently_to_intergenic_regions": 0.024885093112937,
+  "reads_mapped_confidently_to_intronic_regions": 0.0310994471893483,
+  "reads_mapped_confidently_to_exonic_regions": 0.8894739833827949,
+  "reads_mapped_confidently_to_transcriptome": 0.8539719750614301,
+  "reads_mapped_antisense_to_gene": 0.0234800916198489,
+  "fraction_reads_in_spots_under_tissue": 0.8812923314711231,
+  "total_genes_detected": 25281
 }

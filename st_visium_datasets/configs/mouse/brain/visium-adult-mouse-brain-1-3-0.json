@@ -1,91 +1,127 @@
 {
   "name": "visium-adult-mouse-brain-1-3-0",
-  "title": "Mouse Brain Section (Coronal)",
   "homepage": "https://www.10xgenomics.com/resources/datasets/mouse-brain-section-coronal-1-standard",
+  "visium_dataset_name": "mouse-brain-section-coronal-1-standard",
+  "title": "Mouse Brain Section (Coronal)",
   "description": "10x Genomics obtained fresh frozen mouse brain tissue from [BioIVT](https://bioivt.com) Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols - Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10 µm thickness from a slice of the coronal plane were placed on Visium Gene Expression slides, then stained following the Methanol Fixation, H&E Staining & Imaging Demonstrated Protocol ([CG000160](/support/spatial-gene-expression/sample-prep/doc/demonstrated-protocol-methanol-fixation-hande-staining-and-imaging-for-visium-spatial-protocols)).\n\n* Sex: Male\n* Age: >8 weeks\n* Strain: C57BL/6\n* Section Orientation: Coronal\n\nThe slide was coverslipped and the H&E image acquired using a Nikon Ti2-E microscope with the following settings:\n\n* Color camera\n* 10X objective\n* Numerical Aperture: 0.45\n* Exposure: 2 ms\n* Gain: 4.5X\n\nNote the brightness of the captured image was enhanced in Photoshop by setting the white level to 131.\n\nThe Visium Spatial Gene Expression libraries were prepared following the Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide) Rev A).\n\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing depth: 115,569 reads per spot\n* Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), Read 2: 120bp (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n* Dual-index set T1T2-E3\n* Slide: V19L01-041\n* Area: C1\n\nKey metrics were:\n\n* Spots detected under tissue: 2,702\n* Median genes per spot: 6,018\n* Median UMI counts per spot: 28,941\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2022-03-29T16:45:08.812000Z",
   "species": "mouse",
   "anatomical_entity": "brain",
   "disease_state": "healthy",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_image.tif",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism, Imaged Specimen",
+  "donor_count": null,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 2702,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_image.tif",
     "md5sum": "65615da37ec48006f4020f828238f2e3",
-    "name": "Visium_Adult_Mouse_Brain_image.tif"
+    "size": 398267856
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_metrics_summary.csv",
-    "md5sum": "5810907351948f88f6d8b955ae08a9f9",
-    "name": "Visium_Adult_Mouse_Brain_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_spatial.tar.gz",
-    "md5sum": "7a17fe9044fb17f1d02ecb8e0ba3bf0a",
-    "name": "Visium_Adult_Mouse_Brain_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_filtered_feature_bc_matrix.h5",
     "md5sum": "3a62503655eeb4f612350508d544de64",
-    "name": "Visium_Adult_Mouse_Brain_filtered_feature_bc_matrix.h5"
+    "size": 21107817
   },
-  "visium_dataset_name": "mouse-brain-section-coronal-1-standard",
-  "published_at": "2022-03-29T16:45:08.812Z",
-  "pipeline_version": "1.3.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": {
-    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_fastqs.tar",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_spatial.tar.gz",
+    "md5sum": "7a17fe9044fb17f1d02ecb8e0ba3bf0a",
+    "size": 10460398
+  },
+  "fastqs": {
+    "bytes": 28987985920,
     "md5sum": "1ee3579388fedc1cbe86836ea471a545",
-    "name": "Visium_Adult_Mouse_Brain_fastqs.tar"
+    "title": "FASTQs",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_fastqs.tar"
   },
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_possorted_genome_bam.bam",
+  "genome_aligned_bam": {
+    "bytes": 19306445823,
     "md5sum": "f50249dda24ca685848fd3a2290f01e3",
-    "name": "Visium_Adult_Mouse_Brain_possorted_genome_bam.bam"
+    "title": "Genome-aligned BAM",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_possorted_genome_bam.bam"
   },
-  "outputs_genome_aligned_bam_index": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_possorted_genome_bam.bam.bai",
+  "genome_aligned_bam_index": {
+    "bytes": 4045864,
     "md5sum": "eb39c0060f589c2109af6ea9f515a3ae",
-    "name": "Visium_Adult_Mouse_Brain_possorted_genome_bam.bam.bai"
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_possorted_genome_bam.bam.bai"
   },
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_molecule_info.h5",
+  "per_molecule_read_information": {
+    "bytes": 351813760,
     "md5sum": "25e0d005a6d3ca643e5772e5c3bf0de0",
-    "name": "Visium_Adult_Mouse_Brain_molecule_info.h5"
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_molecule_info.h5"
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_filtered_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_filtered": {
+    "bytes": 58401379,
     "md5sum": "de6987778d68e801efa51d4b16395cc0",
-    "name": "Visium_Adult_Mouse_Brain_filtered_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_filtered_feature_bc_matrix.tar.gz"
   },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_raw_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 27569982,
     "md5sum": "4cef273454ed58fea6a23c4e26eacc37",
-    "name": "Visium_Adult_Mouse_Brain_raw_feature_bc_matrix.h5"
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_raw_feature_bc_matrix.h5"
   },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_raw_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_raw": {
+    "bytes": 72691727,
     "md5sum": "8f94fd4dfe4041281acd4e7ebd0e9e8a",
-    "name": "Visium_Adult_Mouse_Brain_raw_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_raw_feature_bc_matrix.tar.gz"
   },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_analysis.tar.gz",
+  "clustering_analysis": {
+    "bytes": 29721292,
     "md5sum": "06a4907bcda039f6443d3bd63980f7a8",
-    "name": "Visium_Adult_Mouse_Brain_analysis.tar.gz"
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_analysis.tar.gz"
   },
-  "outputs_spatial_enrichment_moran_s_i": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_spatial_enrichment.csv",
+  "spatial_enrichment_moran_s_i": {
+    "bytes": 2331503,
     "md5sum": "aacd1617b4e38056b48f31947f80e7e3",
-    "name": "Visium_Adult_Mouse_Brain_spatial_enrichment.csv"
+    "title": "Spatial Enrichment (Moran's I)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_spatial_enrichment.csv"
   },
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_web_summary.html",
+  "summary_csv": {
+    "bytes": 1005,
+    "md5sum": "5810907351948f88f6d8b955ae08a9f9",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 8184025,
     "md5sum": "d304d0404638917905d9d0cdb77ce37e",
-    "name": "Visium_Adult_Mouse_Brain_web_summary.html"
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_web_summary.html"
   },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_cloupe.cloupe",
+  "loupe_browser_file": {
+    "bytes": 348597765,
     "md5sum": "96229b14b92c712a0e7574b69afa04c4",
-    "name": "Visium_Adult_Mouse_Brain_cloupe.cloupe"
-  }
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.3.0/Visium_Adult_Mouse_Brain/Visium_Adult_Mouse_Brain_cloupe.cloupe"
+  },
+  "sample_id": "Visium_Adult_Mouse_Brain",
+  "number_of_reads": 312266904,
+  "mean_reads_per_spot": 115568.80236861584,
+  "mean_reads_under_tissue_per_spot": 103089.04108068098,
+  "fraction_of_spots_under_tissue": 0.5412660256410257,
+  "median_genes_per_spot": 6017.5,
+  "median_umi_counts_per_spot": 28941.0,
+  "valid_barcodes": 0.9742247228351808,
+  "valid_um_is": 0.9995790011739444,
+  "sequencing_saturation": 0.6134865532377689,
+  "q30_bases_in_barcode": 0.9715982480929768,
+  "q30_bases_in_rna_read": 0.9454981324935446,
+  "q30_bases_in_umi": 0.9711534389391244,
+  "reads_mapped_to_genome": 0.949357463767598,
+  "reads_mapped_confidently_to_genome": 0.917976366781412,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0756918639062691,
+  "reads_mapped_confidently_to_intronic_regions": 0.0249516548189813,
+  "reads_mapped_confidently_to_exonic_regions": 0.8173328480561616,
+  "reads_mapped_confidently_to_transcriptome": 0.796010380273921,
+  "reads_mapped_antisense_to_gene": 0.0106907999446524,
+  "fraction_reads_in_spots_under_tissue": 0.9229189910039256,
+  "total_genes_detected": 21949
 }

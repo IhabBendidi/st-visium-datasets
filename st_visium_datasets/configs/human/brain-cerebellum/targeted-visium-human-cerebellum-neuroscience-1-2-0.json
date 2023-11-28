@@ -1,0 +1,132 @@
+{
+  "name": "targeted-visium-human-cerebellum-neuroscience-1-2-0",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-cerebellum-targeted-neuroscience-panel-1-standard-1-2-0",
+  "visium_dataset_name": "human-cerebellum-targeted-neuroscience-panel-1-standard-1-2-0",
+  "title": "Human Cerebellum: Targeted, Neuroscience Panel",
+  "description": "\n10X Genomics obtained fresh frozen human cerebellum tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained following Methanol Fixation, H&E Staining & Imaging for Visium Spatial Protocols (CG000160).\n\nThe H&E image was acquired using a Nikon Eclipse Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 1 ms\n\nThe Visium Gene Expression library (T1T2-E2) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Targeted libraries were prepared following the Targeted Gene Expression - Spatial User Guide (CG000377) using the Human Neuroscience Panel (PN-1000278). Targeted sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HTFNTDRXX (lane 2)\n- Sequencing depth: 10,200 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10M18-056\n- Area: C1\n\nKey targeted metrics were:\n\n- Spots detected: 4,992\n- Median targeted genes per spot: 288\n- Median targeted UMI counts per spot: 625\n- Reads mapped confidently to the targeted transcriptome: 83.1%\n- Total targeted genes detected: 1,142\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
+  "liscense": null,
+  "published_at": "2020-10-27T00:00:00-07:00",
+  "species": "human",
+  "anatomical_entity": "brain-cerebellum",
+  "disease_state": "undefined",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 4992,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_image.tif",
+    "md5sum": "79b7d65366da98451e82fab46c90fdb1",
+    "size": 533601661
+  },
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_filtered_feature_bc_matrix.h5",
+    "md5sum": "eae6b7c27655fd048dd2cc03f11f8491",
+    "size": 1571822
+  },
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_spatial.tar.gz",
+    "md5sum": "b8c41d7fa235c9f8789e8356e589eb38",
+    "size": 10919825
+  },
+  "manual_alignment_file": {
+    "bytes": 576772,
+    "md5sum": "0c2667572532f4f1ab5dbb96ce9c6d53",
+    "title": "Manual alignment file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_alignment_file.json"
+  },
+  "target_panel": {
+    "bytes": 10369128,
+    "md5sum": "2af45a42ee9c7a38174968e540eea589",
+    "title": "Target Panel",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_target_panel.csv"
+  },
+  "per_molecule_read_information": {
+    "bytes": 26683076,
+    "md5sum": "b4c73fa646f6e5ba7fb735a6871fddb5",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 4693463,
+    "md5sum": "3c747b0283d90cfcf9c844eecf9a50bc",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 5128573,
+    "md5sum": "4a056401a1b429a02ed4b26397e75323",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 11326606,
+    "md5sum": "84d535b9bb53abc9eabcd79542c855fb",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 2829962,
+    "md5sum": "2ece7e31a4e48c5908ed8c3876016d97",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 1805,
+    "md5sum": "d224584196e21a6e6ce12906885ef10b",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 9001549,
+    "md5sum": "6f353137188d0b3fc6740b2c2c6d5c68",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 298352939,
+    "md5sum": "114ca30e46c99285458aa84b0561a0e3",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Cerebellum_Neuroscience/Targeted_Visium_Human_Cerebellum_Neuroscience_cloupe.cloupe"
+  },
+  "sample_id": "Targeted_Visium_Human_Cerebellum_Neuroscience",
+  "number_of_reads": 50920066.0,
+  "mean_reads_per_spot": 10200.33373397436,
+  "mean_reads_under_tissue_per_spot": 9793.768229166666,
+  "fraction_of_spots_under_tissue": 1.0,
+  "median_genes_per_spot": 543.0,
+  "median_umi_counts_per_spot": 1071.0,
+  "valid_barcodes": 0.9601419409000768,
+  "valid_um_is": 0.999793971201844,
+  "q30_bases_in_barcode": 0.969887484986416,
+  "q30_bases_in_rna_read": 0.9445912883649096,
+  "q30_bases_in_umi": 0.9664464898959192,
+  "reads_mapped_to_genome": 0.9813443289723938,
+  "reads_mapped_confidently_to_genome": 0.9705723672864052,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0067591428495006,
+  "reads_mapped_confidently_to_intronic_regions": 0.0019658065643512,
+  "reads_mapped_confidently_to_exonic_regions": 0.9618474178725536,
+  "reads_mapped_confidently_to_transcriptome": 0.918718546044304,
+  "reads_mapped_antisense_to_gene": 0.0286317578614293,
+  "fraction_reads_in_spots_under_tissue": 1.0,
+  "total_genes_detected": 17355,
+  "targeted_sequencing_saturation": 0.9150340635373672,
+  "mean_targeted_reads_per_spot": 8477.307892628205,
+  "median_targeted_genes_per_spot": 288.0,
+  "median_targeted_umi_counts_per_spot": 625.0,
+  "total_targeted_genes_detected": 1142,
+  "reads_mapped_confidently_to_the_targeted_transcriptome": 0.8310814247569906,
+  "reads_mapped_confidently_to_the_non_targeted_transcriptome": 0.0876371212873133,
+  "number_of_targeted_genes": 1186,
+  "number_of_non_targeted_genes": 35415,
+  "number_of_targeted_genes_>=_10_um_is": 1071,
+  "number_of_non_targeted_genes_>=_10_um_is": 10249,
+  "number_of_enriched_targeted_genes": 1059,
+  "number_of_enriched_non_targeted_genes": 112,
+  "mean_reads_per_umi_per_targeted_gene": 14.016631241311238,
+  "mean_reads_per_umi_per_non_targeted_gene": 1.4957269925419752,
+  "fraction_of_targeted_genes_enriched": 0.988795518207283,
+  "high_fraction_of_non_targeted_genes_enriched": 0.0109278954044297,
+  "analyzed_reads": 1.0
+}

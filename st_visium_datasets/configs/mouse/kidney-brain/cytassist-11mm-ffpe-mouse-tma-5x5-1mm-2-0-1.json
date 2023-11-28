@@ -1,0 +1,137 @@
+{
+  "name": "cytassist-11mm-ffpe-mouse-tma-5x5-1mm-2-0-1",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/mouse-tissue-microarray-in-5x5-layout-with-1-mm-edge-to-edge-spacing-ffpe-2-standard",
+  "visium_dataset_name": "mouse-tissue-microarray-in-5x5-layout-with-1-mm-edge-to-edge-spacing-ffpe-2-standard",
+  "title": "Mouse Tissue Microarray in 5x5 Layout with 1 mm Edge to Edge Spacing (FFPE)",
+  "description": "\n10x Genomics obtained FFPE mouse kidney and brain tissue microarray (TMA) sections from [Acepix Biosciences](https://acepixbio.com/). The TMA cores of 1 mm diameter were laid out in a 5x5 grid layout with 1 mm edge to edge spacing. Acepix Biosciences sectioned the TMA block according to their standard protocol. Tissue section of 5 µm was placed on a standard glass slide, and H&E-stained following deparaffinization. Sections were coverslipped with 85% glycerol, imaged using a color camera, decoverslipped, followed by destaining & decrosslinking Demonstrated Protocol ([CG000520](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-staining/visium-cyt-assist-spatial-gene-expression-for-ffpe-deparaffinization-hand-e-staining-imaging-and-decrosslinking)). The glass slide with tissue section was processed via Visium CytAssist instrument to transfer analytes to a Visium CytAssist Spatial Gene Expression slide with 11 mm Capture Area. The probe extension and library construction steps follow the standard Visium for FFPE workflow outside of the instrument.\n\nThe TMA layout on the Visium CytAssist Spatial Gene Expression slide with 11 mm Capture Area.\n\n![](https://cdn.10xgenomics.com/image/upload/v1677872229/software-support/Spatial-GEX/SR-v2.0/TMA-tutorial/FOR-TMA-5x5-1mm-layout_3x.png)\n\n<div>\nThe H&E image was acquired using Olympus VS200 Slide Scanning Microscope with these settings:\n\n* Olympus objective magnification: 20x UPLXAPO Objective\n* Numerical Aperture: 0.8\n* Camera: iDS (VS-264C) color camera with 3.45 um pixel size \n\nLibraries were prepared following the Visium CytAssist Spatial Gene Expression Reagent Kits for FFPE User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)).\n\n* Sequencing instrument: Illumina Novaseq\n* Sequencing depth: 635,086,808 reads / 62.8% sequencing saturation\n* Sequencing configuration: 28 bp read 1 (16 bp Visium spatial barcode, 12 bp UMI), 90 bp read 2 (transcript), 10 bp i7 sample barcode and 10 bp i5 sample barcode\n* Dual-Index set: SI-TS-H2\n* Slide: V52Y10-307\n* Area: B1\n\nKey metrics were:\n\n* Spots detected under tissue: 2,805\n* Median genes per spot: 9,207\n* Median UMI counts per spot: 66,412\n</div>",
+  "liscense": null,
+  "published_at": "2023-02-21T21:45:21.520000Z",
+  "species": "mouse",
+  "anatomical_entity": "kidney-brain",
+  "disease_state": "healthy",
+  "preservation_method": "FFPE",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": null,
+  "development_stage": "Adult",
+  "number_of_spots_under_tissue": 2805,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_image.tif",
+    "md5sum": "ed2974bac6796326b71a4096164214ef",
+    "size": 21124236
+  },
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_filtered_feature_bc_matrix.h5",
+    "md5sum": "4b5f4880bd68d1bb64df547315f17424",
+    "size": 27827259
+  },
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_spatial.tar.gz",
+    "md5sum": "632145cf81a81a09b24901c9f9b8441f",
+    "size": 32442834
+  },
+  "fastqs": {
+    "bytes": 50403246080,
+    "md5sum": "c9c541a53157dfc12a525a1d3fca14e5",
+    "title": "FASTQs",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_fastqs.tar"
+  },
+  "manual_alignment_file": {
+    "bytes": 363,
+    "md5sum": "53dc711d34f6626327c561a85a4e83b6",
+    "title": "Manual alignment file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_alignment_file.json"
+  },
+  "probe_set": {
+    "bytes": 2311348,
+    "md5sum": "df6ad1d3e39c9406f5a728705d7aad3d",
+    "title": "Probe Set",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_probe_set.csv"
+  },
+  "microscope_image_without_fiducial_frame_tiff": {
+    "bytes": 3416379835,
+    "md5sum": "9653f13a0a740db2d98520a25a437924",
+    "title": "Microscope image without fiducial frame (TIFF)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_tissue_image.tif"
+  },
+  "genome_aligned_bam": {
+    "bytes": 32081685183,
+    "md5sum": "fa02b5277aa9dd45126954986ef33a93",
+    "title": "Genome-aligned BAM",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_possorted_genome_bam.bam"
+  },
+  "genome_aligned_bam_index": {
+    "bytes": 2419016,
+    "md5sum": "03f120d0efc15f3748c3309c9abc0f8e",
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_possorted_genome_bam.bam.bai"
+  },
+  "per_molecule_read_information": {
+    "bytes": 988997796,
+    "md5sum": "141a11f98542e978e63e452d899ca17b",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 87301395,
+    "md5sum": "990d3e79f5f89151d57482e73d8373b3",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 51341227,
+    "md5sum": "65b0e738844efa7d9a6d1a4acfd15c78",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 137183591,
+    "md5sum": "f0253fc1a571a9fb999002b1c698783f",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 36388915,
+    "md5sum": "fc2a7b9566d37fbf262fcd9e06fad94b",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 840,
+    "md5sum": "9db142f98d7a079ee370b4fea798bbbd",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 6405376,
+    "md5sum": "a8be49af2f68a7c0779b2dbc4b537ec5",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 1716078747,
+    "md5sum": "96dc51224c8df6ad21b3c452d80cb0b5",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm/CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm_cloupe.cloupe"
+  },
+  "sample_id": "CytAssist_11mm_FFPE_Mouse_TMA_5x5_1mm",
+  "number_of_reads": 635086808,
+  "mean_reads_per_spot": 226412.40926916225,
+  "mean_reads_under_tissue_per_spot": 197446.9080213904,
+  "fraction_of_spots_under_tissue": 0.1956612723214285,
+  "valid_barcodes": 0.9904623211760998,
+  "valid_um_is": 0.9999783116263375,
+  "sequencing_saturation": 0.6279591671528493,
+  "q30_bases_in_barcode": 0.9477173611551712,
+  "q30_bases_in_probe_read": 0.9587878827149416,
+  "q30_bases_in_umi": 0.9272092674996832,
+  "reads_mapped_to_probe_set": 0.9894358977143168,
+  "reads_mapped_confidently_to_probe_set": 0.9868766633237956,
+  "fraction_reads_in_spots_under_tissue": 0.8803371109917769,
+  "median_genes_per_spot": 9207.0,
+  "median_umi_counts_per_spot": 66412.0,
+  "genes_detected": 19399,
+  "reads_mapped_confidently_to_the_filtered_probe_set": 0.926376652119028,
+  "number_of_genes": 19465,
+  "number_of_genes_>=_10_um_is": 19311
+}

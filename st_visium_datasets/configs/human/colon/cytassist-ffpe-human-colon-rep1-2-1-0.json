@@ -1,111 +1,151 @@
 {
   "name": "cytassist-ffpe-human-colon-rep1-2-1-0",
-  "title": "Visium CytAssist Gene Expression Libraries of Post-Xenium Human Colon Cancer (FFPE)",
   "homepage": "https://www.10xgenomics.com/resources/datasets/visium-cytassist-gene-expression-libraries-of-post-xenium-human-colon-cancer-ffpe-using-the-human-whole-transcriptome-probe-set-2-standard",
+  "visium_dataset_name": "visium-cytassist-gene-expression-libraries-of-post-xenium-human-colon-cancer-ffpe-using-the-human-whole-transcriptome-probe-set-2-standard",
+  "title": "Visium CytAssist Gene Expression Libraries of Post-Xenium Human Colon Cancer (FFPE)",
   "description": "### Overview\n\nThis dataset is provided as part of the [Technical Note: Post-Xenium In Situ Applications: Immunofluorescence, H&E, and Visium CytAssist Spatial Gene Expression (CG000709)](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/assay/post-xenium-in-situ-applications-immunofluorescence-h-e-and-visium-cytassist-spatial-gene-expression). Post-Xenium samples were compared to controls (samples not processed through the Xenium workflow) using 5 µm (FFPE) serial sections. \n\n*Click the links on the left panel to toggle the files available for download at the bottom of the page.*\n\n### Biomaterials\n\nHuman colon cancer samples (FFPE; adenocarcinoma stage IIA) were obtained from Avaden Biosciences.\n\n### Tissue preparation\n\nPrior to the Visium CytAssist Spatial Gene Expression workflow, all sections were placed on Xenium slides. Two replicates were processed through the Xenium workflow prior to the Visium CytAssist workflow (post-Xenium). The other two replicates were treated as controls, not processed with the Xenium workflow. \n\nFFPE human colon sections used for post-Xenium applications were generated using a custom gene panel designed for human colon gene expression profiling. For more details on methods, see page 13 of the [Technical Note](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/assay/post-xenium-in-situ-applications-immunofluorescence-h-e-and-visium-cytassist-spatial-gene-expression).\n\n### Library preparation & sequencing\n\nConsult the [Technical Note](https://www.10xgenomics.com/support/in-situ-gene-expression/documentation/steps/assay/post-xenium-in-situ-applications-immunofluorescence-h-e-and-visium-cytassist-spatial-gene-expression) for details.\n\n* Probe set: [Human Whole Transcriptome](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/probe-sets/visium-human-transcriptome-probe-set-v2-0)\n* Slides: 11 mm, V53M06-039 (Replicate 1), V53M06-063 (Replicate 2)\n* Areas: A1 (control), B1 (post-Xenium)\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing configuration: 28 bp read 1 (16 bp Visium spatial barcode, 12 bp UMI), 90 bp read 2 (probe insert), 10 bp i7 sample index and 10 bp i5 sample index\n\n### Analysis\n\nThe resulting FASTQ files and image data were analyzed with Space Ranger v2.1 to produce the output files below. \n\n### How to view data\n\nInput and output files are listed below. To get started, [download Loupe Browser](/support/software/loupe-browser/downloads) to explore the Loupe Browser file, or read more about the other [Space Ranger outputs](/support/software/space-ranger/analysis/outputs/output-overview).\n\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2023-10-05T16:56:29.662000Z",
   "species": "human",
   "anatomical_entity": "colon",
-  "disease_state": "cancer;_adenocarcinoma_stage_iia",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_image.tif",
+  "disease_state": "cancer-adenocarcinoma-stage-iia",
+  "preservation_method": "FFPE",
+  "staining_method": null,
+  "biomaterial_type": "Specimen from Organism, Imaged Specimen",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 6487,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_image.tif",
     "md5sum": "6a703fd6a7537e3a1714c67b2b21969d",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_image.tif"
+    "size": 26023827
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_metrics_summary.csv",
-    "md5sum": "e824bb8cea6527fcbee734865d0ff3b1",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_spatial.tar.gz",
-    "md5sum": "f83e3f2af494a910274044d71111ac1f",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_filtered_feature_bc_matrix.h5",
     "md5sum": "2f11b3e72cec40d62deaf8bd2dea07f6",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_filtered_feature_bc_matrix.h5"
+    "size": 25785718
   },
-  "visium_dataset_name": "visium-cytassist-gene-expression-libraries-of-post-xenium-human-colon-cancer-ffpe-using-the-human-whole-transcriptome-probe-set-2-standard",
-  "published_at": "2023-10-05T16:56:29.662Z",
-  "pipeline_version": "2.1.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_fastqs.tar",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_spatial.tar.gz",
+    "md5sum": "f83e3f2af494a910274044d71111ac1f",
+    "size": 38353384
+  },
+  "fastqs": {
+    "bytes": 11486474240,
     "md5sum": "7f44f72066e307b7c2a1533ee0f8cd37",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_fastqs.tar"
+    "title": "FASTQs",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_fastqs.tar"
   },
-  "inputs_probe_set": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_probe_set.csv",
-    "md5sum": "a74f1583689de3c9f95164b2fc090194",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_probe_set.csv"
-  },
-  "outputs_genome_aligned_bam": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_possorted_genome_bam.bam",
-    "md5sum": "08ceeae7c660fd65d6c20c8713f3b1a0",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_possorted_genome_bam.bam"
-  },
-  "outputs_genome_aligned_bam_index": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_possorted_genome_bam.bam.bai",
-    "md5sum": "58e877988ad1c64f1aafc1056f9e06d6",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_possorted_genome_bam.bam.bai"
-  },
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_molecule_info.h5",
-    "md5sum": "83c8111733235d4e0b58095c46e8c2aa",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_molecule_info.h5"
-  },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_filtered_feature_bc_matrix.tar.gz",
-    "md5sum": "fc6989a7e0e6f07587d707866d198f51",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_filtered_feature_bc_matrix.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_raw_feature_bc_matrix.h5",
-    "md5sum": "3d4abb4820f482591c8be3012274e866",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_raw_feature_bc_matrix.h5"
-  },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_raw_feature_bc_matrix.tar.gz",
-    "md5sum": "e5cec907b9f39c0be21f06a593aad7a7",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_raw_feature_bc_matrix.tar.gz"
-  },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_analysis.tar.gz",
-    "md5sum": "6b32f14975a748a78674482f11e0e6cb",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_analysis.tar.gz"
-  },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_web_summary.html",
-    "md5sum": "6797d8b4068f9e5e5772149a568fd2ec",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_web_summary.html"
-  },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_cloupe.cloupe",
-    "md5sum": "ca9ffdf8b702b79ed30748dec5a919d9",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_cloupe.cloupe"
-  },
-  "inputs_manual_alignment_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_alignment_file.json",
+  "manual_alignment_file": {
+    "bytes": 1524101,
     "md5sum": "7e0ff8d2300311cf977909b81d8ca880",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_alignment_file.json"
+    "title": "Manual alignment file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_alignment_file.json"
   },
-  "inputs_microscope_image_without_fiducial_btf": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_tissue_image.btf",
+  "probe_set": {
+    "bytes": 6134282,
+    "md5sum": "a74f1583689de3c9f95164b2fc090194",
+    "title": "Probe set",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_probe_set.csv"
+  },
+  "microscope_image_without_fiducial_btf": {
+    "bytes": 3362147081,
     "md5sum": "73c7e5742e73f0bde1575215f69f1397",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_tissue_image.btf"
+    "title": "Microscope image without fiducial (BTF)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_tissue_image.btf"
   },
-  "outputs_probe_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_raw_probe_bc_matrix.h5",
+  "genome_aligned_bam": {
+    "bytes": 7523264187,
+    "md5sum": "08ceeae7c660fd65d6c20c8713f3b1a0",
+    "title": "Genome-aligned BAM",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_possorted_genome_bam.bam"
+  },
+  "genome_aligned_bam_index": {
+    "bytes": 2395976,
+    "md5sum": "58e877988ad1c64f1aafc1056f9e06d6",
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_possorted_genome_bam.bam.bai"
+  },
+  "per_molecule_read_information": {
+    "bytes": 360627942,
+    "md5sum": "83c8111733235d4e0b58095c46e8c2aa",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 74915880,
+    "md5sum": "fc6989a7e0e6f07587d707866d198f51",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 37678716,
+    "md5sum": "3d4abb4820f482591c8be3012274e866",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 97179333,
+    "md5sum": "e5cec907b9f39c0be21f06a593aad7a7",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_raw_feature_bc_matrix.tar.gz"
+  },
+  "probe_barcode_matrix_raw": {
+    "bytes": 49902020,
     "md5sum": "bede3b6302ae801836dc9c3ca0b37c7f",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_raw_probe_bc_matrix.h5"
+    "title": "Probe / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_raw_probe_bc_matrix.h5"
   },
-  "outputs_spot_deconvolution_outputs": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_deconvolution.tar.gz",
+  "clustering_analysis": {
+    "bytes": 36558016,
+    "md5sum": "6b32f14975a748a78674482f11e0e6cb",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 941,
+    "md5sum": "e824bb8cea6527fcbee734865d0ff3b1",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 8854769,
+    "md5sum": "6797d8b4068f9e5e5772149a568fd2ec",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 1731878967,
+    "md5sum": "ca9ffdf8b702b79ed30748dec5a919d9",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_cloupe.cloupe"
+  },
+  "spot_deconvolution_outputs": {
+    "bytes": 12196416,
     "md5sum": "70ea79c943eefab5f7fb72096e44a3cb",
-    "name": "CytAssist_FFPE_Human_Colon_Rep1_deconvolution.tar.gz"
-  }
+    "title": "Spot deconvolution outputs",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.1.0/CytAssist_FFPE_Human_Colon_Rep1/CytAssist_FFPE_Human_Colon_Rep1_deconvolution.tar.gz"
+  },
+  "sample_id": "CytAssist_FFPE_Human_Colon_Rep1",
+  "number_of_reads": 141009481,
+  "mean_reads_per_spot": 21737.24078927085,
+  "mean_reads_under_tissue_per_spot": 18742.43440727609,
+  "fraction_of_spots_under_tissue": 0.4524972098214285,
+  "valid_barcodes": 0.9886657053932424,
+  "valid_um_is": 0.999957116358722,
+  "sequencing_saturation": 0.4748517439731731,
+  "q30_bases_in_barcode": 0.9383897408609596,
+  "q30_bases_in_probe_read": 0.9455267068657244,
+  "q30_bases_in_umi": 0.9230879892775964,
+  "reads_mapped_to_probe_set": 0.987655255606536,
+  "reads_mapped_confidently_to_probe_set": 0.9104101872412396,
+  "fraction_reads_in_spots_under_tissue": 0.8633370689306881,
+  "median_genes_per_spot": 3018.0,
+  "median_umi_counts_per_spot": 5464.0,
+  "genes_detected": 18063,
+  "reads_mapped_confidently_to_the_filtered_probe_set": 0.8849602034915652,
+  "number_of_genes": 18085,
+  "number_of_genes_>=_10_um_is": 18025,
+  "estimated_um_is_from_genomic_dna": 0.0373655880199957,
+  "estimated_um_is_from_genomic_dna_per_unspliced_probe": 46.0
 }

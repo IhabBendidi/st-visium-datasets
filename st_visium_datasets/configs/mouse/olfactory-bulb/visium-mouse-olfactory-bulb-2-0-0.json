@@ -1,0 +1,127 @@
+{
+  "name": "visium-mouse-olfactory-bulb-2-0-0",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/adult-mouse-olfactory-bulb-1-standard-1",
+  "visium_dataset_name": "adult-mouse-olfactory-bulb-1-standard-1",
+  "title": "Adult Mouse Olfactory Bulb",
+  "description": "10X Genomics obtained fresh frozen mouse olfactory bulb tissue from[ BioIVT](https://bioivt.com/). The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol [CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10µm were placed on Visium Gene Expression slides, then fixed and stained following Methanol Fixation, H&E Staining & Imaging for Visium Spatial Protocols ([CG000160](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-staining/methanol-fixation-hand-e-staining-and-imaging-for-visium-spatial-protocols)).\n\n* Sex: Male\n* Age: >8 weeks\n* Strain: C57BL/6\n* Section Orientation: Coronal\n\nThe H&E image was acquired using a Hamamatsu NanoZoomer S60 digital slide scanner with the following settings:\n\n* Brightfield camera\n* 20X objective\n\nThe Visium Gene Expression library was prepared as described in the Visium Spatial Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide) Rev D). Sequencing data was processed using Space Ranger.\n\n* Sequencing instrument: Illumina NovaSeq 6000, flow cell HCCN5DSX2 (lanes 1-4)   \n* Sequencing depth: 39,560 mean reads per spot\n* Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n* Dual-Index set T1T2-A9\n* Slide: V10N30-322\n* Area: A1\n\nKey metrics were:\n\n* Spots detected under tissue: 1,185\n* Median genes per spot: 4,790\n* Median UMI counts per spot: 16,029",
+  "liscense": null,
+  "published_at": "2022-07-12T21:36:26.097000Z",
+  "species": "mouse",
+  "anatomical_entity": "olfactory-bulb",
+  "disease_state": "healthy",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism, Imaged Specimen",
+  "donor_count": null,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 1185,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_image.tif",
+    "md5sum": "5f0e679870ec65e429c921e28d76892f",
+    "size": 400000154
+  },
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_filtered_feature_bc_matrix.h5",
+    "md5sum": "f556d4a64848710cb7876502b502653e",
+    "size": 7521734
+  },
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_spatial.tar.gz",
+    "md5sum": "89dd73b8d88b88342d0ab0371f097e07",
+    "size": 7806681
+  },
+  "fastqs": {
+    "bytes": 4285614080,
+    "md5sum": "a2cf50d3b79dcf8305044daf2a342b0d",
+    "title": "FASTQs",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_fastqs.tar"
+  },
+  "manual_alignment_file": {
+    "bytes": 523859,
+    "md5sum": "309fc00efde139c6094cb63a7fc3237d",
+    "title": "Manual alignment file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_alignment_file.json"
+  },
+  "genome_aligned_bam": {
+    "bytes": 2943794754,
+    "md5sum": "5a4a51a36194b1505c2d27f9c292f462",
+    "title": "Genome-aligned BAM",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_possorted_genome_bam.bam"
+  },
+  "genome_aligned_bam_index": {
+    "bytes": 2704920,
+    "md5sum": "074068d272ef27efc79e9950249fa914",
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_possorted_genome_bam.bam.bai"
+  },
+  "per_molecule_read_information": {
+    "bytes": 84507801,
+    "md5sum": "ff1345f0dd9c9b9805884c69b06e8fad",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 20043441,
+    "md5sum": "ae36ecbbab8f5565daf77cb3fcca5a06",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 9699567,
+    "md5sum": "ddc75fd45a81eef0b5341d0d0f3ec493",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 24361025,
+    "md5sum": "be033aa111a0e7968079040e56226f6a",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 22311733,
+    "md5sum": "55e2c307a25bfe355a23192b70eb7419",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 1009,
+    "md5sum": "692183e5f9a279607c1fc0f849be2e6e",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 4645545,
+    "md5sum": "4ff3d9cdd2bbb791b41d6ca3d3db92ab",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 131361938,
+    "md5sum": "b9350693bf67086590f30d162b8a0f5f",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.0/Visium_Mouse_Olfactory_Bulb/Visium_Mouse_Olfactory_Bulb_cloupe.cloupe"
+  },
+  "sample_id": "Visium_Mouse_Olfactory_Bulb",
+  "number_of_reads": 46878299,
+  "mean_reads_per_spot": 39559.74599156118,
+  "mean_reads_under_tissue_per_spot": 36211.00421940928,
+  "fraction_of_spots_under_tissue": 0.2373798076923076,
+  "median_genes_per_spot": 4790.0,
+  "median_umi_counts_per_spot": 16029.0,
+  "valid_barcodes": 0.9729117730999582,
+  "valid_um_is": 0.9997120842631256,
+  "sequencing_saturation": 0.4634574125884589,
+  "q30_bases_in_barcode": 0.959964324572523,
+  "q30_bases_in_rna_read": 0.9320737815804594,
+  "q30_bases_in_umi": 0.9496606642293506,
+  "reads_mapped_to_genome": 0.9684339655754148,
+  "reads_mapped_confidently_to_genome": 0.9431071080458784,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0335211394935639,
+  "reads_mapped_confidently_to_intronic_regions": 0.0150846130317143,
+  "reads_mapped_confidently_to_exonic_regions": 0.8945013555206003,
+  "reads_mapped_confidently_to_transcriptome": 0.8748169168851455,
+  "reads_mapped_antisense_to_gene": 0.0104823982627867,
+  "fraction_reads_in_spots_under_tissue": 0.9460463950687472,
+  "total_genes_detected": 19332
+}

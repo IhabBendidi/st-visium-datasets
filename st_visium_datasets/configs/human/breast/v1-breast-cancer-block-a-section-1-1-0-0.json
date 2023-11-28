@@ -1,75 +1,102 @@
 {
   "name": "v1-breast-cancer-block-a-section-1-1-0-0",
-  "title": "Human Breast Cancer (Block A Section 1)",
   "homepage": "https://www.10xgenomics.com/resources/datasets/human-breast-cancer-block-a-section-1-1-standard-1-0-0",
+  "visium_dataset_name": "human-breast-cancer-block-a-section-1-1-standard-1-0-0",
+  "title": "Human Breast Cancer (Block A Section 1)",
   "description": "\n10x Genomics obtained fresh frozen Invasive Ductal Carcinoma breast tissue from [BioIVT](https://bioivt.com/) Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols - Tissue Preparation Guide Demonstrated Protocol ([CG000240](/support/spatial-gene-expression-fresh-frozen/documentation/steps/tissue-prep/visium-spatial-protocols-tissue-preparation-guide)). Tissue sections of 10 µm thickness were placed on Visium Gene Expression Slides.\n\nThe slide was coverslipped and the H&E image acquired using a Nikon Ti2-E microscope with the following settings:\n\n- Color camera\n- 20X objective\n- Numerical Aperture: 0.75\n- Exposure: 10 ms\n- Gain: 4.5X\n\nThe tissue was AJCC/UICC Stage Group IIA, ER positive, PR negative, Her2 positive and annotated with:\n\n- Ductal carcinoma in situ\n- Lobular carcinoma in situ\n- Invasive Carcinoma\n\nThe Visium Spatial Gene Expression library was prepared following the Visium Spatial Gene Expression Reagent Kits User Guide ([CG000239](/support/spatial-gene-expression-fresh-frozen/documentation/steps/library-construction/visium-spatial-gene-expression-reagent-kits-user-guide)).\n\n* Sequencing instrument: Illumina NovaSeq 6000\n* Sequencing Depth: 149,800 reads per spot\n* Sequencing Configuration: 28 x 120 bp\n* Sequencing Coverage: Read 1 - 16 bp (includes 16 bp Spatial Barcode, 12 bp UMI); Read 2 - 120 bp (transcript); i7 sample index - 10 bp; i5 sample index - 10 bp.\n* Dual-Index set: T1T2-F10\n* Slide: V19L29-097\n* Area: B1\n\nKey cell metrics were:\n\n- Spots detected under tissue - 3,813\n- Median UMI counts per spot - 17,531\n- Median genes per spot - 5,394\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2019-12-12T00:00:00-08:00",
   "species": "human",
   "anatomical_entity": "breast",
-  "disease_state": "invasive_ductal_carcinoma",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_image.tif",
+  "disease_state": "invasive-ductal-carcinoma",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 3813,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_image.tif",
     "md5sum": "d238ce9176026a3493322c272634e57a",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_image.tif"
+    "size": 1763006484
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_metrics_summary.csv",
-    "md5sum": "e421ee7fd91f73b9a6dfb0ebc27a7ad6",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_spatial.tar.gz",
-    "md5sum": "218677f86701d43753405c48401f5347",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_filtered_feature_bc_matrix.h5",
     "md5sum": "27eae302ae274354d8a2e00a250f513d",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_filtered_feature_bc_matrix.h5"
+    "size": 25453021
   },
-  "visium_dataset_name": "human-breast-cancer-block-a-section-1-1-standard-1-0-0",
-  "published_at": "2019-12-12T00:00:00-08:00",
-  "pipeline_version": "1.0.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": null,
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": null,
-  "outputs_genome_aligned_bam_index": null,
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_molecule_info.h5",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_spatial.tar.gz",
+    "md5sum": "218677f86701d43753405c48401f5347",
+    "size": 10800282
+  },
+  "per_molecule_read_information": {
+    "bytes": 357843101,
     "md5sum": "47144d4e32966b3209960bc9b1ffb945",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_molecule_info.h5"
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_molecule_info.h5"
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_filtered_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_filtered": {
+    "bytes": 70174434,
     "md5sum": "2ba613d4ed3e44d685a0a45096272d18",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_filtered_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_filtered_feature_bc_matrix.tar.gz"
   },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_raw_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 28434841,
     "md5sum": "daf8c6e208541322787281bcce1468b4",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_raw_feature_bc_matrix.h5"
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_raw_feature_bc_matrix.h5"
   },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_raw_feature_bc_matrix.tar.gz",
+  "feature_barcode_matrix_raw": {
+    "bytes": 77957201,
     "md5sum": "17c80fce574273fc05d7b7dab53fdbea",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_raw_feature_bc_matrix.tar.gz"
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_raw_feature_bc_matrix.tar.gz"
   },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_analysis.tar.gz",
+  "clustering_analysis": {
+    "bytes": 32166856,
     "md5sum": "82e24d5d242537d6d52041582a013dec",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_analysis.tar.gz"
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_analysis.tar.gz"
   },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_web_summary.html",
+  "summary_csv": {
+    "bytes": 969,
+    "md5sum": "e421ee7fd91f73b9a6dfb0ebc27a7ad6",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 9068011,
     "md5sum": "2f1c51488955eaa08eb865f2e3acffbb",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_web_summary.html"
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_web_summary.html"
   },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_cloupe.cloupe",
+  "loupe_browser_file": {
+    "bytes": 1269395680,
     "md5sum": "60ee956da4d120b9acd911b9a55b2d6d",
-    "name": "V1_Breast_Cancer_Block_A_Section_1_cloupe.cloupe"
-  }
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.0.0/V1_Breast_Cancer_Block_A_Section_1/V1_Breast_Cancer_Block_A_Section_1_cloupe.cloupe"
+  },
+  "sample_id": "V1_Breast_Cancer_Block_A_Section_1",
+  "median_genes_per_spot": 5394.0,
+  "number_of_reads": 571187331.0,
+  "valid_barcodes": 0.9700855742544472,
+  "valid_um_is": 0.9987514113824068,
+  "mean_reads_per_spot": 149799.9819040126,
+  "sequencing_saturation": 0.8116308331486644,
+  "q30_bases_in_barcode": 0.9676226768775616,
+  "q30_bases_in_rna_read": 0.9362484856421084,
+  "q30_bases_in_umi": 0.9665043768137964,
+  "reads_mapped_to_genome": 0.901708070272308,
+  "reads_mapped_confidently_to_genome": 0.8438812327229296,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0307403456747887,
+  "reads_mapped_confidently_to_intronic_regions": 0.0274404528065416,
+  "reads_mapped_confidently_to_exonic_regions": 0.7857004342415991,
+  "reads_mapped_confidently_to_transcriptome": 0.7427122031178244,
+  "reads_mapped_antisense_to_gene": 0.0085255269781184,
+  "fraction_reads_in_spots_under_tissue": 0.9406290799473788,
+  "total_genes_detected": 22968,
+  "median_umi_counts_per_spot": 17531.0,
+  "fraction_of_spots_under_tissue": 0.7638221153846154
 }

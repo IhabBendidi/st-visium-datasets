@@ -1,0 +1,103 @@
+{
+  "name": "parent-visium-human-colorectal-cancer-1-2-0",
+  "homepage": "https://www.10xgenomics.com/resources/datasets/human-colorectal-cancer-whole-transcriptome-analysis-1-standard-1-2-0",
+  "visium_dataset_name": "human-colorectal-cancer-whole-transcriptome-analysis-1-standard-1-2-0",
+  "title": "Human Colorectal Cancer: Whole Transcriptome Analysis",
+  "description": "\n10X Genomics obtained fresh frozen Invasive Adenocarcinoma of the large intestine tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained following Methanol Fixation, H&E Staining & Imaging for Visium Spatial Protocols (CG000160).\n\nThe tissue was AJCC/UICC T4aN0M0, Stage Group IIB.\n\nThe H&E image was acquired using a Nikon Eclipse Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 20 ms\n\nThe Visium Gene Expression library (T1T2-E8) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HHYWHDSXY (lanes 1-4)\n- Sequencing depth: 112,228 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A13-206\n- Area: C1\n\nKey metrics were:\n\n- Spots detected: 3,138\n- Median genes per spot: 3,538\n- Median UMI counts per spot: 8,906\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
+  "liscense": null,
+  "published_at": "2020-10-27T00:00:00-07:00",
+  "species": "human",
+  "anatomical_entity": "large-intestine",
+  "disease_state": "invasive-adenocarcinoma",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 3138,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_image.tif",
+    "md5sum": "b4aa0ec592d1dd02526c39d716e8ef94",
+    "size": 533412808
+  },
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_filtered_feature_bc_matrix.h5",
+    "md5sum": "31633637440059d35d4c532cf138570c",
+    "size": 15520164
+  },
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_spatial.tar.gz",
+    "md5sum": "7cacd39bd9bce9c8c038e47d382ea70f",
+    "size": 8522786
+  },
+  "per_molecule_read_information": {
+    "bytes": 177300800,
+    "md5sum": "43ccc811268878e392ecb6041a4ad9b1",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 40788707,
+    "md5sum": "80a75321d287a61d87441350b70dd1fc",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 22864995,
+    "md5sum": "dec092dec039207fc0793e25d009f424",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 57500375,
+    "md5sum": "96654106a4d6d03aea82b4d6c03dfbf4",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 25298117,
+    "md5sum": "fa96fb10e10880791aaa9f9a6dc66fc0",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 1019,
+    "md5sum": "788bfd274a3b871d48be409007f6cbe1",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 7333477,
+    "md5sum": "6de38ce26950a5c8caabf3cd24fbe599",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 340807471,
+    "md5sum": "f002abbb2c675bdaa213ba893b776091",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Parent_Visium_Human_ColorectalCancer/Parent_Visium_Human_ColorectalCancer_cloupe.cloupe"
+  },
+  "sample_id": "Parent_Visium_Human_ColorectalCancer",
+  "number_of_reads": 352172617.0,
+  "mean_reads_per_spot": 112228.36743148502,
+  "mean_reads_under_tissue_per_spot": 82280.75685149778,
+  "fraction_of_spots_under_tissue": 0.6286057692307693,
+  "median_genes_per_spot": 3538.0,
+  "median_umi_counts_per_spot": 8906.5,
+  "valid_barcodes": 0.9665217781540352,
+  "valid_um_is": 0.9983370399294844,
+  "sequencing_saturation": 0.8487680075967903,
+  "q30_bases_in_barcode": 0.9656647743705472,
+  "q30_bases_in_rna_read": 0.946608761505884,
+  "q30_bases_in_umi": 0.9630475423944442,
+  "reads_mapped_to_genome": 0.9056245647855126,
+  "reads_mapped_confidently_to_genome": 0.8713867864405823,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0203882291052742,
+  "reads_mapped_confidently_to_intronic_regions": 0.0275168696605392,
+  "reads_mapped_confidently_to_exonic_regions": 0.8234816876747689,
+  "reads_mapped_confidently_to_transcriptome": 0.7985508112347076,
+  "reads_mapped_antisense_to_gene": 0.0134920484178359,
+  "fraction_reads_in_spots_under_tissue": 0.759468613877632,
+  "total_genes_detected": 23233
+}

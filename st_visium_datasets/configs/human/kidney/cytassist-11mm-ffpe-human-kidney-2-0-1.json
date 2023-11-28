@@ -1,96 +1,131 @@
 {
   "name": "cytassist-11mm-ffpe-human-kidney-2-0-1",
-  "title": "Human Kidney, 11 mm Capture Area (FFPE)",
   "homepage": "https://www.10xgenomics.com/resources/datasets/human-kidney-11-mm-capture-area-ffpe-2-standard",
+  "visium_dataset_name": "human-kidney-11-mm-capture-area-ffpe-2-standard",
+  "title": "Human Kidney, 11 mm Capture Area (FFPE)",
   "description": "10x Genomics obtained FFPE human kidney tissue from [Avaden Biosciences](http://www.avadenbio.com/). The tissue was sectioned as described in the Visium CytAssist Spatial Gene Expression for FFPE – Tissue Preparation Guide ([CG000518](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-prep/visium-cyt-assist-spatial-gene-expression-for-ffpe-tissue-preparation-guide)). Tissue section of 5 µm was placed on a standard glass slide, then stained following the Deparaffinization, H&E Staining, Imaging & Decrosslinking Demonstrated Protocol ([CG000520](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/tissue-staining/visium-cyt-assist-spatial-gene-expression-for-ffpe-deparaffinization-hand-e-staining-imaging-and-decrosslinking)). The glass slide with tissue section was processed via Visium CytAssist instrument to transfer analytes to a Visium CytAssist Spatial Gene Expression Slide v2, with 11 mm capture areas following the Visium CytAssist Spatial Gene Expression Reagent Kits User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe)). \n\n- FFPE Block Age 3 years \n- DV200: 42 \n\nThe H&E image was acquired using Olympus VS200 Slide Scanning Microscope with these settings:\n\n- Olympus Objective magnification: 20x UPLXAPO Objective\n- Numerical Aperture: 0.8\n- ScopeLED light source: Xcite Novum\n- Camera: VS-264C\n- Exposure: 500 µs\n\nFrom the H&E image, the glomeruli and the tubular system, as part of the basic functional unit of the kidney can be identified. Two types of tubule (Distal convoluted tubule and proximal convoluted tubule) can be identified in the cortex structure content. \n\nLibraries were prepared following the Visium CytAssist Spatial Gene Expression Reagent Kits User Guide ([CG000495](/support/spatial-gene-expression-ffpe/documentation/workflows/cytassist-ffpe/steps/library-construction/visium-cyt-assist-spatial-gene-expression-reagent-kits-for-ffpe\n)).\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cells HJWFGDSX5 and HJW2WDSX5 (lane 1-4)\n- Sequencing depth: 905,561,870 reads / 89.4% saturation\n- Sequencing configuration: 28bp read 1 (16bp Visium spatial barcode, 12bp UMI), 90bp read 2 (transcript), 10bp i7 sample barcode and 10bp i5 sample barcode\n- Dual-Index set: SI-TS-G1\n- Slide: V52Y10-365\n- Area: A1\n\nKey cell metrics were:\n\n- Spots detected under tissue: 5,936\n- Median UMI counts per spot: 11,548 \n- Median genes per spot: 5,547\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2023-02-14T00:22:46.044000Z",
   "species": "human",
   "anatomical_entity": "kidney",
   "disease_state": "healthy",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_image.tif",
+  "preservation_method": "FFPE",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism, Imaged Specimen",
+  "donor_count": null,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 5936,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_image.tif",
     "md5sum": "4eb438404f917d3934ebd011eb23af7d",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_image.tif"
+    "size": 23265480
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_metrics_summary.csv",
-    "md5sum": "df01f1f77d818703cac44b7e8eae16d6",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_spatial.tar.gz",
-    "md5sum": "28691f20297b2c603d23a7e2542d5f73",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_filtered_feature_bc_matrix.h5",
     "md5sum": "05ede38f9c76e3760532df00a48f4426",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_filtered_feature_bc_matrix.h5"
+    "size": 37469564
   },
-  "visium_dataset_name": "human-kidney-11-mm-capture-area-ffpe-2-standard",
-  "published_at": "2023-02-14T00:22:46.044Z",
-  "pipeline_version": "2.0.1",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": {
-    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_fastqs.tar",
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_spatial.tar.gz",
+    "md5sum": "28691f20297b2c603d23a7e2542d5f73",
+    "size": 36468759
+  },
+  "fastqs": {
+    "bytes": 84443514880,
     "md5sum": "ca413189042a9813c063506092aa9677",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_fastqs.tar"
+    "title": "FASTQs",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_fastqs.tar"
   },
-  "inputs_probe_set": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_probe_set.csv",
+  "probe_set": {
+    "bytes": 6134282,
     "md5sum": "a74f1583689de3c9f95164b2fc090194",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_probe_set.csv"
+    "title": "Probe Set",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_probe_set.csv"
   },
-  "outputs_genome_aligned_bam": {
-    "uri": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_possorted_genome_bam.bam",
-    "md5sum": "77bd96ced2714f20a9422cf23e740246",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_possorted_genome_bam.bam"
-  },
-  "outputs_genome_aligned_bam_index": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_possorted_genome_bam.bam.bai",
-    "md5sum": "9b0b8b7c332016f81d35839ba1c14f06",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_possorted_genome_bam.bam.bai"
-  },
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_molecule_info.h5",
-    "md5sum": "0742cca02339bd41c76c1e78d0a2d5f5",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_molecule_info.h5"
-  },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_filtered_feature_bc_matrix.tar.gz",
-    "md5sum": "a479157e1df4023b83cb7e9f228e8a7d",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_filtered_feature_bc_matrix.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_raw_feature_bc_matrix.h5",
-    "md5sum": "d0b20eb06f8ce031355f3bc0d5d9c3c3",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_raw_feature_bc_matrix.h5"
-  },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_raw_feature_bc_matrix.tar.gz",
-    "md5sum": "595f755d735e9f04155240dea65b471f",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_raw_feature_bc_matrix.tar.gz"
-  },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_analysis.tar.gz",
-    "md5sum": "202504bb5cecd4500e80ab5808afd782",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_analysis.tar.gz"
-  },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_web_summary.html",
-    "md5sum": "99f2815d1ea1208bf95a6d8db7f59e6c",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_web_summary.html"
-  },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_cloupe.cloupe",
-    "md5sum": "936f92a5288f9524e37d399a3fa96ef2",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_cloupe.cloupe"
-  },
-  "inputs_microscope_image_without_fiducial_frame_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_tissue_image.tif",
+  "microscope_image_without_fiducial_frame_tiff": {
+    "bytes": 3433021474,
     "md5sum": "b9e19841e216c9693cc0427f043ba58c",
-    "name": "CytAssist_11mm_FFPE_Human_Kidney_tissue_image.tif"
-  }
+    "title": "Microscope image without fiducial frame (TIFF)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_tissue_image.tif"
+  },
+  "genome_aligned_bam": {
+    "bytes": 46661848048,
+    "md5sum": "77bd96ced2714f20a9422cf23e740246",
+    "title": "Genome-aligned BAM",
+    "url": "https://s3-us-west-2.amazonaws.com/10x.files/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_possorted_genome_bam.bam"
+  },
+  "genome_aligned_bam_index": {
+    "bytes": 3390544,
+    "md5sum": "9b0b8b7c332016f81d35839ba1c14f06",
+    "title": "Genome-aligned BAM index",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_possorted_genome_bam.bam.bai"
+  },
+  "per_molecule_read_information": {
+    "bytes": 534424853,
+    "md5sum": "0742cca02339bd41c76c1e78d0a2d5f5",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 117152835,
+    "md5sum": "a479157e1df4023b83cb7e9f228e8a7d",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 53528052,
+    "md5sum": "d0b20eb06f8ce031355f3bc0d5d9c3c3",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 143785820,
+    "md5sum": "595f755d735e9f04155240dea65b471f",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 35027589,
+    "md5sum": "202504bb5cecd4500e80ab5808afd782",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 825,
+    "md5sum": "df01f1f77d818703cac44b7e8eae16d6",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 7315343,
+    "md5sum": "99f2815d1ea1208bf95a6d8db7f59e6c",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 1833138076,
+    "md5sum": "936f92a5288f9524e37d399a3fa96ef2",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/2.0.1/CytAssist_11mm_FFPE_Human_Kidney/CytAssist_11mm_FFPE_Human_Kidney_cloupe.cloupe"
+  },
+  "sample_id": "CytAssist_11mm_FFPE_Human_Kidney",
+  "number_of_reads": 905561870,
+  "mean_reads_per_spot": 152554.22338274933,
+  "mean_reads_under_tissue_per_spot": 141896.85057277628,
+  "fraction_of_spots_under_tissue": 0.4140625,
+  "valid_barcodes": 0.9920328933460946,
+  "valid_um_is": 0.9999729681639532,
+  "sequencing_saturation": 0.8937724966568527,
+  "q30_bases_in_barcode": 0.95971892433109,
+  "q30_bases_in_probe_read": 0.9371359034620592,
+  "q30_bases_in_umi": 0.9563540325782198,
+  "reads_mapped_to_probe_set": 0.9868044046510042,
+  "reads_mapped_confidently_to_probe_set": 0.9806812084523832,
+  "fraction_reads_in_spots_under_tissue": 0.9387450547621652,
+  "median_genes_per_spot": 5547.0,
+  "median_umi_counts_per_spot": 11548.0,
+  "genes_detected": 18068,
+  "reads_mapped_confidently_to_the_filtered_probe_set": 0.9508517524042835,
+  "number_of_genes": 18085,
+  "number_of_genes_>=_10_um_is": 18046
 }

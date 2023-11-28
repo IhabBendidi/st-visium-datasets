@@ -1,80 +1,126 @@
 {
   "name": "targeted-visium-human-glioblastoma-pan-cancer-1-2-0",
-  "title": "Human Glioblastoma: Targeted, Pan-Cancer Panel",
   "homepage": "https://www.10xgenomics.com/resources/datasets/human-glioblastoma-targeted-pan-cancer-panel-1-standard-1-2-0",
+  "visium_dataset_name": "human-glioblastoma-targeted-pan-cancer-panel-1-standard-1-2-0",
+  "title": "Human Glioblastoma: Targeted, Pan-Cancer Panel",
   "description": "\n10X Genomics obtained fresh frozen human glioblastoma multiforme tissue from BioIVT Asterand. The tissue was embedded and cryosectioned as described in Visium Spatial Protocols – Tissue Preparation Guide (Demonstrated Protocol CG000240). Tissue sections of 10µm were placed on Visium Gene Expression slides and fixed and stained following Methanol Fixation, H&E Staining & Imaging for Visium Spatial Protocols (CG000160).\n\nThe H&E image was acquired using a Nikon Eclipse Ti2-E microscope with the following settings:\n\n- Color camera\n- 10X objective\n- Numerical Aperture: 0.45\n- Exposure: 20 ms\n\nThe Visium Gene Expression library (T1T2-E4) was prepared as described in the Visium Spatial Reagent Kits User Guide (CG000239 Rev D). Targeted libraries were prepared following the SPRISelect Library Concentration for Targeted Gene Expression (Demonstrated Protocol CG000249) and Targeted Gene Expression - Spatial User Guide (CG000377) using the Human Pan-Cancer Panel (PN-2000287). Targeted sequencing data was processed using Space Ranger.\n\n- Sequencing instrument: Illumina NovaSeq 6000, flow cell HKN5VDSXY (lane 3)\n- Sequencing depth: 16,383 mean reads per cell\n- Sequencing configuration: Paired-end (28 X 90), Dual-Indexed Sequencing. Read 1: 28 cycles (16 bp barcode, 12 bp UMI); i7 index: 10 cycles; i5 index: 10 cycles; Read 2: 90 cycles (transcript).\n- Slide: V10A13-167\n- Area: C1\n\nKey targeted metrics were:\n\n- Spots detected: 3,468\n- Median targeted genes per spot: 318\n- Median targeted UMI counts per spot: 776\n- Reads mapped confidently to the targeted transcriptome: 87.4%\n- Total targeted genes detected: 1,198\n\nTo maintain donor anonymity, sequence data for this sample is not currently available.\n",
-  "liscense": "Creative Commons license",
+  "liscense": null,
+  "published_at": "2020-10-27T00:00:00-07:00",
   "species": "human",
   "anatomical_entity": "brain",
-  "disease_state": "glioblastoma_multiforme",
-  "inputs_image_tiff": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_image.tif",
+  "disease_state": "glioblastoma-multiforme",
+  "preservation_method": "Fresh Frozen",
+  "staining_method": "H&E",
+  "biomaterial_type": "Specimen from Organism",
+  "donor_count": 1,
+  "development_stage": null,
+  "number_of_spots_under_tissue": 3468,
+  "image_tiff": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_image.tif",
     "md5sum": "b2b4b2dd6a09a6137c9bb548b3851722",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_image.tif"
+    "size": 533412808
   },
-  "outputs_summary_csv": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_metrics_summary.csv",
-    "md5sum": "19d0e39c2d289d2830bb523b32de5837",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_metrics_summary.csv"
-  },
-  "outputs_spatial_imaging_data": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_spatial.tar.gz",
-    "md5sum": "83a9d3448501c35c8d737848597e4e02",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_spatial.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_filtered_feature_bc_matrix.h5",
+  "feature_barcode_matrix_hdf5_filtered": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_filtered_feature_bc_matrix.h5",
     "md5sum": "1934e05d33e5dddaa805aa82b19db5b2",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_filtered_feature_bc_matrix.h5"
+    "size": 1251295
   },
-  "visium_dataset_name": "human-glioblastoma-targeted-pan-cancer-panel-1-standard-1-2-0",
-  "published_at": "2020-10-27T00:00:00-07:00",
-  "pipeline_version": "1.2.0",
-  "product_slug": "spatial-gene-expression",
-  "software_name": "Space Ranger",
-  "inputs_fastqs": null,
-  "inputs_probe_set": null,
-  "outputs_genome_aligned_bam": null,
-  "outputs_genome_aligned_bam_index": null,
-  "outputs_per_molecule_read_information": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_molecule_info.h5",
-    "md5sum": "64600bd90810a1488992ac995868c3b6",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_molecule_info.h5"
+  "spatial_imaging_data": {
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_spatial.tar.gz",
+    "md5sum": "83a9d3448501c35c8d737848597e4e02",
+    "size": 9140091
   },
-  "outputs_feature_barcode_matrix_filtered": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_filtered_feature_bc_matrix.tar.gz",
-    "md5sum": "d6709911572ca01451f1d9108a188764",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_filtered_feature_bc_matrix.tar.gz"
-  },
-  "outputs_feature_barcode_matrix_hdf5_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_raw_feature_bc_matrix.h5",
-    "md5sum": "54d42060fadc0799b0c7c32240f9445d",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_raw_feature_bc_matrix.h5"
-  },
-  "outputs_feature_barcode_matrix_raw": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_raw_feature_bc_matrix.tar.gz",
-    "md5sum": "97141e731f0da9f898f7d2af77605f89",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_raw_feature_bc_matrix.tar.gz"
-  },
-  "outputs_clustering_analysis": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_analysis.tar.gz",
-    "md5sum": "6f4494921579c5f8d24064e8e77a9189",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_analysis.tar.gz"
-  },
-  "outputs_spatial_enrichment_moran_s_i": null,
-  "outputs_summary_html": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_web_summary.html",
-    "md5sum": "4c25efb659f4166b970fe1a3c5dbb19b",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_web_summary.html"
-  },
-  "outputs_loupe_browser_file": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_cloupe.cloupe",
-    "md5sum": "9c1585782193f6a29030397b28715a64",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_cloupe.cloupe"
-  },
-  "inputs_target_panel": {
-    "uri": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_target_panel.csv",
+  "target_panel": {
+    "bytes": 10793648,
     "md5sum": "a576461482bd0afca1472c3f0431a1c3",
-    "name": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer_target_panel.csv"
-  }
+    "title": "Target Panel",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_target_panel.csv"
+  },
+  "per_molecule_read_information": {
+    "bytes": 20558108,
+    "md5sum": "64600bd90810a1488992ac995868c3b6",
+    "title": "Per-molecule read information",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_molecule_info.h5"
+  },
+  "feature_barcode_matrix_filtered": {
+    "bytes": 3687697,
+    "md5sum": "d6709911572ca01451f1d9108a188764",
+    "title": "Feature / barcode matrix (filtered)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_filtered_feature_bc_matrix.tar.gz"
+  },
+  "feature_barcode_matrix_hdf5_raw": {
+    "bytes": 3947894,
+    "md5sum": "54d42060fadc0799b0c7c32240f9445d",
+    "title": "Feature / barcode matrix HDF5 (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_raw_feature_bc_matrix.h5"
+  },
+  "feature_barcode_matrix_raw": {
+    "bytes": 8388928,
+    "md5sum": "97141e731f0da9f898f7d2af77605f89",
+    "title": "Feature / barcode matrix (raw)",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_raw_feature_bc_matrix.tar.gz"
+  },
+  "clustering_analysis": {
+    "bytes": 2724360,
+    "md5sum": "6f4494921579c5f8d24064e8e77a9189",
+    "title": "Clustering analysis",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_analysis.tar.gz"
+  },
+  "summary_csv": {
+    "bytes": 1835,
+    "md5sum": "19d0e39c2d289d2830bb523b32de5837",
+    "title": "Summary CSV",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_metrics_summary.csv"
+  },
+  "summary_html": {
+    "bytes": 7711707,
+    "md5sum": "4c25efb659f4166b970fe1a3c5dbb19b",
+    "title": "Summary HTML",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_web_summary.html"
+  },
+  "loupe_browser_file": {
+    "bytes": 314990823,
+    "md5sum": "9c1585782193f6a29030397b28715a64",
+    "title": "Loupe Browser file",
+    "url": "https://cf.10xgenomics.com/samples/spatial-exp/1.2.0/Targeted_Visium_Human_Glioblastoma_Pan_Cancer/Targeted_Visium_Human_Glioblastoma_Pan_Cancer_cloupe.cloupe"
+  },
+  "sample_id": "Targeted_Visium_Human_Glioblastoma_Pan_Cancer",
+  "number_of_reads": 56817667.0,
+  "mean_reads_per_spot": 16383.41032295271,
+  "mean_reads_under_tissue_per_spot": 13661.433102652823,
+  "fraction_of_spots_under_tissue": 0.6947115384615384,
+  "median_genes_per_spot": 476.0,
+  "median_umi_counts_per_spot": 967.5,
+  "valid_barcodes": 0.9504899241991052,
+  "valid_um_is": 0.9997381272272232,
+  "q30_bases_in_barcode": 0.965390471183748,
+  "q30_bases_in_rna_read": 0.9490153106556618,
+  "q30_bases_in_umi": 0.9621203177977374,
+  "reads_mapped_to_genome": 0.9862306736388876,
+  "reads_mapped_confidently_to_genome": 0.975214945027574,
+  "reads_mapped_confidently_to_intergenic_regions": 0.0020377816639321,
+  "reads_mapped_confidently_to_intronic_regions": 0.003373193763834,
+  "reads_mapped_confidently_to_exonic_regions": 0.9698039695998076,
+  "reads_mapped_confidently_to_transcriptome": 0.915446475477425,
+  "reads_mapped_antisense_to_gene": 0.0463664761173668,
+  "fraction_reads_in_spots_under_tissue": 0.8760920496304583,
+  "total_genes_detected": 16190,
+  "targeted_sequencing_saturation": 0.929215790323697,
+  "mean_targeted_reads_per_spot": 14313.41493656286,
+  "median_targeted_genes_per_spot": 318.0,
+  "median_targeted_umi_counts_per_spot": 776.0,
+  "total_targeted_genes_detected": 1198,
+  "reads_mapped_confidently_to_the_targeted_transcriptome": 0.8736529607947472,
+  "reads_mapped_confidently_to_the_non_targeted_transcriptome": 0.0417935146826778,
+  "number_of_targeted_genes": 1253,
+  "number_of_non_targeted_genes": 35348,
+  "number_of_targeted_genes_>=_10_um_is": 1137,
+  "number_of_non_targeted_genes_>=_10_um_is": 7876,
+  "number_of_enriched_targeted_genes": 1127,
+  "number_of_enriched_non_targeted_genes": 119,
+  "mean_reads_per_umi_per_targeted_gene": 18.49433340771701,
+  "mean_reads_per_umi_per_non_targeted_gene": 1.7597990818006717,
+  "fraction_of_targeted_genes_enriched": 0.9912049252418644,
+  "high_fraction_of_non_targeted_genes_enriched": 0.0151091924834941,
+  "analyzed_reads": 1.0
 }
