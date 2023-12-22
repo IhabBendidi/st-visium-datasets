@@ -2,8 +2,8 @@ import typing as tp
 from pathlib import Path
 
 import numpy as np
+import tifffile
 from PIL import Image, ImageDraw
-from tifffile import TiffFile
 
 from st_visium_datasets.base import VisiumConfig
 from st_visium_datasets.feature_barcode import load_feature_barcode_matrix_df
@@ -14,9 +14,9 @@ def build_spots_dataset(
     config: VisiumConfig,
     data_dir: Path,
     *,
-    tiff_img_path: Path,
-    feature_bc_matrix_dir: Path,
-    spatial_dir: Path,
+    tiff: Path,
+    feature_bc_matrix: Path,
+    spatial: Path,
     spot_diameter_px: int | tp.Literal["auto"] = "auto",
     pil_resize_longest: int | None = 3840,
 ) -> Path:
@@ -24,12 +24,12 @@ def build_spots_dataset(
     spots_dir = dataset_dir / "spots"
     spots_dir.mkdir(exist_ok=True, parents=True)
 
-    img: np.ndarray = _read_tiff(tiff_img_path)
+    img: np.ndarray = _read_tiff(tiff)
 
-    features_df = load_feature_barcode_matrix_df(feature_bc_matrix_dir)
+    features_df = load_feature_barcode_matrix_df(feature_bc_matrix)
     if spot_diameter_px == "auto":
-        spot_diameter_px = get_spot_diameter_px(spatial_dir)
-    spots_df = get_tissue_positions_df(spatial_dir)
+        spot_diameter_px = get_spot_diameter_px(spatial)
+    spots_df = get_tissue_positions_df(spatial)
 
     pil_img, resize_ratio = _get_pil_img(img, resize_longest=pil_resize_longest)
     draw, color = ImageDraw.Draw(pil_img), "blue"
@@ -47,7 +47,9 @@ def build_spots_dataset(
         np.save(spot_img_path, spot_img)
 
         # get spot features
-        features_df[[barcode]].to_csv(spots_dir / f"{barcode}.csv")
+        features_df[[barcode]].rename(columns={barcode: "count"}).to_csv(
+            spots_dir / f"{barcode}.csv"
+        )
 
         _draw_spot_bbox(draw, (xmin, ymin, xmax, ymax), resize_ratio, color, line_width)
         _draw_spot_center(draw, (x, y), resize_ratio, color, point_radius)
@@ -64,10 +66,8 @@ def _get_spot_bbox(x: int, y: int, spot_diameter_px: int) -> tuple[int, int, int
     return xmin, ymin, xmax, ymax
 
 
-def _read_tiff(tiff_img_path: Path) -> np.ndarray:
-    with TiffFile(tiff_img_path) as tif:
-        img = tif.asarray()
-    return img
+def _read_tiff(tiff: Path) -> np.ndarray:
+    return tifffile.imread(tiff, is_ome=False)
 
 
 def _get_pil_img(
@@ -84,7 +84,7 @@ def _get_pil_img(
 
 def _draw_spot_bbox(
     draw: ImageDraw.ImageDraw,
-    bbox: tuple[int, int, int, int],
+    bbox: tuple[int, int, int, int] | np.ndarray,
     resize_ratio: float = 1.0,
     color: str = "blue",
     line_width=2,
@@ -95,7 +95,7 @@ def _draw_spot_bbox(
 
 def _draw_spot_center(
     draw: ImageDraw.ImageDraw,
-    center: tuple[int, int],
+    center: tuple[int, int] | np.ndarray,
     resize_ratio: float = 1.0,
     color: str = "blue",
     point_radius=3,

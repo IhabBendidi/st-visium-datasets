@@ -4,23 +4,9 @@ from pathlib import Path
 
 import datasets
 import typing_extensions as tx
-from pydantic import BaseModel, ConfigDict, Field, RootModel
+from pydantic import AliasChoices, BaseModel, ConfigDict, Field, RootModel
 
-from st_visium_datasets.utils import get_configs_dir, sanitize_str
-
-
-class DataFile(BaseModel):
-    url: str
-    md5sum: str
-    size: int = Field(..., alias="bytes")
-
-    model_config = ConfigDict(populate_by_name=True)
-
-    def __repr__(self) -> str:
-        return f"DataFile('{self.url}')"
-
-    def __str__(self) -> str:
-        return str(self.url)
+from st_visium_datasets.utils import DataFile, get_configs_dir, sanitize_str
 
 
 class VisiumConfig(BaseModel):
@@ -32,7 +18,11 @@ class VisiumConfig(BaseModel):
     species: str
     anatomical_entity: str
     number_of_spots_under_tissue: int
-    number_of_genes_detected: int = Field(..., alias="genes_detected")
+    number_of_genes_detected: int = Field(
+        ...,
+        validation_alias=AliasChoices("genes_detected", "total_genes_detected"),
+        serialization_alias="number_of_genes_detected",
+    )
 
     image_tiff: DataFile
     spatial_imaging_data: DataFile
