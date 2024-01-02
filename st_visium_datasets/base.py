@@ -1,5 +1,3 @@
-from __future__ import annotations
-
 import typing as tp
 from pathlib import Path
 
@@ -41,12 +39,12 @@ class VisiumConfig(BaseModel):
 
 
 class VisiumConfigs(RootModel):
-    root: list[VisiumConfig] = Field(..., min_length=1)
+    root: tp.List[VisiumConfig] = Field(..., min_length=1)
 
     def __iter__(self):
         return iter(self.root)
 
-    def __getitem__(self, item: int | str) -> VisiumConfig:
+    def __getitem__(self, item: tp.Union[int, str]) -> VisiumConfig:
         if isinstance(item, int):
             return self.root[item]
         configs = [c for c in self.root if c.name == item]
@@ -90,7 +88,7 @@ class VisiumDatasetBuilderConfig(datasets.BuilderConfig):
 
 
 def gen_builder_configs(
-    configs_dir: Path | None = None,
+    configs_dir: tp.Optional[Path] = None,
 ) -> tp.Generator[VisiumDatasetBuilderConfig, None, None]:
     base_configs_dir = get_configs_dir()
 
