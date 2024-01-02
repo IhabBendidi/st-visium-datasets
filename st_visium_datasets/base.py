@@ -1,4 +1,5 @@
-import dataclasses as dc
+from __future__ import annotations
+
 import typing as tp
 from pathlib import Path
 
@@ -7,6 +8,7 @@ import typing_extensions as tx
 from pydantic import AliasChoices, BaseModel, ConfigDict, Field, RootModel
 
 from st_visium_datasets.utils import DataFile, get_configs_dir, sanitize_str
+from st_visium_datasets.utils.utils import remove_prefix
 
 
 class VisiumConfig(BaseModel):
@@ -63,11 +65,10 @@ class VisiumConfigs(RootModel):
         return cls(root=configs)
 
 
-@dc.dataclass(kw_only=True)
 class VisiumDatasetBuilderConfig(datasets.BuilderConfig):
-    name: str
-    version: datasets.Version = datasets.Version("1.0.0")
-    visium_configs: VisiumConfigs
+    def __init__(self, visium_configs: VisiumConfigs, **kwargs):
+        super().__init__(**kwargs)
+        self.visium_configs = visium_configs
 
     @classmethod
     def load(cls, name: str, path: Path, **kwargs) -> tx.Self:
@@ -89,7 +90,7 @@ class VisiumDatasetBuilderConfig(datasets.BuilderConfig):
 
 
 def gen_builder_configs(
-    configs_dir: Path | None = None
+    configs_dir: Path | None = None,
 ) -> tp.Generator[VisiumDatasetBuilderConfig, None, None]:
     base_configs_dir = get_configs_dir()
 
@@ -102,6 +103,6 @@ def gen_builder_configs(
             continue
 
         if path.is_dir():
-            name = str(path).removeprefix(str(base_configs_dir))
+            name = remove_prefix(str(path), str(base_configs_dir))
             yield VisiumDatasetBuilderConfig.load(name, path)
             yield from gen_builder_configs(path)

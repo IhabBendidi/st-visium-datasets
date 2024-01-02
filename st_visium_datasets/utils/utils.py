@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import logging
 import re
 from functools import lru_cache
@@ -7,6 +9,18 @@ from datasets.utils.logging import get_verbosity
 from rich.logging import RichHandler
 
 import st_visium_datasets
+
+
+def remove_prefix(s: str, prefix: str) -> str:
+    if s.startswith(prefix):
+        return s[len(prefix) :]
+    return s
+
+
+def remove_suffix(s: str, suffix: str) -> str:
+    if s.endswith(suffix):
+        return s[: -len(suffix)]
+    return s
 
 
 def setup_logging(level: int | str | None = None) -> None:

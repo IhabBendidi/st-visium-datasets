@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import logging
 
 import datasets
@@ -57,7 +59,7 @@ def list_visium_datasets() -> list[str]:
 def gen_visium_dataset_stat(name: str = "all") -> dict[str, str | int | float]:
     """TODO: to complete with other interseting stats."""
     config: visium.VisiumDatasetBuilderConfig = (
-        visium.VisiumDatasetBuilder.builder_configs[name]
+        visium.VisiumDatasetBuilder.builder_configs[name]  # type: ignore
     )
     number_of_spots_under_tissue = sum(
         c.number_of_spots_under_tissue for c in config.visium_configs

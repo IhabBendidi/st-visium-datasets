@@ -1,3 +1,5 @@
+from __future__ import annotations
+
 import csv
 import gzip
 from pathlib import Path
@@ -51,7 +53,7 @@ def _load_mat(feature_bc_matrix_dir: Path) -> coo_matrix:
 
 
 def _load_features(
-    feature_bc_matrix_dir: Path
+    feature_bc_matrix_dir: Path,
 ) -> tuple[list[str], list[str], list[str]]:
     """Read in features.tsv.gz as table
     - list of transcript/feature ids, e.g. 'ENSG00000187634'

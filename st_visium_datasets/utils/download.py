@@ -1,4 +1,7 @@
+from __future__ import annotations
+
 import tarfile
+import typing as tp
 from collections import defaultdict
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -6,7 +9,6 @@ from pathlib import Path
 import fsspec
 from rich.console import Group
 from rich.live import Live
-from rich.panel import Panel
 from rich.progress import (
     BarColumn,
     DownloadColumn,
@@ -19,9 +21,10 @@ from rich.progress import (
 )
 
 from st_visium_datasets.utils.data_file import DataFile
+from st_visium_datasets.utils.utils import remove_suffix
 
-DatasetsDict = dict[str, dict[str, DataFile]]
-LocalDatatsetDict = dict[str, dict[str, Path]]
+DatasetsDict = tp.Dict[str, tp.Dict[str, DataFile]]
+LocalDatatsetDict = tp.Dict[str, tp.Dict[str, Path]]
 
 
 def _create_dl_progress(**kwargs) -> Progress:
@@ -60,7 +63,7 @@ def _create_global_progress(**kwargs) -> Progress:
 
 def _split_extensions(path: str | Path) -> tuple[str, str]:
     ext = "".join(Path(path).suffixes)
-    return str(path).removesuffix(ext), ext
+    return remove_suffix(str(path), ext), ext
 
 
 def _download_file(
@@ -109,7 +112,7 @@ def _extract_file(
     if not str(filepath).endswith((".tar.gz")):
         return filepath
 
-    extract_dir = Path(str(filepath).removesuffix(".tar.gz"))
+    extract_dir = Path(remove_suffix(str(filepath), ".tar.gz"))
     if extract_dir.is_dir() and list(extract_dir.iterdir()) and not force_extract:
         return extract_dir
 
