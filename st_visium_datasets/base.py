@@ -77,8 +77,11 @@ class VisiumDatasetBuilderConfig(datasets.BuilderConfig):
         else:
             raise FileNotFoundError(f"{path} is not a file or directory")
 
-        name = sanitize_str(name, sep="-")
-        return cls(name=name, visium_configs=visium_configs, **kwargs)
+        return cls(
+            name=name.strip("/").replace("/", "_"),
+            visium_configs=visium_configs,
+            **kwargs,
+        )
 
     def __repr__(self) -> str:
         return (

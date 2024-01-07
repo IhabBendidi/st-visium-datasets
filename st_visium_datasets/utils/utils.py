@@ -4,58 +4,25 @@ import logging
 import logging.config
 import re
 import typing as tp
-from datetime import datetime
 from functools import lru_cache
 from pathlib import Path
 
 from datasets.utils.logging import get_verbosity
-from rich.console import ConsoleRenderable
-from rich.logging import RichHandler as _RichHandler
-from rich.traceback import Traceback
+from rich.logging import RichHandler
 
 import st_visium_datasets
 
 
-class RichHandler(_RichHandler):
-    """Custom rich logging handler that prints logger name instead of path in the
-    most right column.
-    """
-
-    def __init__(self, **kwargs) -> None:
-        kwargs.update({"rich_tracebacks": True, "enable_link_path": True})
-        super().__init__(**kwargs)
-
-    def render(
-        self,
-        *,
-        record: logging.LogRecord,
-        traceback: tp.Optional[Traceback],
-        message_renderable: ConsoleRenderable,
-    ) -> ConsoleRenderable:
-        path = record.name
-        level = self.get_level_text(record)
-        time_format = None if self.formatter is None else self.formatter.datefmt
-        log_time = datetime.fromtimestamp(record.created)
-
-        log_renderable = self._log_render(
-            self.console,
-            [message_renderable] if not traceback else [message_renderable, traceback],
-            log_time=log_time,
-            time_format=time_format,
-            level=level,
-            path=path,
-            link_path=record.pathname if self.enable_link_path else None,
-        )
-        return log_renderable
-
-
-def setup_logging(level: int | str | None = None) -> None:
+def setup_logging(
+    level: tp.Literal["DEBUG", "INFO", "WARNING", "ERROR"] = "DEBUG",
+) -> None:
     logging.basicConfig(
-        level=level if level is not None else get_verbosity(),
+        level=level,
         format="%(message)s",
         datefmt="[%x %X]",
         handlers=[RichHandler(rich_tracebacks=True)],
     )
+    logging.getLogger("datasets").setLevel(get_verbosity())
 
 
 def remove_prefix(s: str, prefix: str) -> str:
@@ -85,9 +52,9 @@ def sanitize_str(s: str, sep: str = "_") -> str:
     return s
 
 
-def get_nested_filepath(dirname: Path, filename: str) -> Path:
+def get_nested_filepath(dirname: Path | str, filename: str) -> Path:
     """Return path to file in directory"""
-    paths = list(dirname.glob(f"**/{filename}"))
+    paths = list(Path(dirname).glob(f"**/{filename}"))
     if len(paths) == 0:
         raise FileNotFoundError(f"no {filename} found in {dirname}")
     if len(paths) > 1:

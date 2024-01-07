@@ -13,8 +13,7 @@ from st_visium_datasets.base import (
     VisiumDatasetBuilderConfig,
     gen_builder_configs,
 )
-from st_visium_datasets.builder import build_spots_dataset
-from st_visium_datasets.utils import download_visium_datasets
+from st_visium_datasets.builder import build_spots_datasets
 
 logger = logging.getLogger(__name__)
 
@@ -35,14 +34,20 @@ class VisiumDatasetBuilder(datasets.GeneratorBasedBuilder):
         self._spot_diameter_px = spot_diameter_px
         self._pil_resize_longest = pil_resize_longest
         self._cache_datasets_dir = os.path.join(self._cache_dir_root, "visium_datasets")
+        self.config: VisiumDatasetBuilderConfig
+
+    def _build_description(self) -> str:
+        base_desc = (
+            "Visium datasets for spatial transcriptomics. This dataset is "
+            "a collection of the following datasets from 10x "
+            "Genomics: {}"
+        )
+        config_names = [c.name for c in self.config.visium_configs]
+        return base_desc.format(", ".join(config_names))
 
     def _info(self):
         return datasets.DatasetInfo(
-            description=(
-                f"Visium datasets for spatial transcriptomics. This datasets is "
-                f"a collection of the following datasets from 10x "
-                f"Genomics: {self.builder_configs.keys()}"
-            ),
+            description=self._build_description(),
             features=datasets.Features(
                 {
                     "species": datasets.Value("string"),
@@ -65,7 +70,6 @@ class VisiumDatasetBuilder(datasets.GeneratorBasedBuilder):
         )
 
     def _split_generators(self, dl_manager: datasets.DownloadManager):
-        self.config: VisiumDatasetBuilderConfig
         datasets_urls = {
             vc.name: {
                 "tiff": vc.image_tiff,
@@ -74,29 +78,19 @@ class VisiumDatasetBuilder(datasets.GeneratorBasedBuilder):
             }
             for vc in self.config.visium_configs
         }
-
-        logger.info("Downloading Visium datasets...")
-        dataset_paths: dict = download_visium_datasets(
-            datasets_urls,
-            download_dir=self._cache_downloaded_dir,
-            force_download=dl_manager.download_config.force_download,
-            force_extract=dl_manager.download_config.force_extract,
-            disable_pbar=False,
+        logger.info("Downloading dataset files ...")
+        dataset_paths: dict = dl_manager.download_and_extract(datasets_urls)  # type: ignore
+        logger.info("Building spots datasets ...")
+        dataset_dirs = build_spots_datasets(
+            configs=self.config.visium_configs,
+            data_dir=Path(self._cache_datasets_dir),
+            dataset_paths=dataset_paths,
+            spot_diameter_px=self._spot_diameter_px,  # type:ignore
+            pil_resize_longest=self._pil_resize_longest,
+            overwrite=dl_manager.download_config.force_download
+            or dl_manager.download_config.force_extract,
+            num_proc=dl_manager.download_config.num_proc,
         )
-
-        dataset_dirs = []
-
-        logger.info("Building 'spot' datasets...")
-        for name, paths in dataset_paths.items():
-            config = self.config.visium_configs[name]
-            dataset_dir = build_spots_dataset(
-                config,
-                Path(self._cache_datasets_dir),
-                spot_diameter_px=self._spot_diameter_px,  # type:ignore
-                pil_resize_longest=self._pil_resize_longest,
-                **paths,
-            )
-            dataset_dirs.append(dataset_dir)
         return [
             datasets.SplitGenerator(
                 name=self.DEFAULT_SPLIT,

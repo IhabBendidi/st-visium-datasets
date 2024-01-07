@@ -9,20 +9,20 @@ import pandas as pd
 from st_visium_datasets.utils import get_nested_filepath
 
 
-def load_scale_factors(spatial_dir: Path) -> dict[str, float]:
+def load_scale_factors(spatial_dir: Path | str) -> dict[str, float]:
     filename = "scalefactors_json.json"
     scale_factors_path = get_nested_filepath(spatial_dir, filename)
-    with open(scale_factors_path) as f:
+    with open(scale_factors_path, mode="r") as f:
         return json.load(f)
 
 
-def get_spot_diameter_px(spatial_dir: Path) -> int:
+def get_spot_diameter_px(spatial_dir: Path | str) -> int:
     """Return spot diameter in pixels"""
     scale_factors = load_scale_factors(spatial_dir)
     return math.ceil(scale_factors["spot_diameter_fullres"])
 
 
-def get_tissue_positions_df(spatial_dir: Path) -> pd.DataFrame:
+def get_tissue_positions_df(spatial_dir: Path | str) -> pd.DataFrame:
     """Return spots.tsv.gz as dataframe"""
     filenames = ["tissue_positions_list.csv", "tissue_positions.csv"]
     kwargs_list = [
