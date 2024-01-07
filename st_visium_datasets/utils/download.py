@@ -1,5 +1,7 @@
 from __future__ import annotations
 
+import hashlib
+import logging
 import tarfile
 import typing as tp
 from collections import defaultdict
@@ -22,6 +24,8 @@ from rich.progress import (
 
 from st_visium_datasets.utils.data_file import DataFile
 from st_visium_datasets.utils.utils import remove_suffix
+
+logger = logging.getLogger(__name__)
 
 DatasetsDict = tp.Dict[str, tp.Dict[str, DataFile]]
 LocalDatatsetDict = tp.Dict[str, tp.Dict[str, Path]]
@@ -66,6 +70,42 @@ def _split_extensions(path: str | Path) -> tuple[str, str]:
     return remove_suffix(str(path), ext), ext
 
 
+def _validate_md5sum(
+    dataset_name: str,
+    name: str,
+    file: DataFile,
+    filepath: Path,
+    dl_progress: Progress,
+    buffer_size: int = 8192,
+):
+    if not filepath.is_file():
+        raise FileNotFoundError(filepath)
+
+    md5sum_path = filepath.with_suffix(".md5sum")
+    if md5sum_path.is_file():
+        computed_md5sum = md5sum_path.read_text().strip()
+    else:
+        md5 = hashlib.md5()
+        task_id = dl_progress.add_task(
+            "",
+            total=file.size,
+            dataset_name=dataset_name,
+            task_name="Validate MD5",
+            name=name,
+        )
+        with dl_progress.open(
+            filepath, mode="rb", buffering=buffer_size, task_id=task_id
+        ) as f:
+            while chunk := f.read(buffer_size):
+                md5.update(chunk)
+
+        dl_progress.update(task_id, visible=False)
+        computed_md5sum = md5.hexdigest()
+        md5sum_path.write_text(computed_md5sum)
+
+    return computed_md5sum == file.md5sum
+
+
 def _download_file(
     dataset_name: str,
     name: str,
@@ -77,25 +117,34 @@ def _download_file(
 ):
     _, ext = _split_extensions(file.url)
     save_path = download_dir / f"{file.md5sum}{ext}"
-    if save_path.is_file() and not force_download:
-        return save_path
+    if force_download or not save_path.is_file():
+        task_id = dl_progress.add_task(
+            "",
+            total=file.size,
+            dataset_name=dataset_name,
+            task_name="Download",
+            name=name,
+        )
 
-    task_id = dl_progress.add_task(
-        "",
-        total=file.size,
-        dataset_name=dataset_name,
-        task_name="Download",
-        name=name,
+        with fsspec.open(file.url, "rb") as src:
+            with open(save_path, "wb") as fout:
+                while chunk := src.read(buffer_size):  # type: ignore
+                    fout.write(chunk)
+                    dl_progress.update(task_id, advance=len(chunk))
+
+        dl_progress.update(task_id, visible=False)
+
+    is_valid = _validate_md5sum(
+        dataset_name,
+        name,
+        file,
+        save_path,
+        dl_progress,
+        buffer_size=buffer_size,
     )
-
-    with fsspec.open(file.url, "rb") as src:
-        with open(save_path, "wb") as fout:
-            while chunk := src.read(buffer_size):  # type: ignore
-                fout.write(chunk)
-                dl_progress.update(task_id, advance=len(chunk))
-
-    dl_progress.update(task_id, visible=False)
-    return save_path
+    if is_valid:
+        return save_path
+    return None
 
 
 def _extract_file(
@@ -141,16 +190,29 @@ def _download_and_extract_file(
     force_download: bool = False,
     force_extract: bool = False,
     buffer_size: int = 8192,
+    max_retries: int = 3,
 ) -> Path:
-    save_path = _download_file(
-        dataset_name,
-        name,
-        file,
-        download_dir,
-        dl_progress,
-        force_download=force_download,
-        buffer_size=buffer_size,
-    )
+    i = 0
+    save_path = None
+    while i < max_retries:
+        _force_download = force_download or i > 0
+        save_path = _download_file(
+            dataset_name,
+            name,
+            file,
+            download_dir,
+            dl_progress,
+            force_download=_force_download,
+            buffer_size=buffer_size,
+        )
+        if save_path is not None:
+            break
+        logger.warning(f"Failed to download {file.url} (attempt {i + 1}/{max_retries})")
+        i += 1
+
+    if save_path is None:
+        raise RuntimeError(f"Failed to download {file}")
+
     return _extract_file(
         dataset_name,
         name,
@@ -168,6 +230,7 @@ def download_visium_datasets(
     force_download: bool = False,
     force_extract: bool = False,
     disable_pbar: bool = False,
+    max_retries: int = 3,
 ) -> LocalDatatsetDict:
     download_dir = Path(download_dir)
     download_dir.mkdir(exist_ok=True, parents=True)
@@ -187,6 +250,7 @@ def download_visium_datasets(
             dl_progress,
             force_download=force_download,
             force_extract=force_extract,
+            max_retries=max_retries,
         )
         return (dataset_name, name, save_path)
 
