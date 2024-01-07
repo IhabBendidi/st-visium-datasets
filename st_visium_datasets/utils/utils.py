@@ -3,26 +3,17 @@ from __future__ import annotations
 import logging
 import logging.config
 import re
-import typing as tp
 from functools import lru_cache
 from pathlib import Path
 
 from datasets.utils.logging import get_verbosity
-from rich.logging import RichHandler
 
 import st_visium_datasets
 
 
-def setup_logging(
-    level: tp.Literal["DEBUG", "INFO", "WARNING", "ERROR"] = "DEBUG",
-) -> None:
-    logging.basicConfig(
-        level=level,
-        format="%(message)s",
-        datefmt="[%x %X]",
-        handlers=[RichHandler(rich_tracebacks=True)],
-    )
-    logging.getLogger("datasets").setLevel(get_verbosity())
+def setup_logging(level: str | int | None = None) -> None:
+    level = level or get_verbosity()
+    logging.getLogger("st_visium_datasets").setLevel(level)
 
 
 def remove_prefix(s: str, prefix: str) -> str:

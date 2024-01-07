@@ -2,10 +2,9 @@ import typing as tp
 from pathlib import Path
 
 import datasets
-import typing_extensions as tx
 from pydantic import AliasChoices, BaseModel, ConfigDict, Field, RootModel
 
-from st_visium_datasets.utils import DataFile, get_configs_dir, sanitize_str
+from st_visium_datasets.utils import DataFile, get_configs_dir
 from st_visium_datasets.utils.utils import remove_prefix
 
 
@@ -31,7 +30,7 @@ class VisiumConfig(BaseModel):
     model_config = ConfigDict(extra="allow", populate_by_name=True)
 
     @classmethod
-    def load(cls, filepath: Path) -> tx.Self:
+    def load(cls, filepath: Path):
         return cls.model_validate_json((filepath).read_text())
 
     def save(self, filepath: Path) -> None:
@@ -58,7 +57,7 @@ class VisiumConfigs(RootModel):
         return len(self.root)
 
     @classmethod
-    def load(cls, dirpath: Path) -> tx.Self:
+    def load(cls, dirpath: Path):
         configs = [VisiumConfig.load(path) for path in dirpath.glob("**/*.json")]
         return cls(root=configs)
 
@@ -69,7 +68,7 @@ class VisiumDatasetBuilderConfig(datasets.BuilderConfig):
         self.visium_configs = visium_configs
 
     @classmethod
-    def load(cls, name: str, path: Path, **kwargs) -> tx.Self:
+    def load(cls, name: str, path: Path, **kwargs):
         if path.is_dir():
             visium_configs = VisiumConfigs.load(path)
         elif path.is_file():

@@ -5,7 +5,6 @@ import logging
 import datasets
 import tabulate
 
-from st_visium_datasets.utils import sanitize_str
 from st_visium_datasets.visium import visium
 
 logger = logging.getLogger(__name__)

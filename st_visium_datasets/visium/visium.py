@@ -34,7 +34,17 @@ class VisiumDatasetBuilder(datasets.GeneratorBasedBuilder):
         self._spot_diameter_px = spot_diameter_px
         self._pil_resize_longest = pil_resize_longest
         self._cache_datasets_dir = os.path.join(self._cache_dir_root, "visium_datasets")
+        self._dataset_paths: tp.Optional[dict] = None
+        self._spot_dataset_dirs: tp.Optional[list[Path]] = None
         self.config: VisiumDatasetBuilderConfig
+
+    @property
+    def dataset_paths(self) -> dict:
+        if self._dataset_paths is None:
+            raise ValueError(
+                "Dataset paths are not available. Please run `download_and_prepare` first."
+            )
+        return self._dataset_paths
 
     def _build_description(self) -> str:
         base_desc = (
@@ -79,12 +89,12 @@ class VisiumDatasetBuilder(datasets.GeneratorBasedBuilder):
             for vc in self.config.visium_configs
         }
         logger.info("Downloading dataset files ...")
-        dataset_paths: dict = dl_manager.download_and_extract(datasets_urls)  # type: ignore
+        self._dataset_paths = dl_manager.download_and_extract(datasets_urls)  # type: ignore
         logger.info("Building spots datasets ...")
         dataset_dirs = build_spots_datasets(
             configs=self.config.visium_configs,
             data_dir=Path(self._cache_datasets_dir),
-            dataset_paths=dataset_paths,
+            dataset_paths=self.dataset_paths,
             spot_diameter_px=self._spot_diameter_px,  # type:ignore
             pil_resize_longest=self._pil_resize_longest,
             overwrite=dl_manager.download_config.force_download
