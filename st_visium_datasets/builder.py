@@ -13,7 +13,8 @@ from tqdm import tqdm
 
 from st_visium_datasets.base import VisiumConfig, VisiumConfigs
 from st_visium_datasets.feature_barcode import load_feature_barcode_matrix_df
-from st_visium_datasets.spatial import get_spot_diameter_px, get_tissue_positions_df
+from st_visium_datasets.spatial import (get_spot_diameter_px,
+                                        get_tissue_positions_df)
 
 logger = logging.getLogger(__name__)
 
@@ -28,6 +29,7 @@ def build_spots_datasets(
     overwrite: bool = False,
     num_proc: int | None = 2,
 ) -> list[Path]:
+    print("this is the new build_spots_datasets")
     with tqdm(
         total=len(dataset_paths), desc="Building datasets ...", position=0
     ) as pbar:
@@ -49,6 +51,8 @@ def build_spots_datasets(
             dataset_dirs = []
             for f in as_completed(futures):
                 dataset_dirs.append(f.result())
+                # filter out any None values
+                dataset_dirs = [d for d in dataset_dirs if d is not None]
                 pbar.update(1)
 
     return dataset_dirs
@@ -65,7 +69,7 @@ def _build_spots_dataset(
     pil_resize_longest: int | None = 3840,
     overwrite: bool = False,
     index: int = 0,
-) -> Path:
+) -> Path | None:
     dataset_dir = data_dir / config.name
     spots_dir = dataset_dir / "spots"
     spots_dir.mkdir(exist_ok=True, parents=True)
@@ -84,14 +88,18 @@ def _build_spots_dataset(
         spot_diameter_px = get_spot_diameter_px(spatial)
 
     logger.debug(f"[{config.name}] Reading tiff image ...")
-    img: np.ndarray = _read_tiff(tiff)
-    pil_img, resize_ratio = _get_pil_img(img, resize_longest=pil_resize_longest)
-    draw, color = ImageDraw.Draw(pil_img), "blue"
-    # line width of 2px and point radius of 3px if max size is 3840
-    line_width, point_radius = (
-        (max(pil_img.size) * 2) // 3840,
-        (max(pil_img.size) * 3) // 3840,
-    )
+    try :
+        img: np.ndarray = _read_tiff(tiff)
+        pil_img, resize_ratio = _get_pil_img(img, resize_longest=pil_resize_longest)
+        draw, color = ImageDraw.Draw(pil_img), "blue"
+        # line width of 2px and point radius of 3px if max size is 3840
+        line_width, point_radius = (
+            (max(pil_img.size) * 2) // 3840,
+            (max(pil_img.size) * 3) // 3840,
+        )
+    except Exception as e:
+        print(f"Error reading/resizing TIFF image {tiff} in dataset {config.name}: {e}")
+        return None
 
     logger.debug(f"[{config.name}] Extracting spots ...")
     with tqdm(
@@ -101,22 +109,26 @@ def _build_spots_dataset(
         leave=False,
     ) as pbar:
         for barcode, row in spots_df.iterrows():
-            x, y = row["x"], row["y"]
-            xmin, ymin, xmax, ymax = _get_spot_bbox(x, y, spot_diameter_px)
-            spot_img: np.ndarray = img[ymin:ymax, xmin:xmax, ...]
-            spot_img_path = spots_dir / f"{barcode}.npy"
-            np.save(spot_img_path, spot_img)
+            try :
+                x, y = row["x"], row["y"]
+                xmin, ymin, xmax, ymax = _get_spot_bbox(x, y, spot_diameter_px)
+                spot_img: np.ndarray = img[ymin:ymax, xmin:xmax, ...]
+                spot_img_path = spots_dir / f"{barcode}.npy"
+                np.save(spot_img_path, spot_img)
 
-            # get spot features
-            features_df[[barcode]].rename(columns={barcode: "count"}).to_csv(
-                spots_dir / f"{barcode}.csv"
-            )
+                # get spot features
+                features_df[[barcode]].rename(columns={barcode: "count"}).to_csv(
+                    spots_dir / f"{barcode}.csv"
+                )
 
-            _draw_spot_bbox(
-                draw, (xmin, ymin, xmax, ymax), resize_ratio, color, line_width
-            )
-            _draw_spot_center(draw, (x, y), resize_ratio, color, point_radius)
-            pbar.update(1)
+                _draw_spot_bbox(
+                    draw, (xmin, ymin, xmax, ymax), resize_ratio, color, line_width
+                )
+                _draw_spot_center(draw, (x, y), resize_ratio, color, point_radius)
+                pbar.update(1)
+            except Exception as e:
+                print(f"Error processing spot {barcode} in dataset {config.name}: {e}")
+                continue  # Skip to the next spot
 
     pil_img.save(dataset_dir / "spots.png", format="PNG")
     config.save(dataset_dir / "config.json")
