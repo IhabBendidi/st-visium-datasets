@@ -39,6 +39,13 @@ torch_ds = ds.with_format("torch", device=device)
 # cf: https://huggingface.co/docs/datasets/v2.15.0/en/use_with_pytorch
 ```
 
+Please note that `load_visium_dataset` follows the same configuration as `load_dataset` from huggingface datasets. It can reuse the same arguments. Similarly, using downloaded datasets from specific folders, or downloading them unto specific folders can be done using the `data_dir` and `cache_dir` arguments.
+
+
+```python
+ds = load_visium_dataset('human_prostate', cache_dir="/projects/minos/ihab/visium_data")
+```
+
 ## Availlable configs
 | name                     | number_of_spots_under_tissue |
 |--------------------------|------------------------------|

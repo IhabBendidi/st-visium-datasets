@@ -65,7 +65,7 @@ def _build_spots_dataset(
     tiff: Path | str,
     feature_bc_matrix: Path | str,
     spatial: Path | str,
-    spot_diameter_px: int | tp.Literal["auto"] = "auto",
+    spot_diameter_px: int | tp.Literal["auto"] = 256,
     pil_resize_longest: int | None = 3840,
     overwrite: bool = False,
     index: int = 0,
@@ -86,6 +86,7 @@ def _build_spots_dataset(
 
     if spot_diameter_px == "auto":
         spot_diameter_px = get_spot_diameter_px(spatial)
+    print("Spot diameter for dataset : ", str(spot_diameter_px))
 
     logger.debug(f"[{config.name}] Reading tiff image ...")
     try :
